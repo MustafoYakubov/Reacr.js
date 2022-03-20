@@ -2,6 +2,8 @@ import React from "react";
 import "../sectionSale/sectionSale.scss";
 import salerLogo from "../../../assets/img/saler.png";
 import greenIcon from "../../../assets/img/green-icon.png";
+import rightIcon from "../../../assets/icons/right-icon.svg";
+import leftIcon from "../../../assets/icons/left-icon.svg";
 const SectionSale = () => {
   return (
     <div className="container">
@@ -39,6 +41,22 @@ const SectionSale = () => {
               <p className="hrs"> mins</p>
               <p className="hrs"> secs</p>
             </div>
+          </div>
+        </div>
+       <div className="sale-btns">
+       <button className="place-btn">
+          <p className="sale-btns-place">Place a bid</p>
+        </button>
+        <button className="view-btn">
+          <p className="sale-btns-view">View item</p>
+        </button>
+       </div>
+        <div className="page-btns">
+          <div className=" icons-rds">
+            <img className="icns" src={leftIcon} alt="rightIcon" />
+          </div>
+          <div className=" icons-rds">
+            <img className="icns" src={rightIcon} alt="leftIcon s" />
           </div>
         </div>
       </div>

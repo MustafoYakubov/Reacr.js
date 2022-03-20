@@ -126,4 +126,99 @@ body {
   line-height: 1.5rem;
   color: #777e91;
   margin-left: 1rem;
+}
+
+.place-btn {
+  width: 22rem !important;
+  height: 3rem;
+  width: 22rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5.625rem;
+  background-color: #3772ff;
+  color: #fcfcfd;
+  cursor: pointer;
+  position: relative !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 8px;
+}
+
+.view-btn {
+  width: 22rem !important;
+  height: 3rem;
+  width: 22rem;
+  height: 3rem;
+  border: 2px solid #e6e8ec;
+  border-radius: 5.625rem;
+  background-color: #fcfcfd;
+  color: #23262f !important;
+  cursor: pointer;
+  position: relative;
+}
+
+.place-btn {
+  width: 22rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5.625rem;
+  background-color: #3772ff;
+  color: #fcfcfd;
+  cursor: pointer;
+  position: relative;
+}
+
+.sale-btns-place {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5.3125rem;
+  height: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #fcfcfd;
+}
+
+.sale-btns-view {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5.3125rem;
+  height: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #23232f;
+}
+
+.page-btns {
+  width: 8.4375rem !important;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.125rem !important;
+  cursor: pointer;
+}
+
+.sale-btns {
+  display: block;
+}
+
+.icons-rds {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #e6e8ec;
+}
+
+.icns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=sectionSale.css.map */

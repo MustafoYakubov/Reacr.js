@@ -68,3 +68,74 @@
   @include text(toRem(64), toRem(24), 500, 1rem, toRem(24), #777e91);
   margin-left: 1rem;
 }
+.place-btn {
+  width: toRem(352) !important;
+  height: toRem(48);
+  @include btns(toRem(352), toRem(48), none, toRem(90), $colorBlue, #fcfcfd);
+  cursor: pointer;
+  position: relative !important;
+  margin-top: toRem(40) !important;
+  margin-bottom: 8px;
+}
+.view-btn {
+  width: toRem(352) !important;
+  height: toRem(48);
+  @include btns(
+    toRem(352),
+    toRem(48),
+    2px solid #e6e8ec,
+    toRem(90),
+    #fcfcfd,
+    #23262f !important
+  );
+  cursor: pointer;
+  position: relative;
+}
+.place-btn {
+  @include btns(toRem(352), toRem(48), none, toRem(90), $colorBlue, #fcfcfd);
+  cursor: pointer;
+  position: relative;
+}
+.sale-btns-place {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  @include text(toRem(85), toRem(16), 600, 1rem, 1rem, #fcfcfd);
+}
+.sale-btns-view {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  @include text(toRem(85), toRem(16), 600, 1rem, 1rem, #23232f);
+}
+
+.page-btns {
+  width: toRem(135) !important;
+  display: flex;
+  justify-content: space-between;
+ margin-top: toRem(50) !important;
+ cursor: pointer;
+}
+.sale-btns{
+  display: block;
+}
+.icons-rds {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #e6e8ec;
+}
+.icns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}

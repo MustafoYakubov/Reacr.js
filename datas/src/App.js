@@ -1,4 +1,5 @@
 import React, { useEffect, useReducer } from "react";
+import Drawer from "./components/Drawer";
 import { KEY } from "./CONSTANTS/KEY";
 
 const initialData = {
@@ -22,7 +23,6 @@ function App() {
   }, []);
 
   const [resData, dispatch] = useReducer(reducer, initialData);
-  console.log(resData);
   async function fetchFilms() {
     try {
       const res = await fetch(
@@ -32,18 +32,20 @@ function App() {
           headers: {
             "x-rapidapi-host": "data-imdb1.p.rapidapi.com",
             "x-rapidapi-key": KEY,
-          },
-        }
       );
       if (!res.ok) {
         throw new Error("WRONG SINTACTIS" + res.status);
       }
       const data = await res.json();
-      dispatch({ type: "FETCHING", val: data.url });
+      dispatch({ type: "FETCHING", val: data });
     } catch (error) {
       console.log(error.message);
     }
   }
-  return <div className="App">datttaaa</div>;
+  return (
+    <div className="App">
+      <Drawer resData={resData} />
+    </div>
+  );
 }
 export default App;

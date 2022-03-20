@@ -41,7 +41,7 @@ export default function Navbar() {
               </NavLink>
             </li>
           </ul>
-          <form className="d-flex forms">
+          <form autocomplete="off" className="d-flex forms">
             <input
               className="form-control me-2"
               type="search"
