@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import HeadStarter from "../HeadStarter/HeadStarter";
 
 export default function Discover() {
   return (
-    <div className='container' >Discover</div>
-  )
+    <div className="container">
+      <HeadStarter />
+    </div>
+  );
 }

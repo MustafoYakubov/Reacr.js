@@ -4,3 +4,20 @@ $colorGreen: #45b26b;
 $colorViolet: #9757d7;
 $colorPink: #ef466f;
 $colorGrey : #E6E8EC;
+
+@mixin btns ($wdth, $hght, $brdr, $brdr-rds,$bckgr,$clr) {
+    width: $wdth;
+    height: $hght;
+    border: $brdr;
+    border-radius: $brdr-rds;
+    background-color: $bckgr;
+    color: $clr;
+}
+@mixin text ($wdth, $hght,$fw,$fs, $lg, $clr) {
+    width: $wdth;
+    height: $hght;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lg;
+    color: $clr;
+}
