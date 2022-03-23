@@ -59,4 +59,53 @@ body {
 
 .videoPlayer {
   border-radius: 3.125rem;
+}
+
+@media screen and (max-width: 500px) {
+  .line {
+    margin-bottom: 4rem;
+  }
+
+  .head-p {
+    margin-left: 10%;
+    width: 19.4375rem !important;
+    height: 12px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    color: #777e91;
+  }
+
+  .head-h {
+    margin-left: 10%;
+    letter-spacing: -0.01em;
+    width: 19.4375rem;
+    height: 5rem;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #23262f;
+  }
+
+  .head-btn {
+    width: 9.625rem;
+    height: 3rem;
+    border: auto;
+    border-radius: auto;
+    background-color: auto;
+    color: auto;
+    margin-bottom: 4.875rem;
+  }
+
+  .col-sm-12 {
+    padding: unset !important;
+  }
+
+  .videoPlayer {
+    width: 80%;
+    height: 36.3125rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 10%;
+  }
 }/*# sourceMappingURL=HeadStarter.css.map */

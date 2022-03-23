@@ -39,3 +39,32 @@
   border-radius: toRem(50);
 }
 
+@media screen and (max-width: 500px) {
+  .line {
+    margin-bottom: 4rem;
+  }
+  .head-p {
+    margin-left: 10%;
+    @include text(toRem(311) !important, 12px, 700, 12px, 12px, #777e91);
+  }
+  .head-h {
+    margin-left: 10%;
+
+    letter-spacing: -0.01em;
+    @include text(toRem(311), toRem(80), 700, 32px, 40px, #23262f);
+  }
+  .head-btn {
+    @include btns(toRem(154), toRem(48), auto, auto, auto, auto);
+    margin-bottom: toRem(78);
+  }
+  .col-sm-12 {
+    padding: unset !important;
+  }
+  .videoPlayer {
+    width: 80%;
+    height: toRem(581);
+    object-fit: cover;
+    margin: 0 10%;
+    // padding: 0 5%;
+  }
+}

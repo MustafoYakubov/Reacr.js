@@ -107,7 +107,7 @@ a {
   color: #23262f;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .nav-NavLink {
     margin-left: unset;
     margin-bottom: 1rem;
@@ -137,7 +137,7 @@ a {
     height: toRem(40) !important;
   }
   .notification {
-    margin-left: 42%;
+    margin-left: 37%;
     &.active {
       background-color: #dddfe6;
       width: 41px;

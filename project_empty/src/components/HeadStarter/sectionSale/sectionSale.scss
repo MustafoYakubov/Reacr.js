@@ -119,10 +119,10 @@
   width: toRem(135) !important;
   display: flex;
   justify-content: space-between;
- margin-top: toRem(50) !important;
- cursor: pointer;
+  margin-top: toRem(50) !important;
+  cursor: pointer;
 }
-.sale-btns{
+.sale-btns {
   display: block;
 }
 .icons-rds {
@@ -138,4 +138,10 @@
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 500px) {
+  .saler-icons {
+    
+  }
 }
