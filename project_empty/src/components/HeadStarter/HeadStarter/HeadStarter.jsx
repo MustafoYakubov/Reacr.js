@@ -1,7 +1,7 @@
 import React from "react";
-import videoPlayer from "../../assets/img/videoPlayer.jpg";
+import videoPlayer from "../../../assets/img/videoPlayer.jpg";
 import "../HeadStarter/HeadStarter.scss";
-import SectionSale from "./sectionSale/SectionSale";
+import SectionSale from "../sectionSale/SectionSale";
 function HeadStarter() {
   return (
     <div>

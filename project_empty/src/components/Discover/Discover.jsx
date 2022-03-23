@@ -1,5 +1,5 @@
 import React from "react";
-import HeadStarter from "../HeadStarter/HeadStarter";
+import HeadStarter from "../HeadStarter/HeadStarter/HeadStarter";
 
 export default function Discover() {
   return (

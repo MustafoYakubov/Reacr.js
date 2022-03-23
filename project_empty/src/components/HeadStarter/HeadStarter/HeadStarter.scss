@@ -1,4 +1,4 @@
-@import "../../styles/global.scss";
+@import "../../../styles/global.scss";
 .line {
   max-width: toRem(1320) !important;
   border: 0.5px solid #eeeeee;
@@ -38,3 +38,4 @@
 .videoPlayer {
   border-radius: toRem(50);
 }
+
