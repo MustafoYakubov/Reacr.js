@@ -67,24 +67,30 @@ body {
   }
 
   .head-p {
-    margin-left: 10%;
-    width: 19.4375rem !important;
+    margin-left: unset;
+    max-width: 68% !important;
+    width: auto;
     height: 12px;
     font-weight: 700;
     font-size: 12px;
     line-height: 12px;
     color: #777e91;
+    display: inline-block;
+    text-align: center;
   }
 
   .head-h {
-    margin-left: 10%;
     letter-spacing: -0.01em;
-    width: 19.4375rem;
+    margin-left: unset;
+    max-width: 71%;
+    width: auto;
     height: 5rem;
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
     color: #23262f;
+    display: inline-block;
+    text-align: center;
   }
 
   .head-btn {

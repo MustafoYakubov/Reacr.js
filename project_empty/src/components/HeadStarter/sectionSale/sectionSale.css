@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -221,4 +222,43 @@ body {
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 500px) {
+  .prices {
+    padding: 0 !important;
+  }
+
+  .sale-h1 {
+    position: relative;
+    visibility: hidden;
+    margin-top: 2.5rem;
+  }
+  .sale-h1::after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Marco carrillo®";
+    width: 19rem;
+    height: 8rem;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4rem;
+    color: #23262f;
+  }
+
+  .place-btn,
+.view-btn {
+    width: 18.875rem !important;
+  }
+
+  .page-btns {
+    margin: 0 auto;
+  }
+
+  .sale-btns {
+    display: inline-block;
+    text-align: center;
+  }
 }/*# sourceMappingURL=sectionSale.css.map */

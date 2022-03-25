@@ -44,14 +44,19 @@
     margin-bottom: 4rem;
   }
   .head-p {
-    margin-left: 10%;
-    @include text(toRem(311) !important, 12px, 700, 12px, 12px, #777e91);
+    margin-left: unset;
+    max-width: 68% !important;
+    @include text(auto, 12px, 700, 12px, 12px, #777e91);
+    display: inline-block;
+    text-align: center;
   }
   .head-h {
-    margin-left: 10%;
-
     letter-spacing: -0.01em;
-    @include text(toRem(311), toRem(80), 700, 32px, 40px, #23262f);
+    margin-left: unset;
+    max-width: 71%;
+    @include text(auto, toRem(80), 700, 32px, 40px, #23262f);
+    display: inline-block;
+    text-align: center;
   }
   .head-btn {
     @include btns(toRem(154), toRem(48), auto, auto, auto, auto);

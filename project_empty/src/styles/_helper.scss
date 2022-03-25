@@ -6,9 +6,16 @@
 
 body {
   font-family: "DM Sans", sans-serif;
-
 }
 @function toRem($value) {
   $remValue: ($value / 16) + rem;
   @return $remValue;
 }
+// @function percent($target) {
+//   @return percent($target / 32);
+// }
+
+// @function perc($value) {
+//   $total: ($value / 0 ) + percentage($number: 34.2);
+//   @return $total;
+// }

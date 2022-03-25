@@ -124,6 +124,7 @@
 }
 .sale-btns {
   display: block;
+  // text-align: center;
 }
 .icons-rds {
   position: relative;
@@ -139,9 +140,32 @@
   right: 50%;
   transform: translate(-50%, -50%);
 }
-
 @media screen and (max-width: 500px) {
-  .saler-icons {
-    
+  .prices {
+    padding: 0 !important;
+  }
+  .sale-h1 {
+    position: relative;
+    visibility: hidden;
+    margin-top: toRem(40);
+    &::after {
+      visibility: visible;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "Marco carrillo®";
+      @include text(toRem(304), toRem(128), 700, toRem(64), toRem(64), #23262f);
+    }
+  }
+  .place-btn,
+  .view-btn {
+    width: toRem(302) !important;
+  }
+  .page-btns {
+    margin: 0 auto;
+  }
+  .sale-btns{
+    display: inline-block;
+    text-align: center;
   }
 }

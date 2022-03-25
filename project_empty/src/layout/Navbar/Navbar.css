@@ -103,7 +103,7 @@ a {
   background-color: #fff;
   width: 8.4375rem !important;
   height: 40px;
-  border: 2px solid #E6E8EC;
+  border: 2px solid #e6e8ec;
   border-radius: 2rem;
   align-items: center;
   margin-left: 1.75rem;
@@ -165,5 +165,9 @@ a {
     width: 41px;
     height: 40px;
     border-radius: 50%;
+  }
+
+  .line {
+    display: none;
   }
 }/*# sourceMappingURL=Navbar.css.map */

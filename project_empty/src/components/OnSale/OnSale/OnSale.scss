@@ -1,0 +1,51 @@
+@import "../../../styles/global.scss";
+
+.onSaleRow {
+  margin-top: toRem(188) !important;
+}
+.eyes {
+  width: 100%;
+  //   width: toRem(462.52);
+  height: toRem(446);
+  border-radius: 12px;
+}
+.saler {
+  width: toRem(48);
+  height: toRem(48);
+  border-radius: toRem(48);
+  margin-top: 1rem;
+}
+.row-1-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+
+  h4 {
+    @include text(toRem(219), toRem(32), 600, toRem(24), toRem(32), #23262f);
+
+    > span {
+      @include text(toRem(72), toRem(24), 500, 14px, toRem(24), #353945);
+    }
+  }
+  p {
+    @include text(toRem(68), toRem(20), 500, 13px, toRem(20), #777e91);
+
+    span {
+      display: block;
+      width: toRem(68);
+      height: toRem(26);
+      border: 2px solid $colorGreen;
+      box-sizing: border-box;
+      border-radius: 4px;
+      color: $colorGreen;
+      font-weight: 800;
+      font-size: 12px;
+      line-height: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  }
+}
