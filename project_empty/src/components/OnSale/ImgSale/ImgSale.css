@@ -33,7 +33,7 @@ body {
   margin-top: 1.5rem;
 }
 
-.logo {
+.logos {
   width: 1.875rem;
   height: 1.875rem;
   border-radius: 3rem;
@@ -90,4 +90,8 @@ body {
 
 .fatherRow:nth-child(2) {
   padding-top: 1rem;
+}
+
+.fatherRow {
+  margin-left: 1px !important;
 }/*# sourceMappingURL=ImgSale.css.map */

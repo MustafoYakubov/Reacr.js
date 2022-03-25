@@ -70,4 +70,32 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
+}
+
+.salers-title {
+  width: 14.5rem;
+  height: 1.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #777e91;
+}
+
+.discover-btn {
+  margin-top: 2rem;
+  width: 9.875rem;
+  height: 2.5rem;
+  border: 2px solid #e6e8ec;
+  border-radius: 5.625rem;
+  background-color: #fff;
+  color: #23262f;
+}
+.discover-btn p {
+  margin-bottom: unset;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+.discover-btn p span {
+  margin-left: 1rem;
 }/*# sourceMappingURL=OnSale.css.map */
