@@ -1,8 +1,10 @@
 import React from "react";
 import HeadStarter from "../HeadStarter/HeadStarter/HeadStarter";
+
 import OnSale from "../OnSale/OnSale/OnSale";
 import SectionCarousel from "../SectionCarousel/SectionCarousel/SectionCarousel";
-import "./Discover.scss"
+import OnBit from "../OnBit/OnBit/OnBit";
+import "./Discover.scss";
 
 export default function Discover() {
   return (
@@ -13,9 +15,11 @@ export default function Discover() {
       </div>
       <div className="container-fluid  container-style">
         <div className="container">
-        <SectionCarousel />
-
+          <SectionCarousel />
         </div>
+      </div>
+      <div className="container">
+        <OnBit />
       </div>
     </>
   );

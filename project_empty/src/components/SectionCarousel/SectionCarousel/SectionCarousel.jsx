@@ -31,7 +31,7 @@ const SectionCarousel = () => {
   const personNames = {
     name1: "Edd Harris",
     name2: "Odell Hane",
-    name3: "Marlee Kuphal",
+    name3: "Marlee Kupha",
     name4: "Payton Kunde",
     name5: "Payton Buckr",
   };

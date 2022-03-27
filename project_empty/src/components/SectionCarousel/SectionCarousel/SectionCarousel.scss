@@ -11,7 +11,7 @@
   margin-top: toRem(-25);
 }
 .carousel-head {
-  padding-top: toRem(128);
+  padding-top: toRem(80);
   h4 {
     @include text(toRem(221), toRem(32), 600, toRem(24), toRem(32), #777e91);
   }
@@ -27,14 +27,14 @@
   color: #23262f;
 }
 .dropdown2 {
-    width: toRem(256);
-    height: 48px;
+  width: toRem(256);
+  height: 48px;
   margin-left: toRem(770);
-  font-weight: 400px !important ; 
+  font-weight: 400px !important ;
 }
 .dropdown-menu {
-    margin-top: 15px !important;
-    border: none !important;
+  margin-top: 15px !important;
+  border: none !important;
 }
 .dropdown-item {
   color: #000 !important;
@@ -57,4 +57,15 @@
 }
 .cols-margin {
   margin-left: 32px;
+  margin-bottom: toRem(114);
+}
+@media screen and (max-width: 500px) {
+  .dropdwonstyle {
+    display: none;
+  }
+  .cols-margin {
+    margin-left: unset;
+    padding-left: 23% !important;
+    padding-top: 1rem !important;
+  }
 }

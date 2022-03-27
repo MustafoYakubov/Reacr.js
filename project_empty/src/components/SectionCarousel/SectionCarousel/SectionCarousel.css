@@ -22,7 +22,7 @@ body {
 }
 
 .carousel-head {
-  padding-top: 8rem;
+  padding-top: 5rem;
 }
 .carousel-head h4 {
   width: 13.8125rem;
@@ -79,4 +79,17 @@ body {
 
 .cols-margin {
   margin-left: 32px;
+  margin-bottom: 7.125rem;
+}
+
+@media screen and (max-width: 500px) {
+  .dropdwonstyle {
+    display: none;
+  }
+
+  .cols-margin {
+    margin-left: unset;
+    padding-left: 23% !important;
+    padding-top: 1rem !important;
+  }
 }/*# sourceMappingURL=SectionCarousel.css.map */
