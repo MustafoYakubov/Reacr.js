@@ -64,6 +64,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.title_of_nft span:hover {
+  background-color: #353945;
+}
 
 .followers span {
   width: 4.125rem;
