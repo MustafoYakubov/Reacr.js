@@ -58,4 +58,9 @@ body {
   margin-bottom: 11px;
   border: 1px solid #e6e8ec;
   width: 15.25rem !important;
+}
+
+.section-salers:hover {
+  transition: transform 0.1s;
+  transform: scale(1.1);
 }/*# sourceMappingURL=Salers.css.map */

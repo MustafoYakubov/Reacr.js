@@ -24,10 +24,14 @@
     @include text(toRem(21), toRem(20), 500, 13px, toRem(20), #777e91);
   }
 }
-.line-salers{
-    margin-top: toRem(20) !important;
-    margin-bottom: toRem(20) !important;
-    margin-bottom: 11px;
-    border: 1px solid $colorGrey;
-    width: toRem(244) !important;
+.line-salers {
+  margin-top: toRem(20) !important;
+  margin-bottom: toRem(20) !important;
+  margin-bottom: 11px;
+  border: 1px solid $colorGrey;
+  width: toRem(244) !important;
+}
+.section-salers:hover {
+  transition: transform 0.1s;
+  transform: scale(1.1);
 }

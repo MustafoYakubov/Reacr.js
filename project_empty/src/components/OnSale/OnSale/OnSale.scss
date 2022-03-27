@@ -7,6 +7,10 @@
   width: 100%;
   height: toRem(446);
   border-radius: 12px;
+  &:hover {
+    transition: transform 0.4s;
+    transform: scale(0.9);
+  }
 }
 .saler {
   width: toRem(48);
@@ -19,7 +23,10 @@
   justify-content: space-between;
   align-items: center;
   justify-items: center;
-
+  &:hover {
+    transition: transform 0.1s;
+    transform: scale(1.1);
+  }
   h4 {
     @include text(toRem(219), toRem(32), 600, toRem(24), toRem(32), #23262f);
 
@@ -88,7 +95,7 @@
     padding-left: 23%;
   }
   .discover-btn {
-    margin: 0 auto  ;
+    margin: 0 auto;
     display: block;
   }
 }

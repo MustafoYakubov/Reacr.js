@@ -17,6 +17,10 @@ body {
   height: 27.875rem;
   border-radius: 12px;
 }
+.eyes:hover {
+  transition: transform 0.4s;
+  transform: scale(0.9);
+}
 
 .saler {
   width: 3rem;
@@ -30,6 +34,10 @@ body {
   justify-content: space-between;
   align-items: center;
   justify-items: center;
+}
+.row-1-text:hover {
+  transition: transform 0.1s;
+  transform: scale(1.1);
 }
 .row-1-text h4 {
   width: 13.6875rem;

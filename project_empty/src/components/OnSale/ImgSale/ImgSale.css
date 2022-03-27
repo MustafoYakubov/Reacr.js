@@ -84,6 +84,11 @@ body {
   color: #23262f;
 }
 
+.fatherRow2:hover {
+  transition: transform 0.1s;
+  transform: scale(1.1);
+}
+
 .fatherRow2:nth-child(3) {
   padding-top: 1rem;
 }
@@ -112,5 +117,10 @@ body {
   .imgH4 {
     width: 14.8rem !important;
     margin-left: -9px;
+  }
+
+  .fatherRow2:hover {
+    transition: transform 0.1s;
+    transform: scale(1.1);
   }
 }/*# sourceMappingURL=ImgSale.css.map */

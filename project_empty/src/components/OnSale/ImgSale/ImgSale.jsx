@@ -1,6 +1,5 @@
 import React from "react";
 import "./ImgSale.scss";
-import salerLogo from "../../../assets/icons/saler1.svg"
 const ImgSale = (props) => {
   const { img, textH4, logo, page,prices } = props;
   console.log(textH4, page);
