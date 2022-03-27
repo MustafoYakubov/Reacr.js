@@ -35,7 +35,6 @@
   @include text(toRem(55), toRem(24), 400, 14px, toRem(24), #777e91);
 }
 .imgBtn {
-  // @include btns(toRem());
   padding: 1px 10px;
   @include btns(toRem(98), toRem(32), 2px solid #e6e8ec, toRem(90), #fff, auto);
   margin-top: 12px;

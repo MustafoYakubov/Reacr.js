@@ -1,27 +1,33 @@
 import React from "react";
 import OnBitText from "../OnBitText/OnBitText";
 import eyes from "../../../assets/img/eyes.jpg";
+import woman from "../../../assets/img/woman.jpg";
+import pyramid from "../../../assets/img/pyramid.jpg";
+import ball from "../../../assets/img/ball.jpg";
+import building from "../../../assets/img/building.jpg";
 import "./OnBit.scss";
 const OnBit = () => {
   return (
     <>
-      <h1>Hot Bid</h1>
+      <h1 className="onbit_title">Hot Bid</h1>
       <div className="section_hotBid">
         <div className="row">
           <div className="col-3">
-            img 1
+            <img className="w-100 imgHover" src={woman} alt="woman" />
             <OnBitText />
           </div>
           <div className="col-3">
-            img2
+            <img className="w-100 imgHover" src={pyramid} alt="pyramid" />
             <OnBitText />
           </div>
 
-          <div className="col-3">
-            img3 <OnBitText />
+          <div className="col-3 ">
+            <img className="w-100 imgHover" src={ball} alt="ball" />
+            <OnBitText />
           </div>
           <div className="col-3">
-            img 4 <OnBitText />
+            <img className="w-100 imgHover" src={building} alt="building" />
+            <OnBitText />
           </div>
         </div>
       </div>
@@ -58,12 +64,15 @@ const OnBit = () => {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img src={eyes} className="d-block w-100" alt="..." />
+              <OnBitText />
             </div>
             <div className="carousel-item">
               <img src={eyes} className="d-block w-100 " alt="..." />
+              <OnBitText />
             </div>
             <div className="carousel-item">
               <img src={eyes} className="d-block w-100" alt="..." />
+              <OnBitText />
             </div>
           </div>
           <button
