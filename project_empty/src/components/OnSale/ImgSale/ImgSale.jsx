@@ -5,7 +5,7 @@ const ImgSale = (props) => {
   const { img, textH4, logo, page,prices } = props;
   console.log(textH4, page);
   return (
-    <div className="fatherRow row">
+    <div className="fatherRow2 row">
       <div className="col-5">
         <img className="imgSale" src={img} alt="img" />
       </div>

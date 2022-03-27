@@ -10,13 +10,13 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-        <Container>
+        {/* <Container> */}
           <Routes>
             <Route path="/" element={<Discover />} />
             <Route path="/how-it-works" element={<HowWork />} />
             <Route path="/Notification" element={<Notification />} />
           </Routes>
-        </Container>
+        {/* </Container> */}
       </BrowserRouter>
     </>
   );

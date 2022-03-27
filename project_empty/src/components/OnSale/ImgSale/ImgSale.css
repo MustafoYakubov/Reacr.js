@@ -84,14 +84,33 @@ body {
   color: #23262f;
 }
 
-.fatherRow:nth-child(3) {
+.fatherRow2:nth-child(3) {
   padding-top: 1rem;
 }
 
-.fatherRow:nth-child(2) {
+.fatherRow2:nth-child(2) {
   padding-top: 1rem;
 }
 
 .fatherRow {
   margin-left: 1px !important;
+}
+
+@media screen and (max-width: 500px) {
+  .fatherRow {
+    margin-left: unset;
+    padding-left: unset;
+  }
+  .fatherRow .row {
+    padding-left: unset;
+  }
+
+  .imgH4 {
+    width: 14rem;
+  }
+
+  .imgH4 {
+    width: 14.8rem !important;
+    margin-left: -9px;
+  }
 }/*# sourceMappingURL=ImgSale.css.map */

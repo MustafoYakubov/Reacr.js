@@ -13,7 +13,7 @@ const Salers = (props) => {
           {price} <span>ETH</span>
         </h6>
       </div>
-      <div className="line-salers"></div>
+      <div color="0" className="line-salers"></div>
     </div>
   );
 };
