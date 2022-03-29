@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer-line"></div>
         <div className="footer-section">
           <div className="row footer-row">
-            <div className="col-xxl-3 col-sm-12 me-4  ">
+            <div className="col-xxl-3 col-sm-12   logo_title ">
               <img className="logo2" src={logo} alt="logo" />
               <span className="crypto2">crypter</span>
               <h4 className="creative" >The New Creative Economy.</h4>

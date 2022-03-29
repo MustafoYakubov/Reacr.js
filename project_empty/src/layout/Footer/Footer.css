@@ -104,4 +104,48 @@ body {
 
 .footer-section {
   margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .footer-section {
+    margin-left: 1rem;
+  }
+
+  .creative {
+    width: 12rem;
+    height: 3rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #23262f;
+  }
+
+  .row_txt_ftr {
+    margin-top: 2.4375rem;
+    margin-bottom: 2rem !important;
+    font-weight: 600;
+  }
+
+  .logo2 {
+    margin-left: -5rem;
+  }
+
+  .section_letters {
+    margin-top: 1rem;
+    margin-bottom: 2rem !important;
+    font-weight: 600;
+  }
+
+  .ftr_form {
+    margin-bottom: 2rem;
+  }
+
+  .form_style {
+    position: absolute !important;
+    top: -32px;
+  }
+
+  .form_icon {
+    margin-top: 5px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

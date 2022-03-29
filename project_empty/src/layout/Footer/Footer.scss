@@ -36,7 +36,7 @@
   border-radius: toRem(90) !important;
 }
 .form {
-    position: relative;
+  position: relative;
 }
 .form_icon {
   margin-left: 8px;
@@ -51,5 +51,39 @@
   margin-left: toRem(177);
 }
 .footer-section {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .footer-section {
+    margin-left: 1rem;
+  }
+
+  .creative {
+    @include text(toRem(192), toRem(48), 500, 1.2rem, toRem(24), #23262f);
+    // margin-bottom: toRem(71);
+  }
+  .row_txt_ftr {
+    margin-top: toRem(39);
+    margin-bottom: 2rem !important;
+    font-weight: 600;
+  }
+  .logo2 {
+    margin-left: -5rem;
+  }
+  .section_letters {
+    margin-top: 1rem;
+    margin-bottom: 2rem !important;
+    font-weight: 600;
+  }
+  .ftr_form {
+    margin-bottom: 2rem;
+  }
+  .form_style {
+    position: absolute !important;
+    top: -32px;
+  }
+  .form_icon {
+    margin-top: 5px;
+  }
 }
