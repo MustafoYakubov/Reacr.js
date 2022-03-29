@@ -108,4 +108,34 @@ body {
 .imgHover:hover {
   transform: scale(0.9);
   transition: all 1s ease;
+}
+
+@media screen and (max-width: 500px) {
+  .onbit_title {
+    margin-top: 5rem;
+  }
+
+  .section_hotBid {
+    display: none;
+  }
+
+  .carousel-mobile {
+    display: block;
+  }
+
+  .mobile_carousel_img {
+    border-radius: 12px;
+  }
+
+  .title_of_nft {
+    margin-left: 11%;
+  }
+
+  .followers {
+    margin: 2% 0 0 12%;
+  }
+
+  .onBitLine {
+    margin-bottom: 1rem;
+  }
 }/*# sourceMappingURL=OnBit.css.map */

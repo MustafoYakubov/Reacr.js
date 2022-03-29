@@ -1,8 +1,7 @@
 import React from "react";
 import "./ImgSale.scss";
 const ImgSale = (props) => {
-  const { img, textH4, logo, page,prices } = props;
-  console.log(textH4, page);
+  const { img, textH4, logo, page, prices } = props;
   return (
     <div className="fatherRow2 row">
       <div className="col-5">

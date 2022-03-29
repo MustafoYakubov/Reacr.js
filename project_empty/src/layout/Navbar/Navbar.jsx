@@ -24,7 +24,7 @@ export default function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span >
+          <span>
             <img src={mobileNavIcon} alt="mobile-nav" />
           </span>
         </button>
@@ -50,13 +50,16 @@ export default function Navbar() {
             />
             <img className="search-logo" src={search} alt="search-logo" />
             <NavLink className="notification" to="/Notification">
-              <img className="noti-logo" src={Notification} alt="Notification" />
+              <img
+                className="noti-logo"
+                src={Notification}
+                alt="Notification"
+              />
             </NavLink>
             <button type="button" className="upload">
               upload
             </button>
             <button type="button" className="connect">
-            
               <span className="connect-text"> Connect Wallet </span>
             </button>
           </form>

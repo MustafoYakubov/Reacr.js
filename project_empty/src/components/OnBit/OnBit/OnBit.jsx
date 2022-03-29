@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import OnBitText from "../OnBitText/OnBitText";
-import eyes from "../../../assets/img/eyes.jpg";
 import woman from "../../../assets/img/woman.jpg";
 import pyramid from "../../../assets/img/pyramid.jpg";
 import ball from "../../../assets/img/ball.jpg";
 import building from "../../../assets/img/building.jpg";
+import Carousel from "react-bootstrap/Carousel";
+// import Item from "react-bootstrap/Item";
 import "./OnBit.scss";
 const OnBit = () => {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
   return (
     <>
       <h1 className="onbit_title">Hot Bid</h1>
@@ -31,80 +38,41 @@ const OnBit = () => {
           </div>
         </div>
       </div>
-
       {/* // CAROUSEL FOR MOBILE */}
+      {/* ///// */}
+      {/* MOBILE CAROUSEL  !!! */}
       <div className="carousel-mobile">
-        <div
-          id="carouselExampleCaptions"
-          className="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src={eyes} className="d-block w-100" alt="..." />
-              <OnBitText />
-            </div>
-            <div className="carousel-item">
-              <img src={eyes} className="d-block w-100 " alt="..." />
-              <OnBitText />
-            </div>
-            <div className="carousel-item">
-              <img src={eyes} className="d-block w-100" alt="..." />
-              <OnBitText />
-            </div>
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-        {/* CAROUSEL END  */}
-        <div>
-          <h1>hello its carousel</h1>
-          <button>click me</button>
-        </div>
+        <Carousel activeIndex={index} onSelect={handleSelect}>
+          <Carousel.Item>
+            <img
+              className="d-block w-100 mobile_carousel_img"
+              src={woman}
+              alt="First slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100 mobile_carousel_img "
+              src={pyramid}
+              alt="Second slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100  mobile_carousel_img"
+              src={ball}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100 mobile_carousel_img"
+              src={building}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+        </Carousel>
+        <OnBitText /> 
       </div>
     </>
   );

@@ -38,7 +38,7 @@
     align-items: center;
     justify-content: center;
     &:hover {
-        background-color: #353945;
+      background-color: #353945;
     }
   }
 }
@@ -67,5 +67,29 @@
     transform: scale(0.9);
     transition: all 1s ease;
     // transform: translate(10px, 300px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .onbit_title {
+    margin-top: toRem(80);
+  }
+  .section_hotBid {
+    display: none;
+  }
+  .carousel-mobile {
+    display: block;
+  }
+  .mobile_carousel_img {
+    border-radius: 12px;
+  }
+  .title_of_nft {
+    margin-left: 11%;
+  }
+  .followers {
+    margin: 2% 0 0 12%;
+  }
+  .onBitLine {
+    margin-bottom: 1rem;
   }
 }
