@@ -1,6 +1,6 @@
 import React from "react";
 import "./CreateNft.scss";
-import esco from "../.././assets/img/esco.png"
+import esco from "../.././assets/img/esco.png";
 const CreateNft = () => {
   return (
     <>
@@ -9,15 +9,17 @@ const CreateNft = () => {
 
         <div className="row">
           <div className="col-xxl-6 col-sm-12">
-            <p>Save your time with Stacks</p>
+            <p className="createNft_p">Save your time with Stacks</p>
             <h1>Earn free crypto with Crypter</h1>
-            <p>A creative agency that lead and inspire</p>
-            <div className="createNft_btns d-flex">
-              <button className="btn btn-primary "> Earn now</button>
-              <button className="btn  btn-light"> Discover more</button>
+            <p className="mb-5 mt-3">A creative agency that lead and inspire</p>
+            <div className="createNft_btns ">
+              <button className="btn btn-primary me-3 btns "> Learn now</button>
+              <button className="btn  btn-light btns"> Discover more</button>
             </div>
           </div>
-          <div className="col-xxl-6 col-sm-12"> <img className="esco w-100 d-block" src={esco} alt="esco" /></div>
+          <div className="col-xxl-6 col-sm-12">
+            <img className="esco w-100 d-block" src={esco} alt="esco" />
+          </div>
         </div>
       </div>
     </>
