@@ -36,6 +36,7 @@ const OnBit = () => {
             <img className="w-100 imgHover" src={building} alt="building" />
             <OnBitText />
           </div>
+          <button className="btn-load mt-5">Load More </button>
         </div>
       </div>
       {/* // CAROUSEL FOR MOBILE */}
@@ -72,7 +73,7 @@ const OnBit = () => {
             />
           </Carousel.Item>
         </Carousel>
-        <OnBitText /> 
+        <OnBitText />
       </div>
     </>
   );

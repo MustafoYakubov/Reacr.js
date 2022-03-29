@@ -66,8 +66,18 @@
   &:hover {
     transform: scale(0.9);
     transition: all 1s ease;
-    // transform: translate(10px, 300px);
   }
+}
+.btn-load {
+  @include btns(
+    toRem(132) !important,
+    toRem(40) !important,
+    1px solid #e6e8ec,
+    toRem(90),
+    #fff,
+    #23262f
+  );
+  margin-left: toRem(574);
 }
 
 @media screen and (max-width: 500px) {

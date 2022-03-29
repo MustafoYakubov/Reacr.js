@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.btn-primary {
+  border-radius: 90px !important;
+}
+
+.btn-light {
+  border: 1px solid #e6e8ec !important;
+  border-radius: 90px !important;
+  background-color: #fff !important;
+}/*# sourceMappingURL=CreateNft.css.map */
