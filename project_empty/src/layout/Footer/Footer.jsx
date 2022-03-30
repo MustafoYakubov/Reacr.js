@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="col-xxl-3 col-sm-12   logo_title ">
               <img className="logo2" src={logo} alt="logo" />
               <span className="crypto2">crypter</span>
-              <h4 className="creative" >The New Creative Economy.</h4>
+              <h4 className="creative">The New Creative Economy.</h4>
             </div>
             <div className="col-xxl-2 col-sm-12 me-5">
               <p className="row_txt_ftr mb-5">Crypter</p>
@@ -44,10 +44,9 @@ const Footer = () => {
                 placeholder="Enter Your Email"
               />
               <span className="form ">
-                  <div className="form_style">
+                <div className="form_style">
                   <img className="form_icon" src={right} alt="form_icon" />
-                  </div>
-                 
+                </div>
               </span>
             </div>
           </div>
