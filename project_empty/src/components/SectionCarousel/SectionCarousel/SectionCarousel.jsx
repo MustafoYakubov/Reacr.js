@@ -104,35 +104,35 @@ const SectionCarousel = () => {
       </div>
 
       <div className="row">
-        <div className="col-xxl-2  col-sm-12 cols-margin">
+        <div className="col-xl-2  col-sm-12 cols-margin">
           <Persons
             images={personImages.person1}
             badges={badges.badge1}
             names={personNames.name1}
           />
         </div>
-        <div className="col-xxl-2 col-sm-12 cols-margin">
+        <div className="col-xl-2 col-sm-12 cols-margin">
           <Persons
             images={personImages.person2}
             badges={badges.badge2}
             names={personNames.name2}
           />
         </div>
-        <div className="col-xxl-2  col-sm-12 cols-margin">
+        <div className="col-xl-2  col-sm-12 cols-margin">
           <Persons
             images={personImages.person3}
             badges={badges.badge3}
             names={personNames.name3}
           />
         </div>
-        <div className="col-xxl-2  col-sm-12 cols-margin">
+        <div className="col-xl-2  col-sm-12 cols-margin">
           <Persons
             images={personImages.person4}
             badges={badges.badge4}
             names={personNames.name4}
           />
         </div>
-        <div className="col-xxl-2  col-sm-12 cols-margin">
+        <div className="col-xl-2  col-sm-12 cols-margin">
           <Persons
             images={personImages.person5}
             badges={badges.badge5}

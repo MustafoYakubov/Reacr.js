@@ -46,7 +46,7 @@ const onSale = () => {
   return (
     <>
       <div className=" row onSaleRow">
-        <div className="col-xxl-4 col-sm-12">
+        <div className="col-xl-4 col-sm-12">
           <div className="row-1">
             <img className="eyes" src={eyes} alt="eyes" />
             <div className="row-1-text">
@@ -60,7 +60,7 @@ const onSale = () => {
             </div>
           </div>
         </div>
-        <div className="col-xxl-4 col-sm-12">
+        <div className="col-xl-4 col-sm-12">
           <div className="row-2">
             <div className="row fatherRow">
               <ImgSale
@@ -87,7 +87,7 @@ const onSale = () => {
             </div>
           </div>
         </div>
-        <div className="col-xxl-4     col-sm-offset-2 ">
+        <div className="col-xl-4     col-sm-offset-2 ">
           <div className="row-3">
             <p className="salers-title">Latest upload from creators 🔥</p>
             <Salers

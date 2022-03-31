@@ -11,12 +11,12 @@ const Footer = () => {
         <div className="footer-line"></div>
         <div className="footer-section">
           <div className="row footer-row">
-            <div className="col-xxl-3 col-sm-12   logo_title ">
+            <div className="col-xl-3 col-sm-12   logo_title ">
               <img className="logo2" src={logo} alt="logo" />
               <span className="crypto2">crypter</span>
               <h4 className="creative">The New Creative Economy.</h4>
             </div>
-            <div className="col-xxl-2 col-sm-12 me-5">
+            <div className="col-xl-2 col-sm-12 me-5">
               <p className="row_txt_ftr mb-5">Crypter</p>
               <NavLink className="ftr_link" to="/">
                 <p className="ftr_link  mt-4">Discover</p>
@@ -24,7 +24,7 @@ const Footer = () => {
                 <p className="ftr_link  mt-4">Create item</p>
               </NavLink>
             </div>
-            <div className="col-xxl-2 col-sm-12">
+            <div className="col-xl-2 col-sm-12">
               <p className="row_txt_ftr mb-5">Info</p>
               <NavLink to="/">
                 <p className="ftr_link mt-4">Download</p>
@@ -32,7 +32,7 @@ const Footer = () => {
                 <p className="ftr_link  mt-4">Support</p>
               </NavLink>
             </div>
-            <div className="col-xxl-4 me-2 col-sm-12">
+            <div className="col-xl-4 me-2 col-sm-12">
               <h5 className="section_letters mb-5">Join Newsletter</h5>
               <p className="ftr_p mb-4">
                 Subscribe our newsletter to get more free design course and
