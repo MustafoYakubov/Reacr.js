@@ -32,11 +32,14 @@ function App() {
           headers: {
             "x-rapidapi-host": "data-imdb1.p.rapidapi.com",
             "x-rapidapi-key": KEY,
+          },
+        }
       );
       if (!res.ok) {
         throw new Error("WRONG SINTACTIS" + res.status);
       }
       const data = await res.json();
+      console.log(data);
       dispatch({ type: "FETCHING", val: data });
     } catch (error) {
       console.log(error.message);

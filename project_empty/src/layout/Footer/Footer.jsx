@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
             <div className="col-xl-2 col-sm-12 me-5">
               <p className="row_txt_ftr mb-5">Crypter</p>
-              <NavLink className="ftr_link" to="/">
+              <NavLink className="ftr_link" to="/footer">
                 <p className="ftr_link  mt-4">Discover</p>
                 <p className="ftr_link  mt-4">Connect wallet</p>
                 <p className="ftr_link  mt-4">Create item</p>

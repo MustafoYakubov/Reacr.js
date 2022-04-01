@@ -5,14 +5,17 @@ const Drawer = (props) => {
   const integral = resData.films.results;
   console.log(integral);
 
-  if (integral !== undefined) {
-    return integral.map((item, index) => {
+  return integral ? (
+    integral.map((item, index) => (
       <div key={index} className="row">
         <div className="col">{item.id}</div>
-      </div>;
-    });
-  }
-  return <div>yeap</div>;
+        {/* <div className="col">{item?.primaryImage?.url}</div> */}
+        <img src={item.primaryImage?.url} alt="primaryImage" />
+      </div>
+    ))
+  ) : (
+    <div>data yoq</div>
+  );
 };
 
 export default Drawer;

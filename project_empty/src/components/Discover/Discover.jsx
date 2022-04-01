@@ -6,6 +6,7 @@ import SectionCarousel from "../SectionCarousel/SectionCarousel/SectionCarousel"
 import OnBit from "../OnBit/OnBit/OnBit";
 import "./Discover.scss";
 import CreateNft from "../CreateNft/CreateNft";
+import Collections from "../Collections/Collections/Collections";
 
 export default function Discover() {
   return (
@@ -21,6 +22,7 @@ export default function Discover() {
       </div>
       <div className="container">
         <OnBit />
+        <Collections />
         <CreateNft />
       </div>
     </>
