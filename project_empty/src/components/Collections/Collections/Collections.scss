@@ -15,14 +15,14 @@ div {
   margin-bottom: toRem(40);
 }
 .onHover {
-   &:hover {
-    transition: transform .3s;
+  &:hover {
+    transition: transform 0.3s;
     transform: scale(1.1);
-   }
+  }
 }
 .onHoverBig {
-   &:hover {
-    transition: transform .3s;
+  &:hover {
+    transition: transform 0.3s;
     transform: scale(0.9);
-   }
+  }
 }
