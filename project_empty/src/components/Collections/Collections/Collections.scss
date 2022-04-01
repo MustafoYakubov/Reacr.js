@@ -14,7 +14,15 @@ div {
   margin-top: toRem(100);
   margin-bottom: toRem(40);
 }
-img:hover {
-    transition: transform .2s;
+.onHover {
+   &:hover {
+    transition: transform .3s;
     transform: scale(1.1);
+   }
+}
+.onHoverBig {
+   &:hover {
+    transition: transform .3s;
+    transform: scale(0.9);
+   }
 }

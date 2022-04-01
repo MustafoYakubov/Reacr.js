@@ -16,31 +16,31 @@ const Collections = () => {
       <h1 className="collection-h1">Hot Collections</h1>
       <div className="row">
         <div className="col-xl-4">
-          <img className="w-100 d-block mt-3" src={row1Img} alt="eyes" />
+          <img className="w-100 d-block mt-3 onHoverBig" src={row1Img} alt="eyes" />
           <div className="row  mt-3">
             <div className="col-4">
-              <img className="w-100 d-block " src={row1Img1} alt="row1Img1" />
+              <img className="w-100 d-block onHover " src={row1Img1} alt="row1Img1" />
             </div>
             <div className="col-4">
-              <img className="w-100 d-block  " src={row1Img2} alt="row1Img2" />
+              <img className="w-100 d-block onHover " src={row1Img2} alt="row1Img2" />
             </div>
             <div className="col-4">
-              <img className="w-100 d-block  " src={row1Img3} alt="row1Img3" />
+              <img className="w-100 d-block  onHover " src={row1Img3} alt="row1Img3" />
             </div>
           </div>
           <CollectionsText />
         </div>
         <div className="col-xl-4">
-          <img className="w-100 d-block mt-3" src={row2img} alt="ball" />
+          <img className="w-100 d-block mt-3  onHoverBig " src={row2img} alt="ball" />
           <div className="row mt-3">
             <div className="col-4">
-              <img className="w-100" src={row2img1} alt="row2img1" />
+              <img className="w-100 onHover" src={row2img1} alt="row2img1" />
             </div>
-            <div className="col-4">
-              <img className="w-100" src={row2img2} alt="row2img2" />
+            <div className="col-4 onHover">
+              <img className="w-100 onHover" src={row2img2} alt="row2img2" />
             </div>
-            <div className="col-4">
-              <img className="w-100" src={row2img3} alt="row2img3" />
+            <div className="col-4 onHover">
+              <img className="w-100 onHover" src={row2img3} alt="row2img3" />
             </div>
             <CollectionsText />
           </div>
@@ -48,19 +48,19 @@ const Collections = () => {
 
         <div className="col-xl-4">
           <img
-            className="w-100 d-block mt-3 row2-style"
+            className="w-100 d-block mt-3 row2-style onHoverBig"
             src={woman}
             alt="ball"
           />
           <div className="row mt-3">
             <div className="col-4">
-              <img className="w-100" src={row1Img3} alt="row2img3" />
+              <img className="w-100 onHover" src={row1Img3} alt="row2img3" />
             </div>
             <div className="col-4">
-              <img className="w-100" src={row1Img2} alt="row2img2" />
+              <img className="w-100 onHover" src={row1Img2} alt="row2img2" />
             </div>
             <div className="col-4">
-              <img className="w-100" src={row2img1} alt="row2img1" />
+              <img className="w-100 onHover" src={row2img1} alt="row2img1" />
             </div>
             <CollectionsText />
           </div>

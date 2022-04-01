@@ -30,7 +30,12 @@ div img {
   margin-bottom: 2.5rem;
 }
 
-img:hover {
-  transition: transform 0.2s;
+.onHover:hover {
+  transition: transform 0.3s;
   transform: scale(1.1);
+}
+
+.onHoverBig:hover {
+  transition: transform 0.3s;
+  transform: scale(0.9);
 }/*# sourceMappingURL=Collections.css.map */
