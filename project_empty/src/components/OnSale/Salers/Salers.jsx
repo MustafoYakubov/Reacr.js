@@ -1,6 +1,5 @@
 import React from "react";
 import "./Salers.scss";
-import saler1 from "../../../assets/img/saler1.png";
 const Salers = (props) => {
   const { names, price, img } = props;
   return (

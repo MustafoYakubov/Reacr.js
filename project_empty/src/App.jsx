@@ -1,10 +1,8 @@
 import Navbar from "./layout/Navbar/Navbar";
-import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Discover from "./components/Discover/Discover";
 import HowWork from "./components/HowWork/HowWork";
 import Notification from "./components/Notification/Notification";
-import Container from "./layout/Navbar/Container/Container";
 import Footer from "./layout/Footer/Footer";
 import FooterFaq from "./layout/Footer/FooterFaqs/FooterFaq";
 function App() {

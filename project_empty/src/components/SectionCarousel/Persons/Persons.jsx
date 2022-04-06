@@ -1,9 +1,7 @@
 import React from "react";
 import "./Persons.scss";
-import achieved1 from "../../../assets/icons/badge1.svg";
 import plus from "../../../assets/icons/plus.svg";
 import top from "../../../assets/icons/up.svg";
-import person1 from "../../../assets/img/person1.jpg";
 import heart from "../../../assets/icons/heart.svg";
 export const Persons = (props) => {
   const { images, badges, names } = props;
