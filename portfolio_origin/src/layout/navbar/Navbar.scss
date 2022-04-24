@@ -1,0 +1,52 @@
+@import "../../style/global.scss";
+.navbar_first_child {
+  margin-left: toRem(420) !important;
+}
+.nav-link {
+  color: $colorWhite !important;
+  margin-left: toRem(25);
+  margin-top: 8px;
+}
+.active {
+  color: $colorYellow !important;
+}
+.btn-yellow {
+  @include btns(
+    auto,
+    auto,
+    2px solid $colorYellow,
+    toRem(50),
+    $colorYellow,
+    $colorDarkBlue !important
+  );
+  padding: 12px 26px !important;
+  &:focus {
+    // border: 4    px solid rgb(47, 47, 54);
+    box-shadow: rgba(56, 62, 69, 0.44);
+    outline: blue;
+  }
+  margin-left: toRem(425);
+}
+.btn-yellow p {
+  margin-bottom: 0;
+  @include text(
+    toRem(69),
+    toRem(30),
+    700,
+    toRem(18),
+    toRem(30),
+    $colorDarkBlue
+  );
+}
+@media screen and (max-width: 500px) {
+  .navbar_first_child {
+    margin-left: toRem(10) !important;
+  }
+  .nav-link {
+    margin-left: toRem(10);
+    margin-top: 8px;
+  }
+  .btn-yellow {
+      display: none;
+  }
+}

@@ -1,1 +1,67 @@
-/*# sourceMappingURL=Navbar.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212529 !important;
+  color: #fff !important;
+  height: 500vh;
+  font-family: "Inter", sans-serif !important;
+}
+
+.navbar_first_child {
+  margin-left: 26.25rem !important;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  margin-left: 1.5625rem;
+  margin-top: 8px;
+}
+
+.active {
+  color: #ffb742 !important;
+}
+
+.btn-yellow {
+  width: auto;
+  height: auto;
+  border: 2px solid #ffb742;
+  border-radius: 3.125rem;
+  background-color: #ffb742;
+  color: #212529 !important;
+  padding: 12px 26px !important;
+  margin-left: 26.5625rem;
+}
+.btn-yellow:focus {
+  box-shadow: rgba(56, 62, 69, 0.44);
+  outline: blue;
+}
+
+.btn-yellow p {
+  margin-bottom: 0;
+  width: 4.3125rem;
+  height: 1.875rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  color: #212529;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar_first_child {
+    margin-left: 0.625rem !important;
+  }
+
+  .nav-link {
+    margin-left: 0.625rem;
+    margin-top: 8px;
+  }
+
+  .btn-yellow {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

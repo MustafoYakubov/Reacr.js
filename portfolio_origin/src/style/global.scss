@@ -9,8 +9,35 @@
   $remValue: ($value / 16) + rem;
   @return $remValue;
 }
+@mixin btns($wdth, $hght, $brdr, $brdr-rds, $bckgr, $clr) {
+  width: $wdth;
+  height: $hght;
+  border: $brdr;
+  border-radius: $brdr-rds;
+  background-color: $bckgr;
+  color: $clr;
+}
+@mixin text($wdth, $hght, $fw, $fs, $lg, $clr) {
+  width: $wdth;
+  height: $hght;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lg;
+  color: $clr;
+}
+@mixin center {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+$colorYellow: #ffb742;
+$colorWhite: #ffffff;
+$colorGray: #7b7b7b;
+$colorLightGray: #d4d4d4;
+$colorDarkBlue: #212529;
 body {
-  background-color: #212529 !important;
+  background-color: $colorDarkBlue !important;
   color: #fff !important;
   height: 500vh;
   font-family: "Inter", sans-serif !important;

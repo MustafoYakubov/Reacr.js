@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import logo from "../../assets/icons/logo.svg";
+import "./Navbar.scss";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const toggleBtn = () => setToggle((prev) => !prev);
+  function scrollWin() {
+    window.scrollBy(0, 900);
+  }
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            <img src={logo} alt="logo " />
+            <img src={logo} alt="logo" />
           </a>
           <button
             className="navbar-toggler"
@@ -23,18 +27,27 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link active " aria-current="page" >
+              <a
+                className="nav-link active navbar_first_child "
+                aria-current="page"
+              >
                 Home
               </a>
               <a className="nav-link" href="#">
                 About
               </a>
-              <a className="nav-link" href="#">
+              <a onClick={scrollWin} className="nav-link" href="#">
                 Skills
               </a>
               <a className="nav-link" href="#">
                 Portfolio
               </a>
+              <a className="nav-link" href="#">
+                Contact
+              </a>
+              <button className=" btn-yellow">
+                <p>Hire me</p>
+              </button>
             </div>
           </div>
         </div>
