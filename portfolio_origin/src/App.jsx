@@ -1,3 +1,4 @@
+import Entering from "./components/entering/Entering";
 import Navbar from "./layout/navbar/Navbar";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Entering />
     </>
   );
 }
