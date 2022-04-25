@@ -1,6 +1,6 @@
 @import "../../style/global.scss";
 .navbar_first_child {
-  margin-left: toRem(420) !important;
+  margin-left: toRem(468) !important;
 }
 .nav-link {
   color: $colorWhite !important;
@@ -20,10 +20,10 @@
     $colorDarkBlue !important
   );
   padding: 12px 26px !important;
-  &:focus {
-    // border: 4    px solid rgb(47, 47, 54);
-    box-shadow: rgba(56, 62, 69, 0.44);
-    outline: blue;
+  &:hover {
+    background-color: transparent;
+    transition: 0.5s;
+    color: #fff;
   }
   margin-left: toRem(425);
 }
@@ -37,6 +37,10 @@
     toRem(30),
     $colorDarkBlue
   );
+  &:hover {
+    color: $colorYellow !important;
+    transition: 2s;
+  }
 }
 @media screen and (max-width: 500px) {
   .navbar_first_child {
@@ -47,6 +51,6 @@
     margin-top: 8px;
   }
   .btn-yellow {
-      display: none;
+    display: none;
   }
 }

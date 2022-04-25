@@ -13,7 +13,7 @@ body {
 }
 
 .navbar_first_child {
-  margin-left: 26.25rem !important;
+  margin-left: 29.25rem !important;
 }
 
 .nav-link {
@@ -36,9 +36,10 @@ body {
   padding: 12px 26px !important;
   margin-left: 26.5625rem;
 }
-.btn-yellow:focus {
-  box-shadow: rgba(56, 62, 69, 0.44);
-  outline: blue;
+.btn-yellow:hover {
+  background-color: transparent;
+  transition: 0.5s;
+  color: #fff;
 }
 
 .btn-yellow p {
@@ -49,6 +50,10 @@ body {
   font-size: 1.125rem;
   line-height: 1.875rem;
   color: #212529;
+}
+.btn-yellow p:hover {
+  color: #ffb742 !important;
+  transition: 2s;
 }
 
 @media screen and (max-width: 500px) {

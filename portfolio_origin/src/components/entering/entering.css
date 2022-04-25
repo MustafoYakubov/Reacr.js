@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212529 !important;
+  color: #fff !important;
+  height: 500vh;
+  font-family: "Inter", sans-serif !important;
+}
+
+.entering {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 5.625rem;
+}
+
+@-webkit-keyframes animate {
+  0%, 100% {
+    border-radius: 42% 56% 72% 28%/42% 42% 56% 48%;
+  }
+  33% {
+    border-radius: 72% 28% 48% 48%/28% 28% 72% 72%;
+  }
+  66% {
+    border-radius: 100% 56% 56% 100%/100% 100% 56% 56%;
+  }
+}
+
+@keyframes animate {
+  0%, 100% {
+    border-radius: 42% 56% 72% 28%/42% 42% 56% 48%;
+  }
+  33% {
+    border-radius: 72% 28% 48% 48%/28% 28% 72% 72%;
+  }
+  66% {
+    border-radius: 100% 56% 56% 100%/100% 100% 56% 56%;
+  }
+}
+.avatar {
+  overflow: hidden;
+  width: 13.125rem;
+  height: 13.875rem;
+  border-radius: 42% 56% 72% 28%/42% 42% 56% 48%;
+  background: transparent url("../../assets/img/avatar.png");
+  background-size: cover;
+  background-position: center;
+  -webkit-animation: animate 3.35s linear infinite;
+          animation: animate 3.35s linear infinite;
+  display: inline-block;
+}
+
+.title_enter {
+  width: 28.375rem !important;
+  height: 3.1875rem !important;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.1875rem;
+  color: #ffffff;
+  display: inline-block;
+}
+.title_enter span {
+  color: #ffb742;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.info_enter {
+  width: 29.625rem;
+  height: 5.6875rem;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 5.6875rem;
+  color: #ffffff;
+  margin: auto;
+}
+
+.about_enter {
+  width: 38rem;
+  height: 3.1875rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 3.1875rem;
+  color: #ffffff;
+  margin: 1.5625rem auto;
+}
+
+@media screen and (max-width: 500px) {
+  .entering {
+    margin-top: 1.2rem;
+  }
+
+  .title_enter {
+    width: 96% !important;
+    font-size: 1.6rem;
+  }
+
+  .info_enter {
+    width: 80% !important;
+    font-size: 1.6rem;
+  }
+
+  .about_enter {
+    width: 81% !important;
+    font-size: 1.4rem;
+  }
+
+  .avatar {
+    margin-top: 14% !important;
+  }
+}/*# sourceMappingURL=entering.css.map */

@@ -1,0 +1,74 @@
+@import "../../style/global.scss";
+.entering {
+  @include center;
+  margin-top: toRem(90);
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  }
+  33% {
+    border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+  }
+  66% {
+    border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+  }
+}
+.avatar {
+  overflow: hidden;
+  width: toRem(210);
+  height: toRem(222);
+  border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  background: transparent url("../../assets/img/avatar.png");
+  background-size: cover;
+  background-position: center;
+  animation: animate 3.35s linear infinite;
+  display: inline-block;
+}
+.title_enter {
+  @include text(
+    toRem(454) !important,
+    toRem(51) !important,
+    700,
+    toRem(32),
+    toRem(51),
+    $colorWhite
+  );
+  display: inline-block;
+  & span {
+    color: $colorYellow;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+}
+.info_enter {
+  @include text(toRem(474), toRem(91), 700, toRem(48), toRem(91), $colorWhite);
+  margin: auto;
+}
+.about_enter {
+  @include text(toRem(608), toRem(51), 500, toRem(24), toRem(51), $colorWhite);
+  margin: toRem(25) auto;
+}
+
+@media screen and (max-width: 500px) {
+  .entering {
+    margin-top: 1.2rem;
+  }
+  .title_enter {
+    width: 96% !important;
+    font-size: 1.6rem;
+  }
+  .info_enter {
+    width: 80% !important;
+    font-size: 1.6rem;
+  }
+  .about_enter {
+    width: 81% !important;
+    font-size: 1.4rem;
+  }
+  .avatar {
+    margin-top: 14% !important;
+  }
+}

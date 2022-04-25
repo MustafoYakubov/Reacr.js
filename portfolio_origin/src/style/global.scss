@@ -27,9 +27,9 @@
 }
 @mixin center {
   align-items: center;
-  display: flex;
   text-align: center;
   justify-content: center;
+  justify-items: center;
 }
 $colorYellow: #ffb742;
 $colorWhite: #ffffff;
