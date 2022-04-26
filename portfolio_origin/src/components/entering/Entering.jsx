@@ -1,6 +1,25 @@
 import Block from "../block/Block";
 import "./entering.scss";
+import emblem from "../../assets/icons/emblem.svg";
+import complete from "../../assets/icons/complete.svg";
+import clients from "../../assets/icons/clients.svg";
 const Entering = () => {
+  const blockOne = {
+    emblem,
+    numbers: "0+",
+    paragph: "Years of Experience",
+  };
+  const blockTwo = {
+    complete,
+    numbers: "5+",
+    paragph: "Completed Projects",
+  };
+  const blockThree = {
+    clients,
+    numbers: "1+",
+    paragph: "Happy Clients",
+  };
+
   return (
     <>
       <div className="entering">
@@ -16,13 +35,25 @@ const Entering = () => {
       <div className="works">
         <div className="row">
           <div className="col-xl-4">
-            <Block />
+            <Block
+              img={blockOne.emblem}
+              numbers={blockOne.numbers}
+              paragph={blockOne.paragph}
+            />
           </div>
           <div className="col-xl-4">
-            <Block />
+            <Block
+              img={blockTwo.complete}
+              numbers={blockTwo.numbers}
+              paragph={blockTwo.paragph}
+            />
           </div>
           <div className="col-xl-4">
-            <Block />
+            <Block
+              img={blockThree.clients}
+              numbers={blockThree.numbers}
+              paragph={blockThree.paragph}
+            />
           </div>
         </div>
       </div>
