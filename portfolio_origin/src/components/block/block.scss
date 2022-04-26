@@ -1,0 +1,21 @@
+@import "../../style/global.scss";
+.complete_icon {
+  width: 64px;
+  height: 64px;
+  //   margin-top: toRem(-46);
+}
+.block {
+  background: rgba(56, 62, 69, 0.44);
+  backdrop-filter: blur(4px) !important;
+  border-radius: 10px;
+  padding: toRem(28) toRem(30);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.2);
+}
+// h1 {
+//   display: inline-block;
+// }
+.block_text {
+  display: inline-block;
+}
