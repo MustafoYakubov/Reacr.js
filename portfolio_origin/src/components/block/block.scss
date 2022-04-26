@@ -10,8 +10,10 @@
   border-radius: 10px;
   padding: toRem(28) toRem(30);
   display: flex;
-  justify-content: space-between;
+  @include center;
+  justify-content: space-between !important;
   box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.2);
+  height: toRem(120)!important;
 }
 // h1 {
 //   display: inline-block;
