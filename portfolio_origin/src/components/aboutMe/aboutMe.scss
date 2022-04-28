@@ -1,0 +1,15 @@
+@import "/src/style/global.scss";
+.aboutMe {
+  margin-top: toRem(120);
+}
+.whoAmI {
+  padding: 5px toRem(25);
+  width: toRem(132);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50px;
+  color: $colorYellow;
+  font-weight: bold;
+}
+.aboutMe_txt {
+    
+}

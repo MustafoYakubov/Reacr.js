@@ -5,7 +5,7 @@
 }
 .block {
   background: rgba(56, 62, 69, 0.44);
-  backdrop-filter: blur(4px) !important;
+  // backdrop-filter: blur(4px) !important;
   border-radius: 10px;
   padding: toRem(28) toRem(30);
   display: flex;
@@ -50,5 +50,6 @@
   }
   .block_text h5 {
     font-size: 14px;
+    margin-bottom: unset;
   }
 }

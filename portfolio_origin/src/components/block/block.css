@@ -10,6 +10,7 @@ body {
   color: #fff !important;
   height: 500vh;
   font-family: "Inter", sans-serif !important;
+  position: relative;
 }
 
 .complete_icon {
@@ -19,8 +20,6 @@ body {
 
 .block {
   background: rgba(56, 62, 69, 0.44);
-  -webkit-backdrop-filter: blur(4px) !important;
-          backdrop-filter: blur(4px) !important;
   border-radius: 10px;
   padding: 1.75rem 1.875rem;
   display: flex;
@@ -73,5 +72,6 @@ body {
 
   .block_text h5 {
     font-size: 14px;
+    margin-bottom: unset;
   }
 }/*# sourceMappingURL=block.css.map */

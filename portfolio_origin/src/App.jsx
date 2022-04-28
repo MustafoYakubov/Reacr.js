@@ -1,3 +1,4 @@
+import AboutMe from "./components/aboutMe/AboutMe";
 import Entering from "./components/entering/Entering";
 import Container from "./layout/Container/Container";
 import Navbar from "./layout/navbar/Navbar";
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Container>
         <Entering />
+        <AboutMe />
       </Container>
     </>
   );
