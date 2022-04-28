@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container-fluid">
+        <div className="container-fluid navbarHeader">
           <a className="navbar-brand" href="#">
             <img src={logo} alt="logo" />
           </a>
@@ -45,10 +45,10 @@ const Navbar = () => {
               <a className="nav-link" href="#">
                 Contact
               </a>
-              <button className=" btn-yellow">
-                <p>Hire me</p>
-              </button>
             </div>
+            <button className=" btn-yellow">
+              <p>Hire me</p>
+            </button>
           </div>
         </div>
       </nav>

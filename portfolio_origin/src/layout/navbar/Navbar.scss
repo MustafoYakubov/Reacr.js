@@ -1,7 +1,7 @@
 @import "../../style/global.scss";
-.navbar_first_child {
-  margin-left: toRem(468) !important;
-}
+// .navbar_first_child {
+//   margin-left: toRem(468) !important;
+// }
 .nav-link {
   color: $colorWhite !important;
   margin-left: toRem(25);
@@ -9,6 +9,9 @@
 }
 .active {
   color: $colorYellow !important;
+}
+.navbar-collapse {
+  justify-content: space-evenly;
 }
 .btn-yellow {
   @include btns(
@@ -25,11 +28,9 @@
     transition: 0.5s;
     color: #fff;
   }
-  // margin-left: toRem(425);
- }
-  // .navbar-brand {
-  //   margin-left: -128px;
-  // }
+  margin-left: auto;
+}
+
 .btn-yellow p {
   margin-bottom: 0;
   @include text(
@@ -44,6 +45,10 @@
     color: $colorYellow !important;
     transition: 2s;
   }
+}
+.navbarHeader {
+  display: flex;
+  justify-content: space-between;
 }
 @media screen and (max-width: 500px) {
   .navbar_first_child {
