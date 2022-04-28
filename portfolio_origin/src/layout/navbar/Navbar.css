@@ -10,6 +10,7 @@ body {
   color: #fff !important;
   height: 500vh;
   font-family: "Inter", sans-serif !important;
+  position: relative;
 }
 
 .navbar_first_child {
@@ -34,7 +35,6 @@ body {
   background-color: #ffb742;
   color: #212529 !important;
   padding: 12px 26px !important;
-  margin-left: 26.5625rem;
 }
 .btn-yellow:hover {
   background-color: transparent;

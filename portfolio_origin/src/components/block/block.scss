@@ -13,8 +13,42 @@
   justify-content: space-between !important;
   box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.2);
   height: toRem(120) !important;
+  &:hover {
+    transform: scale(1.05);
+    overflow: hidden;
+    transform-origin: 0 1;
+    transition: transform 0.25s, visibility 0.25s ease-in;
+  }
 }
 
 .block_text {
   display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+  .block {
+    display: block;
+    padding: 8px;
+  }
+  .complete_icon {
+    width: toRem(47);
+    height: toRem(47);
+    display: block;
+    margin: 0 auto;
+  }
+  .block_3 {
+    margin: auto;
+    margin-top: 5% !important;
+    display: block;
+  }
+  .icon_right {
+    display: none;
+  }
+  .block_text h1 {
+    color: $colorYellow;
+    margin-left: 11px;
+  }
+  .block_text h5 {
+    font-size: 14px;
+  }
 }

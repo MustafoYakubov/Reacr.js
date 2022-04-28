@@ -33,22 +33,22 @@ const Entering = () => {
         <div className="avatar"></div>
       </div>
       <div className="works">
-        <div className="row">
-          <div className="col-xl-4">
+        <div className="row mt-5">
+          <div className="col-xl-4 col-6">
             <Block
               img={blockOne.emblem}
               numbers={blockOne.numbers}
               paragph={blockOne.paragph}
             />
           </div>
-          <div className="col-xl-4">
+          <div className="col-xl-4 col-6">
             <Block
               img={blockTwo.complete}
               numbers={blockTwo.numbers}
               paragph={blockTwo.paragph}
             />
           </div>
-          <div className="col-xl-4">
+          <div className="col-xl-4 col-6 block_3 ">
             <Block
               img={blockThree.clients}
               numbers={blockThree.numbers}

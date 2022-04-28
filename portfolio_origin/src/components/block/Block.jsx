@@ -4,12 +4,12 @@ const Block = (props) => {
   const { img, numbers, paragph } = props;
   return (
     <div className="block">
-      <img className="complete_icon" src={props.img} alt="emblem" />
+      <img className="complete_icon" src={img} alt="emblem" />
       <div className="block_text">
-        <h1 style={{ color: "orange" }}> {numbers}</h1>
+        <h1> {numbers}</h1>
         <h5> {paragph}</h5>
       </div>
-      <img src={iconRight} alt="iconRight" />
+      <img className="icon_right" src={iconRight} alt="iconRight" />
     </div>
   );
 };

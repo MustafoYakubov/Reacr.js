@@ -25,8 +25,11 @@
     transition: 0.5s;
     color: #fff;
   }
-  margin-left: toRem(425);
-}
+  // margin-left: toRem(425);
+ }
+  // .navbar-brand {
+  //   margin-left: -128px;
+  // }
 .btn-yellow p {
   margin-bottom: 0;
   @include text(
