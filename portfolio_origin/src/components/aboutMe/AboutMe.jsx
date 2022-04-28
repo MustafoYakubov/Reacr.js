@@ -6,12 +6,12 @@ const AboutMe = () => {
     <section className="aboutMe">
       <div className="row">
         <div className="col-xl-6 col-sm-12">
-          <img src={imgAboutMe} alt="imgAboutMe" />
+          <img className="imgAboutMe w-100" src={imgAboutMe} alt="imgAboutMe" />
         </div>
         <div className="col-xl-6 col-sm-12">
           <h6 className="whoAmI">WHO I AM</h6>
           <h1 className="aboutMe_txt">About Me</h1>
-          <p className="about_paragrph">
+          <p className="about_paragrph w-100">
             Hi! I`m Mustafo Yakubov, and I`m developer who has passion for
             building clean web applications with intuitive functionality. I
             enjoy the process of turning ideas into reality using creative
@@ -22,7 +22,6 @@ const AboutMe = () => {
             management.
           </p>
           <button className="btn-yellow">
-            {" "}
             <p>Hire me</p>
           </button>
         </div>

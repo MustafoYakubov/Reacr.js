@@ -9,7 +9,31 @@
   border-radius: 50px;
   color: $colorYellow;
   font-weight: bold;
+  margin-top: toRem(100);
+  margin-bottom: 1.5rem;
 }
 .aboutMe_txt {
-    
+  @include text(toRem(229), toRem(30), 700, toRem(48), toRem(30), $colorWhite);
+  margin-top: 0.8rem;
+}
+.about_paragrph {
+  @include text(toRem(672), toRem(177), 400, 1rem, toRem(30), #d5d5d5);
+  margin-top: toRem(30);
+  margin-bottom: toRem(50);
+}
+
+@media screen and (max-width: 500px) {
+  .aboutMe {
+    margin-top: toRem(40);
+  }
+  .whoAmI {
+    margin: 20px auto;
+  }
+  .aboutMe_txt {
+    margin: auto;
+    width: toRem(221);
+  }
+  .about_paragrph {
+    padding: 0 12px;
+  }
 }
