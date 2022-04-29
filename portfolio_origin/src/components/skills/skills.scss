@@ -1,0 +1,20 @@
+@import "../../style/global.scss";
+.skills_btn {
+  width: 7.5rem !important;
+}
+.skills_position {
+    justify-content: space-between;
+}
+.skills_row img {
+  width: toRem(80);
+  height: toRem(80);
+  object-fit: contain;
+}
+.skills_background {
+    width: toRem(100) !important;
+  height: toRem(100) !important;
+  background: #383e45;
+  border-radius: 10px;
+  display: flex;
+  @include center;
+}

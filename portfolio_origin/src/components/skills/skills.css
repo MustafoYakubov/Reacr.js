@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212529 !important;
+  color: #fff !important;
+  height: 500vh;
+  font-family: "Inter", sans-serif !important;
+  position: relative;
+}
+
+.skills_btn {
+  width: 7.5rem !important;
+}
+
+.skills_position {
+  justify-content: space-between;
+}
+
+.skills_row img {
+  width: 5rem;
+  height: 5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.skills_background {
+  width: 6.25rem !important;
+  height: 6.25rem !important;
+  background: #383e45;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}/*# sourceMappingURL=skills.css.map */
