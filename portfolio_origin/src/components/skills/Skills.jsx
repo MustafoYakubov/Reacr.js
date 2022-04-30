@@ -20,7 +20,7 @@ const Skills = () => {
             users get things done with less effort and time with those
             technologies.
           </p>
-          <button className=" btn-yellow skills_btn">
+          <button className=" btn-yellow skills_btn mt-4">
             <p>Hire me</p>
           </button>
         </div>
