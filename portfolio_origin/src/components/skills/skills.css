@@ -60,4 +60,37 @@ body {
   text-align: center;
   justify-content: center;
   justify-items: center;
+}
+
+.skilss_top {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .skills_txt {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .skills_parag {
+    width: 89%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .skills_background {
+    width: 80px !important;
+  }
+
+  .skills_row img {
+    width: 3.125rem;
+    height: 3.125rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  #row_of_skills {
+    padding: 1.2rem !important;
+  }
 }/*# sourceMappingURL=skills.css.map */

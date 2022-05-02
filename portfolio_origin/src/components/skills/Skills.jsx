@@ -12,8 +12,8 @@ import figma from "../../assets/icons/figma.png";
 const Skills = () => {
   return (
     <section className="skills_row">
-      <div className="row">
-        <div className="col-6">
+      <div id="row_of_skills" className="row ">
+        <div className="col-xl-6 col-sm-12">
           <h1 className="skills_txt">What My Programming Skills Included?</h1>
           <p className="skills_parag">
             I develop simple, intuitive and responsive user interface that helps
@@ -25,32 +25,35 @@ const Skills = () => {
           </button>
         </div>
 
-        <div className="col-6">
+        <div className="col-xl-6 col-sm-12">
           <div className="row skills_position ">
-            <div className="col-3 skills_background">
+            <div className="col-xl-3 col-sm-6 skills_background">
               <img src={js} alt="js" />
             </div>
-            <div className="col-3 skills_background ">
+            <div className="col-xl-3 col-sm-6 skills_background ">
               <img src={react} alt="react" />
             </div>
-            <div className="col-3 skills_background ">
+            <div className="col-xl-3 col-sm-6 skills_background ">
               <img className="w-100" src={redux} alt="redux" />
             </div>
-            <div className="col-3 skills_background ">
+            <div className="col-xl-3 col-sm-6 skills_background ">
               <img src={git} alt="" />
             </div>
           </div>
-          <div className="row mt-5 skills_position">
-            <div className="col-3 skills_background">
+          <div
+            style={{ marginTop: "2rem" }}
+            className="row skills_position skilss_top "
+          >
+            <div className="col-xl-3 col-sm-6 skills_background">
               <img src={html} alt="html" />
             </div>
-            <div className="col-3 skills_background">
+            <div className="col-xl-3 col-sm-6 skills_background">
               <img src={sass} alt="sass" />
             </div>
-            <div className="col-3 skills_background">
+            <div className="col-xl-3 col-sm-6 skills_background">
               <img src={bootstrap} alt="bootstrap" />
             </div>
-            <div className="col-3 skills_background">
+            <div className="col-xl-3 col-sm-6 skills_background">
               <img src={figma} alt="figma" />
             </div>
           </div>

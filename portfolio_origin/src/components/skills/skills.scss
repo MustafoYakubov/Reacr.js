@@ -1,6 +1,6 @@
 @import "../../style/global.scss";
 .skills_row {
-    margin-top: toRem(180);
+  margin-top: toRem(180);
 }
 .skills_txt {
   @include text(toRem(518), toRem(111), 700, toRem(46), toRem(56), $colorWhite);
@@ -26,4 +26,30 @@
   border-radius: 10px;
   display: flex;
   @include center;
+}
+.skilss_top {
+  margin-top: 2rem;
+}
+@media screen and(max-width:500px) {
+  .skills_txt {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .skills_parag {
+    width: 89%;
+    text-align: center;
+    margin: auto;
+  }
+  .skills_background {
+    width: 80px !important;
+  }
+  .skills_row img {
+    width: toRem(50);
+    height: toRem(50);
+    object-fit: contain;
+  }
+  #row_of_skills {
+    padding: 1.2rem !important;
+  }
 }
