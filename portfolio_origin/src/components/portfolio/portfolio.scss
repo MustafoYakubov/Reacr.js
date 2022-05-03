@@ -1,1 +1,24 @@
-@import '../../style/global.scss';
+@import "../../style/global.scss";
+.card {
+  border: 2px solid red !important;
+  background-color: transparent !important;
+  height: auto;
+}
+.card:nth-child(2) {
+  height: 15rem;
+}
+
+.card-body {
+  padding: unset !important;
+}
+.portfolio img {
+  object-fit: contain;
+  height: auto !important;
+
+  &:hover {
+    transform: scale(-50px);
+  }
+}
+// .main_img {
+//     margin-left: 29%;
+// }
