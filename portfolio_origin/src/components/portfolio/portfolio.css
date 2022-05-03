@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212529 !important;
+  color: #fff !important;
+  height: 500vh;
+  font-family: "Inter", sans-serif !important;
+  position: relative;
+}/*# sourceMappingURL=portfolio.css.map */

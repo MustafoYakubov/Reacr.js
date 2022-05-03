@@ -10,8 +10,6 @@ const Navbar = () => {
   }
   const navBtnAnimate = () => {
     setIsActiveBtnAnimate((prev) => !prev);
-    //     const navmen = document.getElementById("#navMenu");
-    //     navmen.classList.toggle("active");
   };
   return (
     <>

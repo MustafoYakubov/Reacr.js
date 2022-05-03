@@ -1,5 +1,6 @@
 import AboutMe from "./components/aboutMe/AboutMe";
 import Entering from "./components/entering/Entering";
+import Portfolio from "./components/portfolio/Portfolio";
 import Skills from "./components/skills/Skills";
 import Container from "./layout/Container/Container";
 import Navbar from "./layout/navbar/Navbar";
@@ -15,6 +16,7 @@ function App() {
         <Entering />
         <AboutMe />
         <Skills />
+        <Portfolio />
       </Container>
     </>
   );
