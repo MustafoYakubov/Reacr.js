@@ -1,52 +1,73 @@
 import React from "react";
 import "./portfolio.scss";
 import gameRisk from "../../assets/img/game.png";
-import woman from "../../assets/img/wom.jpg";
+import gameNumber from "../../assets/img/gameNumber.png";
+import nftStore from "../../assets/img/nft.jpg";
+import pumaStore from "../../assets/img/pum.jpg";
+import samsungStore from "../../assets/img/samsungStore.jpg";
 const Portfolio = () => {
   return (
     <>
       <section className="portfolio">
         <div className="row">
-          <div className=" main_img col-4">
+          <div className="col-xl-4 col-sm-10">
             <div className="card">
               <div className="card-body">
-                <img className="w-100 main_portfolio_img" src={woman} alt="gameRisk " />
-              </div>
-              <div className="card-text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusamus in sequi iusto cum officia, minus ad recusandae ea
-                  id odit quibusdam laudantium eligendi dicta praesentium omnis
-                  vitae modi, unde nam.
-                </p>
+                <img
+                  className="w-100 imgs_corners "
+                  src={nftStore}
+                  alt="gameRisk "
+                />
+                <div className="card-footer">
+                  <p>made with : <span> Bootstrap</span> </p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-4">
-            <div className="card">
-              <div className="card-body"><h1>
-                <img className="w-100" src={gameRisk} alt="" /></h1></div>
-            </div>
-          </div>
-          <div className="col-4">
+          <div className="col-xl-4 col-sm-10">
             <div className="card">
               <div className="card-body">
-                <img className="w-100 wom" src={woman} alt="" />
-                <div className="overlay"></div>
-                <button className="btn-link"> <p>click</p></button>
+                <img
+                  className="w-100 web_games_img"
+                  src={gameNumber}
+                  alt="gameRisk"
+                />
+                <div className="card-footer"></div>
+              </div>
+            </div>
+            <div className="card mt-5">
+              <div className="card-body">
+                <img
+                  className="w-100 web_games_img "
+                  src={gameRisk}
+                  alt="gameRisk"
+                />
+                <div className="card-footer"></div>
+              </div>
+            </div>
+            <div className="card mt-5">
+              <div className="card-body">
+                <img
+                  className="w-100 web_games_img "
+                  src={samsungStore}
+                  alt="gameRisk"
+                />
+                <div className="card-footer"></div>
               </div>
             </div>
           </div>
-          {/* <div className="col-6">
+          <div className="col-xl-4 col-sm-10">
             <div className="card">
-              <div className="card-body"></div>
+              <div className="card-body">
+                <img
+                  className="w-100  imgs_corners"
+                  src={pumaStore}
+                  alt="pumaStore"
+                />
+                <div className="card-footer"></div>
+              </div>
             </div>
           </div>
-          <div className="col-6">
-            <div className="card">
-              <div className="card-body"></div>
-            </div>
-          </div> */}
         </div>
       </section>
     </>
