@@ -10,6 +10,31 @@
 
 .card-body {
   padding: unset !important;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+.btn-link {
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  color: red;
+}
+.wom:hover + .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
 }
 .portfolio img {
   object-fit: contain;
