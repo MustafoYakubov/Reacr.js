@@ -24,7 +24,7 @@ body {
   overflow: hidden;
   -o-object-position: top;
      object-position: top;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
 
@@ -66,4 +66,5 @@ body {
   justify-content: center;
   display: flex;
   text-align: center;
+  align-items: center;
 }/*# sourceMappingURL=portfolio.css.map */
