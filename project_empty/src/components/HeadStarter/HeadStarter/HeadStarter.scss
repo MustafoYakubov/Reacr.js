@@ -11,13 +11,14 @@
 }
 .head-p {
   @include text(toRem(302), 12px, 700, 12px, 12px, #777e91);
-  margin-left: toRem(519);
+  margin: auto;
   text-align: center;
 }
 .head-h {
   @include text(toRem(736), toRem(48), 700, toRem(40), toRem(48), #23262f);
-  margin-left: toRem(302);
+
   text-align: center;
+  margin: auto;
 }
 .head-btn {
   @include btns(
@@ -32,7 +33,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
-  margin-top: 1rem;
+  margin-top: 1rem ;
   margin-bottom: toRem(144);
 }
 .videoPlayer {

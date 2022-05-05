@@ -14,10 +14,10 @@ function HeadStarter() {
           <h1 className="head-h">The new creative economy.</h1>
           <button className="head-btn"> Start your search</button>
         </div>
-        <div className="col-xxl-6 col-sm-12 sectionImg">
-          <img className="videoPlayer" src={videoPlayer} alt="videoPlayer" />
+        <div className="col-xl-6 col-sm-12 sectionImg">
+          <img className="videoPlayer w-100" src={videoPlayer} alt="videoPlayer" />
         </div>
-        <div className="col-xxl-6 col-sm-12 sectionSale">
+        <div className="col-xl-6 col-sm-12 sectionSale">
           <SectionSale />
         </div>
       </div>

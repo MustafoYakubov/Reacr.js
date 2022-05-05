@@ -27,7 +27,7 @@ body {
   font-size: 12px;
   line-height: 12px;
   color: #777e91;
-  margin-left: 32.4375rem;
+  margin: auto;
   text-align: center;
 }
 
@@ -38,8 +38,8 @@ body {
   font-size: 2.5rem;
   line-height: 3rem;
   color: #23262f;
-  margin-left: 18.875rem;
   text-align: center;
+  margin: auto;
 }
 
 .head-btn {
