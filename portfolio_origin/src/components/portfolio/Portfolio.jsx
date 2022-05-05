@@ -66,7 +66,9 @@ const Portfolio = () => {
                   <a href="https://github.com"> View Code</a>
                 </div>
                 <div className="btn-yellow">
-                <a href="https://nft-marketplacr.netlify.app/">View Web-Site</a>
+                  <a href="https://nft-marketplacr.netlify.app/">
+                    View Web-Site
+                  </a>
                 </div>
               </div>
             </div>
@@ -91,7 +93,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="col-5 mt-5">
-            <img className="w-100" src={gameNumber} alt="" />
+            <img className="w-100" src={gameNumber} alt="gameNumber" />
             <div className="card-footer">
               <div className="card_footer_txt">
                 <span>JavaScript</span>
