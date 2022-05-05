@@ -2,37 +2,45 @@
 .portfolio {
   margin-top: toRem(50);
 }
-.card {
-  background-color: transparent !important;
-  height: auto;
-  border-radius: 20px 20px 0 0 !important;
-}
-.sam {
-  object-fit: contain;
-  border-radius: 20px;
-  margin-top: 20px;
-}
-.card-body {
-  padding: unset !important;
-  position: relative;
-}
-.card-body img {
-  border-radius: 20px 20px 0 0 !important  ;
-}
 .portfolio img {
+  height: 300px !important;
   object-fit: cover;
-}
-.imgs_corners {
-  height: toRem(700) !important;
+  overflow: hidden;
   object-position: top;
+  border-radius: 10px ;
+  overflow: hidden;
 }
 .card-footer {
-  border: 1px solid gray;
+  background-color: rgba(56, 62, 69, 0.44) !important;
+  height: toRem(92);
+  position: relative;
 }
 .card-footer span {
-   background-color: rgba(255, 255, 255, 0.08);
-    color: $colorYellow !important;
-  border: 1px solid black;
-  padding: 5px toRem(20);
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 5px 20px;
   border-radius: 50px;
+}
+.card_footer_txt {
+  display: flex;
+  justify-content: space-between;
+}
+.card_footer_btns .btn-yellow {
+  margin-left: unset !important;
+  padding: 5px 20px !important;
+}
+.card_footer_btns {
+  margin-top: toRem(20);
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn-yellow a {
+  width: 80px;
+  height: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 1px solid $colorYellow !important ;
+  justify-content: center;
+  display: flex;
+  text-align: center;
 }
