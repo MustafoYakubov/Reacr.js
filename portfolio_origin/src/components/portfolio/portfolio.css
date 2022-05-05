@@ -8,30 +8,62 @@
 body {
   background-color: #212529 !important;
   color: #fff !important;
-  height: 700vh;
+  height: 1000vh;
   font-family: "Inter", sans-serif !important;
   position: relative;
 }
 
-.card {
-  border: 2px solid red !important;
-  background-color: transparent !important;
-  height: auto;
-}
-
-.card:nth-child(2) {
-  height: 15rem;
-}
-
-.card-body {
-  padding: unset !important;
+.portfolio {
+  margin-top: 3.125rem;
 }
 
 .portfolio img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: auto !important;
+  height: 300px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.portfolio img:hover {
-  transform: scale(-50px);
+
+.card-footer {
+  background-color: rgba(56, 62, 69, 0.44) !important;
+  height: 5.75rem;
+  position: relative;
+}
+
+.card-footer span {
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+
+.card_footer_txt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_footer_btns .btn-yellow {
+  margin-left: unset !important;
+  padding: 5px 20px !important;
+}
+
+.card_footer_btns {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-yellow a {
+  width: 80px;
+  height: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 1px solid #ffb742 !important;
+  justify-content: center;
+  display: flex;
+  text-align: center;
 }/*# sourceMappingURL=portfolio.css.map */
