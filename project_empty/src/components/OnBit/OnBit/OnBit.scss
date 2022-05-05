@@ -33,7 +33,7 @@
   span {
     border: 2px solid #45b36b;
     border-radius: 4px;
-    @include text(toRem(78), toRem(26), 700, 15px, 12px, #45b36b);
+    @include text(toRem(85), toRem(26), 700, 15px, 12px, #45b36b);
     display: flex;
     align-items: center;
     justify-content: center;
