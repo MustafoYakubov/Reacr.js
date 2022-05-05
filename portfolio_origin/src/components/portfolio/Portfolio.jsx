@@ -25,7 +25,7 @@ const Portfolio = () => {
               </div>
               <div className="card_footer_btns">
                 <div className="btn-yellow">
-                  <a to="https://github.com">view code</a>
+                  <a href="https://github.com"> View Code</a>
                 </div>
                 <div className="btn-yellow">
                   <a>view web-site</a>
@@ -44,7 +44,7 @@ const Portfolio = () => {
               </div>
               <div className="card_footer_btns">
                 <div className="btn-yellow">
-                  <a to="https://github.com">view code</a>
+                  <a href="https://github.com"> View Code</a>
                 </div>
                 <div className="btn-yellow">
                   <a>view web-site</a>
@@ -63,10 +63,10 @@ const Portfolio = () => {
               </div>
               <div className="card_footer_btns">
                 <div className="btn-yellow">
-                  <a to="https://github.com">view code</a>
+                  <a href="https://github.com"> View Code</a>
                 </div>
                 <div className="btn-yellow">
-                  <a>view web-site</a>
+                <a href="https://nft-marketplacr.netlify.app/">View Web-Site</a>
                 </div>
               </div>
             </div>
@@ -82,10 +82,10 @@ const Portfolio = () => {
               </div>
               <div className="card_footer_btns">
                 <div className="btn-yellow">
-                  <a to="https://github.com">view code</a>
+                  <a href="https://github.com"> View Code</a>
                 </div>
                 <div className="btn-yellow">
-                  <a>view web-site</a>
+                  <a href="https://nft-marketplacr.netlify.app/"> View Code</a>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@ const Portfolio = () => {
               </div>
               <div className="card_footer_btns">
                 <div className="btn-yellow">
-                  <a to="https://github.com">view code</a>
+                  <a href="https://github.com"> View Code</a>
                 </div>
                 <div className="btn-yellow">
                   <a>view web-site</a>

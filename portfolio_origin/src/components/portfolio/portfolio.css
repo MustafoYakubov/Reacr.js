@@ -58,13 +58,19 @@ body {
 }
 
 .btn-yellow a {
-  width: 80px;
+  width: 84px;
   height: 12px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 1px solid #ffb742 !important;
   justify-content: center;
   display: flex;
   text-align: center;
   align-items: center;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+}
+.btn-yellow a:hover {
+  color: #fff !important;
 }/*# sourceMappingURL=portfolio.css.map */
