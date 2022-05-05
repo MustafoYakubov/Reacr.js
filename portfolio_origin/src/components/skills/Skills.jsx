@@ -37,7 +37,7 @@ const Skills = () => {
               <img className="w-100" src={redux} alt="redux" />
             </div>
             <div className="col-xl-3 col-sm-6 skills_background ">
-              <img src={git} alt="" />
+              <img src={github} alt="" />
             </div>
           </div>
           <div

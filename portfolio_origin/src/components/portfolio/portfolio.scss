@@ -2,6 +2,10 @@
 .portfolio {
   margin-top: toRem(50);
 }
+.title {
+  @include text(toRem(400), 2rem, 700, toRem(48), toRem(30), $colorWhite);
+  margin-bottom: toRem(65);
+}
 .portfolio img {
   height: 300px !important;
   object-fit: cover;
@@ -14,12 +18,17 @@
   background-color: rgba(56, 62, 69, 0.44) !important;
   height: toRem(92);
   position: relative;
+  border-radius: 0 0 1rem 1rem !important;
 }
 .card-footer span {
   font-size: 12px;
   background: rgba(255, 255, 255, 0.08);
   padding: 5px 20px;
   border-radius: 50px;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
 }
 .card_footer_txt {
   display: flex;
@@ -39,19 +48,43 @@
   height: 12px;
   font-size: 12px;
   font-weight: 600;
-  border-radius: 1px solid $colorYellow !important ;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   text-align: center;
   align-items: center;
   text-decoration: none;
   list-style: none;
-  color: #000;
+  cursor: pointer;
+  color: #212529;
   &:hover {
-    color: #fff !important;
+    color: $colorYellow !important;
   }
 }
 
-.portfolio .col-5  .card_footer_txt{
-  justify-content: space-around ;
+.portfolio .col-xl-5 .card_footer_txt {
+  justify-content: space-around;
+}
+.portfolio .col-xl-5 {
+  margin-left: toRem(77);
+}
+@media screen and (max-width: 500px) {
+  .title {
+    margin-bottom:  unset;
+    text-align: center;
+  }
+  .portfolio .row {
+    padding: 1rem;
+    .col-sm-10 {
+      margin-top: 3rem;
+    }
+  }
+  .card_footer_btns .btn-yellow {
+    display: block;
+  }
+  .portfolio .col-xl-5 {
+    margin-left: unset;
+  }
+  .portfolio img {
+    height: 200px !important;
+  }
 }

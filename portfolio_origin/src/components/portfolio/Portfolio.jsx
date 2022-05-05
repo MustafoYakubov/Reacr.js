@@ -12,9 +12,11 @@ import samsungStore from "../../assets/img/samsungStore.jpg";
 const Portfolio = () => {
   return (
     <>
+      <div className="line mt-5"></div>
       <section className="portfolio">
+        <h1 className="title">PortFolio</h1>
         <div className="row">
-          <div className="col-4">
+          <div className="col-xl-4 col-sm-10">
             <img className="w-100" src={pumaStore} alt="" />
             <div className="card-footer">
               <div className="card_footer_txt">
@@ -28,12 +30,12 @@ const Portfolio = () => {
                   <a href="https://github.com"> View Code</a>
                 </div>
                 <div className="btn-yellow">
-                  <a>view web-site</a>
+                  <a>View web-site</a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-xl-4 col-sm-10">
             <img className="w-100" src={samsungStore} alt="" />
             <div className="card-footer">
               <div className="card_footer_txt">
@@ -47,12 +49,12 @@ const Portfolio = () => {
                   <a href="https://github.com"> View Code</a>
                 </div>
                 <div className="btn-yellow">
-                  <a>view web-site</a>
+                  <a>View web-site</a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-xl-4 col-sm-10">
             <img className="w-100" src={nftStore} alt="" />
             <div className="card-footer">
               <div className="card_footer_txt">
@@ -73,8 +75,8 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div className="col-5 offset-1 mt-5">
-            <img className="w-100" src={gameRisk} alt="" />
+          <div className="col-xl-5 col-sm-10 mt-5">
+            <img className="w-100" src={gameRisk} alt="gameRisk" />
             <div className="card-footer">
               <div className="card_footer_txt">
                 <span>JavaScript</span>
@@ -92,7 +94,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div className="col-5 mt-5">
+          <div className="col-xl-5 col-sm-10 mt-5">
             <img className="w-100" src={gameNumber} alt="gameNumber" />
             <div className="card-footer">
               <div className="card_footer_txt">
@@ -106,7 +108,7 @@ const Portfolio = () => {
                   <a href="https://github.com"> View Code</a>
                 </div>
                 <div className="btn-yellow">
-                  <a>view web-site</a>
+                  <a>View web-site</a>
                 </div>
               </div>
             </div>

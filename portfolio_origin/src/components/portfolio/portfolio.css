@@ -13,8 +13,25 @@ body {
   position: relative;
 }
 
+.line {
+  border: 1px solid rgb(69, 69, 69);
+  height: 2px;
+  width: 75%;
+  margin: auto;
+}
+
 .portfolio {
   margin-top: 3.125rem;
+}
+
+.title {
+  width: 25rem;
+  height: 2rem;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.875rem;
+  color: #ffffff;
+  margin-bottom: 4.0625rem;
 }
 
 .portfolio img {
@@ -32,6 +49,7 @@ body {
   background-color: rgba(56, 62, 69, 0.44) !important;
   height: 5.75rem;
   position: relative;
+  border-radius: 0 0 1rem 1rem !important;
 }
 
 .card-footer span {
@@ -39,6 +57,9 @@ body {
   background: rgba(255, 255, 255, 0.08);
   padding: 5px 20px;
   border-radius: 50px;
+}
+.card-footer span:hover {
+  background-color: rgba(255, 255, 255, 0.02);
 }
 
 .card_footer_txt {
@@ -62,19 +83,49 @@ body {
   height: 12px;
   font-size: 12px;
   font-weight: 600;
-  border-radius: 1px solid #ffb742 !important;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   text-align: center;
   align-items: center;
   text-decoration: none;
   list-style: none;
-  color: #000;
+  cursor: pointer;
+  color: #212529;
 }
 .btn-yellow a:hover {
-  color: #fff !important;
+  color: #ffb742 !important;
 }
 
-.portfolio .col-5 .card_footer_txt {
+.portfolio .col-xl-5 .card_footer_txt {
   justify-content: space-around;
+}
+
+.portfolio .col-xl-5 {
+  margin-left: 4.8125rem;
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    margin-bottom: unset;
+    text-align: center;
+  }
+
+  .portfolio .row {
+    padding: 1rem;
+  }
+  .portfolio .row .col-sm-10 {
+    margin-top: 3rem;
+  }
+
+  .card_footer_btns .btn-yellow {
+    display: block;
+  }
+
+  .portfolio .col-xl-5 {
+    margin-left: unset;
+  }
+
+  .portfolio img {
+    height: 200px !important;
+  }
 }/*# sourceMappingURL=portfolio.css.map */

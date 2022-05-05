@@ -36,11 +36,16 @@ $colorWhite: #ffffff;
 $colorGray: #7b7b7b;
 $colorLightGray: #d4d4d4;
 $colorDarkBlue: #212529;
-// backdrop-filter: blur(4px);
 body {
   background-color: $colorDarkBlue !important;
   color: #fff !important;
   height: 1000vh;
   font-family: "Inter", sans-serif !important;
   position: relative;
+}
+.line {
+  border: 1px solid rgb(69, 69, 69);
+  height: 2px;
+  width: 75%;
+  margin: auto;
 }
