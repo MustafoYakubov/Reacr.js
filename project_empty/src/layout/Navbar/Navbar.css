@@ -29,6 +29,10 @@ a {
   top: -85px;
 }
 
+.notification .noti-logo {
+  border-radius: unset !important;
+}
+
 .crypto {
   position: absolute;
   left: 8rem;

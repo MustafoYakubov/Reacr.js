@@ -108,7 +108,7 @@ body {
   }
 
   .videoPlayer {
-    width: 80%;
+    width: 80% !important;
     height: 36.3125rem;
     -o-object-fit: cover;
        object-fit: cover;

@@ -15,7 +15,7 @@ function HeadStarter() {
           <button className="head-btn"> Start your search</button>
         </div>
         <div className="col-xl-6 col-sm-12 sectionImg">
-          <img className="videoPlayer w-100" src={videoPlayer} alt="videoPlayer" />
+          <img className="videoPlayer " src={videoPlayer} alt="videoPlayer" />
         </div>
         <div className="col-xl-6 col-sm-12 sectionSale">
           <SectionSale />
