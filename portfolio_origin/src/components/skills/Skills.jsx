@@ -11,6 +11,7 @@ import figma from "../../assets/icons/figma.png";
 const Skills = () => {
   return (
     <section className="skills_row">
+      <div className="line"></div>
       <h1 className="title">Skills</h1>
       <div id="row_of_skills" className="row ">
         <div className="col-xl-6 col-sm-12">

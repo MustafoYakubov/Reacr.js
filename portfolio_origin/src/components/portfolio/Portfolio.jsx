@@ -21,6 +21,7 @@ const Portfolio = () => {
             <div className="card-footer">
               <div className="card_footer_txt">
                 <span>HTML</span>
+                <span>JQuery</span>
                 <span>CSS</span>
                 <span>Bootstrap</span>
               </div>
@@ -38,9 +39,8 @@ const Portfolio = () => {
             <img className="w-100" src={samsungStore} alt="" />
             <div className="card-footer">
               <div className="card_footer_txt">
-                <span>JavaScript</span>
                 <span>Html</span>
-                <span>CSS</span>
+                <span>SCSS</span>
                 <span>Bootstrap</span>
               </div>
               <div className="card_footer_btns">
@@ -54,17 +54,19 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="col-xl-4 col-sm-10">
-            <img className="w-100" src={nftStore} alt="" />
+            <img className="w-100" src={nftStore} alt="nftStore" />
             <div className="card-footer">
               <div className="card_footer_txt">
-                <span>JavaScript</span>
-                <span>Html</span>
-                <span>CSS</span>
+                <span>ReactJS</span>
+                <span>HTML</span>
+                <span>SCSS</span>
                 <span>Bootstrap</span>
               </div>
               <div className="card_footer_btns">
                 <div className="btn-yellow">
-                  <a href="https://github.com"> View Code</a>
+                  <a href="https://github.com/DushanovShamshod/MustafoYakubov/tree/main/project_empty">
+                    View Code
+                  </a>
                 </div>
                 <div className="btn-yellow">
                   <a href="https://nft-marketplacr.netlify.app/">
@@ -78,10 +80,9 @@ const Portfolio = () => {
             <img className="w-100" src={gameRisk} alt="gameRisk" />
             <div className="card-footer">
               <div className="card_footer_txt">
-                <span>JavaScript</span>
-                <span>Html</span>
-                <span>CSS</span>
-                <span>Bootstrap</span>
+                <span> JavaScript</span>
+                <span>HTML</span>
+                <span>SCSS</span>
               </div>
               <div className="card_footer_btns">
                 <div className="btn-yellow">
@@ -98,9 +99,8 @@ const Portfolio = () => {
             <div className="card-footer">
               <div className="card_footer_txt">
                 <span>JavaScript</span>
-                <span>Html</span>
-                <span>CSS</span>
-                <span>Bootstrap</span>
+                <span>HTML</span>
+                <span>SCSS</span>
               </div>
               <div className="card_footer_btns">
                 <div className="btn-yellow">

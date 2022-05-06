@@ -1,9 +1,12 @@
 @import "../../style/global.scss";
 .skills_row {
-  margin-top: toRem(180);
+  margin-top: toRem(100);
   .col-xl-3:hover {
     transform: scale(1.1);
     transition: 0.5s;
+  }
+  .line {
+    margin: toRem(90) auto;
   }
 }
 .skills_txt {
