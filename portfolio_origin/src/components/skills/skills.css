@@ -23,6 +23,10 @@ body {
 .skills_row {
   margin-top: 11.25rem;
 }
+.skills_row .col-xl-3:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
 .skills_txt {
   width: 32.375rem;

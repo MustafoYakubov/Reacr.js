@@ -1,6 +1,10 @@
 @import "../../style/global.scss";
 .skills_row {
   margin-top: toRem(180);
+  .col-xl-3:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
 }
 .skills_txt {
   @include text(toRem(518), toRem(111), 700, toRem(46), toRem(56), $colorWhite);

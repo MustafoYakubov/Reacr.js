@@ -27,35 +27,46 @@ const Skills = () => {
 
         <div className="col-xl-6 col-sm-12">
           <div className="row skills_position ">
-            <div title="JavaScript" className="col-xl-3 col-sm-6 skills_background">
+            <div
+              title="JavaScript"
+              className="col-xl-3 col-sm-6 skills_background"
+            >
               <img src={js} alt="js" />
             </div>
-            <div title="React JS"  className="col-xl-3 col-sm-6 skills_background ">
+            <div
+              title="React JS"
+              className="col-xl-3 col-sm-6 skills_background "
+            >
               <img src={react} alt="react" />
             </div>
             <div title="Redux" className="col-xl-3 col-sm-6 skills_background ">
               <img className="w-100" src={redux} alt="redux" />
             </div>
-            <div title="Git Hub"  className="col-xl-3 col-sm-6 skills_background ">
+            <div
+              title="Git Hub"
+              className="col-xl-3 col-sm-6 skills_background "
+            >
               <img src={github} alt="" />
             </div>
           </div>
           <div
-          
             style={{ marginTop: "2rem" }}
             className="row skills_position skilss_top "
           >
-            <div title="HTML"  className="col-xl-3 col-sm-6 skills_background">
+            <div title="HTML" className="col-xl-3 col-sm-6 skills_background">
               <img src={html} alt="html" />
             </div>
-            <div title="SCSS/SASS"  className="col-xl-3 col-sm-6 skills_background">
+            <div
+              title="SCSS/SASS"
+              className="col-xl-3 col-sm-6 skills_background"
+            >
               <img src={sass} alt="sass" />
             </div>
             <div className="col-xl-3 col-sm-6 skills_background">
-              <img title="Bootstrap"  src={bootstrap} alt="bootstrap" />
+              <img title="Bootstrap" src={bootstrap} alt="bootstrap" />
             </div>
             <div className="col-xl-3 col-sm-6 skills_background">
-              <img title="Figma"  src={figma} alt="figma" />
+              <img title="Figma" src={figma} alt="figma" />
             </div>
           </div>
         </div>
