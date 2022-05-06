@@ -42,6 +42,9 @@ const Footer = () => {
           <h6 className="links">
             <a href=""> Git Hub</a>
           </h6>
+          <h6 className="links">
+            <a href=""> Telegram</a>
+          </h6>
         </div>
         <div className="col-2">
           <input type="email" placeholder="eamil" />

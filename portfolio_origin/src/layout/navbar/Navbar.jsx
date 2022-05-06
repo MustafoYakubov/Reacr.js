@@ -4,6 +4,7 @@ import "./Navbar.scss";
 
 const Navbar = () => {
   const [isActiveBtnAnimate, setIsActiveBtnAnimate] = useState(false);
+  const [modal, setModal] = useState(false);
   function scrollToSkills() {
     window.scrollBy(0, 1600);
   }
@@ -15,6 +16,9 @@ const Navbar = () => {
   };
   const navBtnAnimate = () => {
     setIsActiveBtnAnimate((prev) => !prev);
+  };
+  const showContact = () => {
+    setModal((prev) => !prev);
   };
 
   return (
@@ -57,7 +61,18 @@ const Navbar = () => {
               <button onClick={scrollToPortfolio} className="nav-link">
                 Portfolio
               </button>
-              <button className="nav-link">Contact</button>
+              <button onClick={showContact} className="nav-link">
+                {modal ? (
+                  <span>
+                    +99899994649
+                    <h6>
+                      <a href="https://telegram.com/">Telegram</a>
+                    </h6>
+                  </span>
+                ) : (
+                  "Contact"
+                )}
+              </button>
             </div>
             <button className=" btn-yellow">
               <p>Hire me</p>
