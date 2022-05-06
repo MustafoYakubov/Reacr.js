@@ -24,6 +24,11 @@ body {
   color: #ffffff !important;
   margin-left: 1.5625rem;
   margin-top: 8px;
+  background-color: transparent;
+  border: unset;
+}
+.nav-link:hover {
+  opacity: 0.5;
 }
 
 .active {
@@ -120,9 +125,10 @@ body {
   .nav-link {
     margin-left: 0.625rem;
     margin-top: 8px;
+    text-align: left;
   }
 
   .btn-yellow {
     display: none;
   }
-}/*# sourceMappingURL=Navbar.css.map */
+} /*# sourceMappingURL=Navbar.css.map */

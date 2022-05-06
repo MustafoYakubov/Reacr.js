@@ -20,8 +20,7 @@ const Portfolio = () => {
             <img className="w-100" src={pumaStore} alt="" />
             <div className="card-footer">
               <div className="card_footer_txt">
-                <span>JavaScript</span>
-                <span>Html</span>
+                <span>HTML</span>
                 <span>CSS</span>
                 <span>Bootstrap</span>
               </div>

@@ -1,28 +1,33 @@
 import React, { useState } from "react";
 import logo from "../../assets/icons/logo.svg";
 import "./Navbar.scss";
+
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
   const [isActiveBtnAnimate, setIsActiveBtnAnimate] = useState(false);
-  const toggleBtn = () => setToggle((prev) => !prev);
-  function scrollWin() {
-    window.scrollBy(0, 900);
+  function scrollToSkills() {
+    window.scrollBy(0, 1600);
   }
+  const scrollToAbout = () => {
+    window.scrollBy(0, 900);
+  };
+  const scrollToPortfolio = () => {
+    window.scrollBy(0, 2200);
+  };
   const navBtnAnimate = () => {
     setIsActiveBtnAnimate((prev) => !prev);
   };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid navbarHeader">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand">
             <img src={logo} alt="logo" />
           </a>
           <div
             className={`navMenu navbar-toggler ${
               isActiveBtnAnimate ? "active" : ""
             } `}
-            // className=" "
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -31,31 +36,28 @@ const Navbar = () => {
             aria-label="Toggle navigation"
             onClick={navBtnAnimate}
           >
-            {/* <span className="navbar-toggler-icon"></span> */}
             <span></span>
             <span></span>
             <span></span>
           </div>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a
+              <button
                 className="nav-link active navbar_first_child "
                 aria-current="page"
               >
                 Home
-              </a>
-              <a className="nav-link" href="#">
+              </button>
+              <button onClick={scrollToAbout} className="nav-link">
                 About
-              </a>
-              <a onClick={scrollWin} className="nav-link" href="#">
+              </button>
+              <button onClick={scrollToSkills} className="nav-link">
                 Skills
-              </a>
-              <a className="nav-link" href="#">
+              </button>
+              <button onClick={scrollToPortfolio} className="nav-link">
                 Portfolio
-              </a>
-              <a className="nav-link" href="#">
-                Contact
-              </a>
+              </button>
+              <button className="nav-link">Contact</button>
             </div>
             <button className=" btn-yellow">
               <p>Hire me</p>

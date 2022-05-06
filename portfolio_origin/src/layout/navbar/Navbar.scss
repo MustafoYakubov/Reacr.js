@@ -4,14 +4,19 @@
   color: $colorWhite !important;
   margin-left: toRem(25);
   margin-top: 8px;
+  background-color: transparent;
+  border: unset;
+  &:hover {
+    opacity: 0.5;
+  }
 }
+
 .active {
   color: $colorYellow !important;
 }
 .navbar-collapse {
   justify-content: space-evenly;
 }
-
 .navMenu {
   border: none !important;
 }
@@ -20,7 +25,7 @@
   width: toRem(30);
   height: 4px;
   border-radius: toRem(9999);
-  background-color: $colorYellow
+  background-color: $colorYellow;
 }
 .navMenu > span:not(:last-child) {
   margin-bottom: 7px;
@@ -90,6 +95,7 @@
   .nav-link {
     margin-left: toRem(10);
     margin-top: 8px;
+    text-align: left;
   }
   .btn-yellow {
     display: none;
