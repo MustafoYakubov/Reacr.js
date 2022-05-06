@@ -6,7 +6,7 @@
   @include text(toRem(518), toRem(111), 700, toRem(46), toRem(56), $colorWhite);
 }
 .skills_parag {
-  @include text(toRem(592), toRem(60), 400, 1rem, toRem(30), $colorWhite);
+  @include text(toRem(556), toRem(60), 400, 1rem, toRem(30), $colorWhite);
 }
 .skills_btn {
   width: 7.5rem !important;

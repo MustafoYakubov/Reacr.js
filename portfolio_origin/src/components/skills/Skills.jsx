@@ -5,13 +5,13 @@ import redux from "../../assets/icons/redux.png";
 import github from "../../assets/icons/github.png";
 import html from "../../assets/icons/html.png";
 import sass from "../../assets/icons/sass.png";
-import git from "../../assets/icons/git.png";
 import bootstrap from "../../assets/icons/bootstrap.png";
 import figma from "../../assets/icons/figma.png";
 
 const Skills = () => {
   return (
     <section className="skills_row">
+      <h1 className="title">Skills</h1>
       <div id="row_of_skills" className="row ">
         <div className="col-xl-6 col-sm-12">
           <h1 className="skills_txt">What My Programming Skills Included?</h1>

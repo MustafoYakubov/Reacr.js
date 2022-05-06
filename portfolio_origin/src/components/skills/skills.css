@@ -13,6 +13,13 @@ body {
   position: relative;
 }
 
+.line {
+  border: 1px solid rgb(69, 69, 69);
+  height: 2px;
+  width: 75%;
+  margin: auto;
+}
+
 .skills_row {
   margin-top: 11.25rem;
 }
@@ -27,7 +34,7 @@ body {
 }
 
 .skills_parag {
-  width: 37rem;
+  width: 34.75rem;
   height: 3.75rem;
   font-weight: 400;
   font-size: 1rem;
