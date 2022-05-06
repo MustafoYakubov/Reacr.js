@@ -1,0 +1,46 @@
+@import "../../style/global.scss";
+.footer {
+  margin-top: toRem(120);
+  .row {
+    .col-3 {
+      .links {
+        color: $colorGray;
+        font-weight: 500;
+        font-size: 17.9888px;
+        line-height: 36px;
+        cursor: pointer;
+        &:hover {
+          color: $colorLightGray;
+        }
+        a {
+          text-decoration: none;
+          color: $colorGray;
+
+          &:hover {
+            color: $colorLightGray;
+          }
+        }
+      }
+    }
+
+    .col-2 {
+      margin-left: 50px;
+      .title_footer {
+        @include text(
+          toRem(273),
+          toRem(66),
+          700,
+          toRem(32),
+          100%,
+          $colorYellow
+        );
+      }
+      .parag_footer {
+        @include text(toRem(221), toRem(67), 600, 1rem, toRem(32), #d4d4d4);
+      }
+    }
+  }
+}
+.title_footer {
+   @include text(toRem(145),2rem ,700,toRem(22),2rem,#F5FBF2)
+}

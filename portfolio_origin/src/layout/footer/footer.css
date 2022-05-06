@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212529 !important;
+  color: #fff !important;
+  height: 100vh;
+  font-family: "Inter", sans-serif !important;
+  position: relative;
+}
+
+.line {
+  border: 1px solid rgb(69, 69, 69);
+  height: 2px;
+  width: 75%;
+  margin: auto;
+}
+
+.footer {
+  margin-top: 7.5rem;
+}
+.footer .row .col-3 .links {
+  color: #7b7b7b;
+  font-weight: 500;
+  font-size: 17.9888px;
+  line-height: 36px;
+  cursor: pointer;
+}
+.footer .row .col-3 .links:hover {
+  color: #d4d4d4;
+}
+.footer .row .col-3 .links a {
+  text-decoration: none;
+  color: #7b7b7b;
+}
+.footer .row .col-3 .links a:hover {
+  color: #d4d4d4;
+}
+.footer .row .col-2 {
+  margin-left: 50px;
+}
+.footer .row .col-2 .title_footer {
+  width: 17.0625rem;
+  height: 4.125rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
+  color: #ffb742;
+}
+.footer .row .col-2 .parag_footer {
+  width: 13.8125rem;
+  height: 4.1875rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #d4d4d4;
+}
+
+.title_footer {
+  width: 9.0625rem;
+  height: 2rem;
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 2rem;
+  color: #F5FBF2;
+}/*# sourceMappingURL=footer.css.map */
