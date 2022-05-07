@@ -1,5 +1,4 @@
 import "./footer.scss";
-// import messageIcon from "../../assets/icons/messageIcon.svg";
 import icon_send from "../../assets/icons/telegram.svg";
 const Footer = () => {
   const scroll = () => {
@@ -35,16 +34,29 @@ const Footer = () => {
         <div className="col-3">
           <h5 className="title_links">Social Media</h5>
           <h6 className="links">
-            <a href="https://www.instagram.com/">Instagram</a>
+            <a target="_blank" href="https://www.instagram.com/m_yakuboff/">
+              Instagram
+            </a>
           </h6>
           <h6 className="links">
-            <a href="">Linkedin</a>
+            <a
+              target="_blank"
+              href=" https://www.linkedin.com/in/mustafo-yakubov-484338234"
+            >
+              Linkedin
+            </a>
           </h6>
           <h6 className="links">
-            <a href=""> Git Hub</a>
+            <a target="_blank" href="https://github.com/DushanovShamshod/">
+              {" "}
+              Git Hub
+            </a>
           </h6>
           <h6 className="links">
-            <a href=""> Telegram</a>
+            <a target="_blank" href="https://t.me/m_yakuboff">
+              {" "}
+              Telegram
+            </a>
           </h6>
         </div>
         <div className="col-3 footer_right_row">
