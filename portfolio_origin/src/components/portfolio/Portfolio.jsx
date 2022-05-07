@@ -36,7 +36,7 @@ const Portfolio = () => {
                 </div>
                 <div className="btn-yellow">
                   <a target="_blank" href="https://pumastore.netlify.app/ ">
-                    View web-site
+                    View Web-site
                   </a>
                 </div>
               </div>
@@ -55,7 +55,7 @@ const Portfolio = () => {
                   <a href="https://github.com"> View Code</a>
                 </div>
                 <div className="btn-yellow">
-                  <a>View web-site</a>
+                  <a>View Web-site</a>
                 </div>
               </div>
             </div>
@@ -76,9 +76,7 @@ const Portfolio = () => {
                   </a>
                 </div>
                 <div className="btn-yellow">
-                  <a href="https://nft-marketplacr.netlify.app/">
-                    View Web-Site
-                  </a>
+                  <a href="https://nftmarkets.netlify.app/">View Web-site</a>
                 </div>
               </div>
             </div>
@@ -93,10 +91,12 @@ const Portfolio = () => {
               </div>
               <div className="card_footer_btns">
                 <div className="btn-yellow">
-                  <a href="https://github.com"> View Code</a>
+                  <a href="https://github.com/DushanovShamshod/MustafoYakubov/tree/main/06-Tavakkal-Game/starter">
+                    View Code
+                  </a>
                 </div>
                 <div className="btn-yellow">
-                  <a href="https://nft-marketplacr.netlify.app/"> View Code</a>
+                  <a href="https://gamerisk.netlify.app/"> View Web-site</a>
                 </div>
               </div>
             </div>
@@ -111,10 +111,17 @@ const Portfolio = () => {
               </div>
               <div className="card_footer_btns">
                 <div className="btn-yellow">
-                  <a href="https://github.com"> View Code</a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/DushanovShamshod/MustafoYakubov/tree/main/04-Guess-My-Number/starter"
+                  >
+                    View Code
+                  </a>
                 </div>
                 <div className="btn-yellow">
-                  <a>View web-site</a>
+                  <a target="_blank" href="https://game-of-number.netlify.app/">
+                    View Web-site
+                  </a>
                 </div>
               </div>
             </div>
