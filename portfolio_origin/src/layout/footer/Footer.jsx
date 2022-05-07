@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="col-3">
           <h5 className="title_links">Social Media</h5>
           <h6 className="links">
-            <a target="_blank" href="https://www.instagram.com/m_yakuboff/">
+            <a target="_blank" href="https://www.instagram.com/m_yakuboff">
               Instagram
             </a>
           </h6>

@@ -73,10 +73,12 @@
 }
 
 .icon_send {
+  margin-top: -5px;
   position: relative;
-  margin-left: -55px;
+  margin-left: toRem(-25);
   background-color: $colorYellow;
-  border-radius: 50%;
-  padding: toRem(23);
+  border-radius: 0 10px 10px 0;
+  padding: toRem(20);
   cursor: pointer;
+  overflow: hidden;
 }
