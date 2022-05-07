@@ -4,7 +4,7 @@
   background-color: #1c1c1c;
   .row {
     padding-top: toRem(80);
-    .col-3 {
+    .col-xl-3 {
       .links {
         color: $colorGray;
         font-weight: 500;
@@ -25,8 +25,7 @@
       }
     }
 
-    .col-2:nth-child(1) {
-      // margin-left: 50px;
+    .col-xl-2:nth-child(1) {
       .title_footer {
         @include text(
           toRem(273),
@@ -54,7 +53,7 @@
   width: toRem(250);
   height: toRem(63);
   border: unset;
-  border-radius: toRem(49);
+  border-radius: toRem(49) 0 0 toRem(49);
   background: #212529;
   outline: none;
   padding: 1rem 25px;
@@ -81,4 +80,14 @@
   padding: toRem(20);
   cursor: pointer;
   overflow: hidden;
+}
+@media screen and(max-width:500px) {
+  .title_footer,
+  .parag_footer {
+    width: 80%;
+    margin: auto;
+  }
+  .input_txt {
+    width: 100%;
+  }
 }
