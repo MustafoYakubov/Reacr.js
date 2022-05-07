@@ -17,7 +17,7 @@ const Portfolio = () => {
         <h1 className="title">PortFolio</h1>
         <div className="row">
           <div className="col-xl-4 col-sm-10">
-            <img className="w-100" src={pumaStore} alt="" />
+            <img className="w-100" src={pumaStore} alt="pumaStore" />
             <div className="card-footer">
               <div className="card_footer_txt">
                 <span>HTML</span>
@@ -27,16 +27,23 @@ const Portfolio = () => {
               </div>
               <div className="card_footer_btns">
                 <div className="btn-yellow">
-                  <a href="https://github.com"> View Code</a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/DushanovShamshod/MustafoYakubov/tree/main/puma"
+                  >
+                    View Code
+                  </a>
                 </div>
                 <div className="btn-yellow">
-                  <a>View web-site</a>
+                  <a target="_blank" href="https://pumastore.netlify.app/ ">
+                    View web-site
+                  </a>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-xl-4 col-sm-10">
-            <img className="w-100" src={samsungStore} alt="" />
+            <img className="w-100" src={samsungStore} alt="samsungStore" />
             <div className="card-footer">
               <div className="card_footer_txt">
                 <span>Html</span>
