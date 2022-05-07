@@ -1,12 +1,13 @@
 import React from "react";
 import "./aboutMe.scss";
 import imgAboutMe from "../../assets/img/aboutMe.png";
+import me from "../../assets/img/me.png";
 const AboutMe = () => {
   return (
     <section className="aboutMe">
       <div className="row">
         <div className="col-xl-6 col-sm-12">
-          <img className="imgAboutMe w-100" src={imgAboutMe} alt="imgAboutMe" />
+          <img className="imgAboutMe w-100" src={me} alt="imgAboutMe" />
         </div>
         <div className="col-xl-6 col-sm-12">
           <h6 className="whoAmI">WHO I AM</h6>

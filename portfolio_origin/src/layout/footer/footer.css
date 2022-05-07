@@ -136,6 +136,15 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .footer .row {
+    padding: 1rem;
+    display: none;
+  }
+
+  .title_links {
+    margin-top: 1rem;
+  }
+
   .title_footer,
 .parag_footer {
     width: 80%;
@@ -144,5 +153,12 @@ body {
 
   .input_txt {
     width: 100%;
+    height: 1.9375rem;
+    margin-bottom: 5%;
+    font-size: 14px;
+  }
+
+  .footer_input {
+    width: 80% !important;
   }
 }/*# sourceMappingURL=footer.css.map */
