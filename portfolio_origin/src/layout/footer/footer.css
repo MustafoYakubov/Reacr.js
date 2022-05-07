@@ -79,6 +79,10 @@ body {
   color: #7b7b7b;
 }
 
+.table_2 {
+  margin-left: 5.125rem;
+}
+
 .footer_input {
   position: relative;
   width: 15.625rem;
@@ -138,7 +142,6 @@ body {
 @media screen and (max-width: 500px) {
   .footer .row {
     padding: 1rem;
-    display: none;
   }
 
   .title_links {

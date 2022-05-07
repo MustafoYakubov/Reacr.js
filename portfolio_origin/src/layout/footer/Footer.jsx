@@ -16,11 +16,11 @@ const Footer = () => {
   return (
     <footer className="footer container-fluid">
       <div className="row">
-        <div className="col-xl-2 col-sm-3">
+        <div className="col-xl-2 col-sm-12">
           <h3 className="title_footer">Mustafo Yakubov.</h3>
           <h5 className="parag_footer">Creative front-end devoloper</h5>
         </div>
-        <div className="col-xl-3 col-sm-3 ">
+        <div className="col-xl-3 col-sm-12 table_2  ">
           <h5 className="title_links">Useful Links</h5>
           <h6 onClick={functionsScroll.scrollToHome} className="links">
             Home
@@ -31,7 +31,7 @@ const Footer = () => {
           <h6 className="links"> Skills</h6>
           <h6 className="links">Portfolio</h6>
         </div>
-        <div className="col-xl-3 col-sm-3">
+        <div className="col-xl-3 col-sm-12">
           <h5 className="title_links">Social Media</h5>
           <h6 className="links">
             <a target="_blank" href="https://www.instagram.com/m_yakuboff">
@@ -57,7 +57,7 @@ const Footer = () => {
             </a>
           </h6>
         </div>
-        <div className="col-xl-3 col-sm-10 footer_right_row">
+        <div className="col-xl-3 col-sm-12 footer_right_row">
           <h5 className="title_links">News Letter</h5>
           <h6 className="input_txt">
             Enter your email and get notified about news, of.
