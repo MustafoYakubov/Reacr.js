@@ -47,6 +47,8 @@ const Footer = () => {
           </h6>
         </div>
         <div className="col-2">
+          <h5 className="title_links">News Letter</h5>
+          <h6 className="input_txt">Enter your email and get notified about news, of.</h6>
           <input type="email" placeholder="eamil" />
         </div>
       </div>

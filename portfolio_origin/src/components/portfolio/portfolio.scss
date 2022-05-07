@@ -44,10 +44,10 @@
   justify-content: space-evenly;
 }
 .btn-yellow a {
-  width: 84px;
+  width: toRem(84);
   height: 12px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   justify-content: center;
   text-align: center;

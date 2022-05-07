@@ -8,7 +8,7 @@
 body {
   background-color: #212529 !important;
   color: #fff !important;
-  height: 1000vh;
+  height: 100vh;
   font-family: "Inter", sans-serif !important;
   position: relative;
 }
@@ -131,4 +131,4 @@ body {
   .btn-yellow {
     display: none;
   }
-} /*# sourceMappingURL=Navbar.css.map */
+}/*# sourceMappingURL=Navbar.css.map */

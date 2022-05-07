@@ -1,7 +1,9 @@
 @import "../../style/global.scss";
 .footer {
   margin-top: toRem(120);
+  background-color: #1c1c1c;
   .row {
+    padding-top: toRem(80);
     .col-3 {
       .links {
         color: $colorGray;
@@ -23,7 +25,7 @@
       }
     }
 
-    .col-2 {
+    .col-2:nth-child(1) {
       margin-left: 50px;
       .title_footer {
         @include text(
@@ -43,4 +45,7 @@
 }
 .title_footer {
   @include text(toRem(145), 2rem, 700, toRem(22), 2rem, #f5fbf2);
+}
+.input_txt {
+  @include text(toRem(271), toRem(73), 500, 1.1rem, toRem(36), $colorGray);
 }
