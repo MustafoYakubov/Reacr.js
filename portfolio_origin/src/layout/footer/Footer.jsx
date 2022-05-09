@@ -57,21 +57,23 @@ const Footer = () => {
             </a>
           </h6>
         </div>
-        <div className="col-xl-3 col-sm-12 footer_right_row">
+        <div className="col-xl-2 col-sm-12 footer_write_row">
           <h5 className="title_links">News Letter</h5>
           <h6 className="input_txt">
             Enter your email and get notified about news, of.
           </h6>
 
           <div className="col-12">
-            <input
-              className="footer_input"
-              type="email"
-              placeholder="Your email address"
-            />
-            <button type="submit" className="input_submit">
-              <img className="icon_send" src={icon_send} alt="icon_send" />
-            </button>
+            <form>
+              <input
+                className="footer_input"
+                type="email"
+                placeholder="Your email address"
+              />
+            </form>
+            {/* <button type="submit" className="input_submit"> */}
+            {/* <img className="icon_send" src={icon_send} alt="icon_send" /> */}
+            {/* </button> */}
           </div>
         </div>
       </div>

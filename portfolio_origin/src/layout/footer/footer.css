@@ -80,7 +80,7 @@ body {
 }
 
 .table_2 {
-  margin-left: 5.125rem;
+  margin-left: 9.375rem;
 }
 
 .footer_input {
@@ -88,7 +88,7 @@ body {
   width: 15.625rem;
   height: 3.9375rem;
   border: unset;
-  border-radius: 3.0625rem 0 0 3.0625rem;
+  border-radius: 3.0625rem;
   background: #212529;
   outline: none;
   padding: 1rem 25px;

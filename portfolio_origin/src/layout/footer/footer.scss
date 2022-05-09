@@ -49,14 +49,14 @@
   @include text(toRem(211), toRem(73), 500, 1.1rem, toRem(36), $colorGray);
 }
 .table_2 {
-  margin-left: toRem(82);
+  margin-left: toRem(150);
 }
 .footer_input {
   position: relative;
   width: toRem(250);
   height: toRem(63);
   border: unset;
-  border-radius: toRem(49) 0 0 toRem(49);
+  border-radius: toRem(49);
   background: #212529;
   outline: none;
   padding: 1rem 25px;

@@ -17,7 +17,6 @@ const Navbar = () => {
   const navBtnAnimate = () => {
     setIsActiveBtnAnimate((prev) => !prev);
   };
- 
 
   return (
     <>
@@ -59,7 +58,7 @@ const Navbar = () => {
               <button onClick={scrollToPortfolio} className="nav-link">
                 Portfolio
               </button>
-     
+
               <li class="nav-item dropdown">
                 <a
                   class="nav-link"
@@ -93,11 +92,12 @@ const Navbar = () => {
                     <a
                       class="dropdown-item"
                       href="mailto:mustafa6143170@gmail.com "
-                    >Email</a>
+                    >
+                      Email
+                    </a>
                   </li>
                 </ul>
               </li>
-
             </div>
             <button className=" btn-yellow btn_navbar">
               <p>Hire me</p>
