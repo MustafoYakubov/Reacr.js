@@ -26,7 +26,7 @@ const AboutMe = () => {
             <p>Hire me</p>
           </button>
 
-          <a style={{display:'block'}} href={resume} download>
+          <a href={resume} download>
             <button> download CV</button>
           </a>
         </div>
