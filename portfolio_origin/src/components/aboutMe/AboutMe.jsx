@@ -1,7 +1,7 @@
 import React from "react";
 import "./aboutMe.scss";
-import imgAboutMe from "../../assets/img/aboutMe.png";
 import me from "../../assets/img/me.png";
+import resume from "../../assets/network/resume.pdf";
 const AboutMe = () => {
   return (
     <section className="aboutMe">
@@ -25,6 +25,10 @@ const AboutMe = () => {
           <button className="btn-yellow">
             <p>Hire me</p>
           </button>
+
+          <a style={{display:'block'}} href={resume} download>
+            <button> download CV</button>
+          </a>
         </div>
       </div>
     </section>
