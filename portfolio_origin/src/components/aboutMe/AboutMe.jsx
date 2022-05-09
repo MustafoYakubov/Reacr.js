@@ -2,6 +2,7 @@ import React from "react";
 import "./aboutMe.scss";
 import me from "../../assets/img/me.png";
 import resume from "../../assets/network/resume.pdf";
+import downloadIcon from "../../assets/icons/download.png";
 const AboutMe = () => {
   return (
     <section className="aboutMe">
@@ -22,13 +23,19 @@ const AboutMe = () => {
             stand-ups and communications, source control, and project
             management.
           </p>
-          <button className="btn-yellow">
-            <p>Hire me</p>
-          </button>
-
-          <a href={resume} download>
-            <button> download CV</button>
-          </a>
+          <div className="aboutBtns">
+            <button className="btn-yellow">
+              <p>Hire me</p>
+            </button>
+            <a href={resume} download>
+              <button className="download">
+                <span>Download CV</span>
+                <span>
+                  <img className="downloadIcon" src={downloadIcon} alt="" />
+                </span>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </section>

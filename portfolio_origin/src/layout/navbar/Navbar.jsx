@@ -17,9 +17,7 @@ const Navbar = () => {
   const navBtnAnimate = () => {
     setIsActiveBtnAnimate((prev) => !prev);
   };
-  const showContact = () => {
-    setModal((prev) => !prev);
-  };
+ 
 
   return (
     <>
@@ -61,20 +59,47 @@ const Navbar = () => {
               <button onClick={scrollToPortfolio} className="nav-link">
                 Portfolio
               </button>
-              <button onClick={showContact} className="nav-link">
-                {modal ? (
-                  <span>
-                    +99899994649
-                    <h6>
-                      <a href="https://telegram.com/">Telegram</a>
-                    </h6>
-                  </span>
-                ) : (
-                  "Contact"
-                )}
-              </button>
+     
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDarkDropdownMenuLink"
+                >
+                  <li>
+                    <a className="dropdown-item" href="tel:+998-99-994-62-29">
+                      +998-99-994-62-29
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="dropdown-item"
+                      target="_blank"
+                      href="https://t.me/m_yakuboff"
+                    >
+                      Telegram
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="mailto:mustafa6143170@gmail.com "
+                    >Email</a>
+                  </li>
+                </ul>
+              </li>
+
             </div>
-            <button className=" btn-yellow">
+            <button className=" btn-yellow btn_navbar">
               <p>Hire me</p>
             </button>
           </div>

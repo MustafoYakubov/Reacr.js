@@ -21,10 +21,37 @@
   margin-top: toRem(30);
   margin-bottom: toRem(50);
 }
+.download {
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #000;
+  border-radius: 90px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-left: 1.5rem;
+  &:hover {
+    background: rgb(255, 255, 255, 0.19);
+  }
+}
+.download span {
+  font-weight: 900;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  color: $colorYellow;
+
+  margin-bottom: unset;
+}
+.downloadIcon {
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+}
 
 @media screen and (max-width: 500px) {
   .aboutMe {
     margin-top: toRem(40);
+  }
+  .imgAboutMe {
+    padding-left: 5%;
   }
   .whoAmI {
     margin: 20px auto;
@@ -35,5 +62,13 @@
   }
   .about_paragrph {
     padding: 0 12px;
+    height: auto;
+  }
+  .btn-yellow {
+    margin-left: unset !important;
+  }
+  .aboutBtns {
+    display: flex;
+    justify-content: space-around;
   }
 }

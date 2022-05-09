@@ -10,7 +10,6 @@
     opacity: 0.5;
   }
 }
-
 .active {
   color: $colorYellow !important;
 }
@@ -97,7 +96,7 @@
     margin-top: 8px;
     text-align: left;
   }
-  .btn-yellow {
-    display: none;
+  .btn_navbar {
+    display: none !important;
   }
 }
