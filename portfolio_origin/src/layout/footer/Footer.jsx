@@ -9,7 +9,7 @@ const Footer = () => {
       window.scrollTo(0, 0);
     },
     scrollToAbout() {
-      window.scrollTo(0, 850);
+      window.scrollTo(0, 851);
     },
     scrollToSkills() {
       window.scrollTo(0, 1600);
