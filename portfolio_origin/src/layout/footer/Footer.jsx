@@ -9,14 +9,20 @@ const Footer = () => {
       window.scrollTo(0, 0);
     },
     scrollToAbout() {
-      window.scrollTo(0, 1000);
+      window.scrollTo(0, 850);
+    },
+    scrollToSkills() {
+      window.scrollTo(0, 1600);
+    },
+    scrollToPortfolio() {
+      window.scrollTo(0, 2200);
     },
   };
 
   return (
     <footer className="footer container-fluid">
       <div className="row">
-        <div className="col-xl-2 col-sm-12">
+        <div className="col-xl-2 col-sm-12 footer_title_name">
           <h3 className="title_footer">Mustafo Yakubov.</h3>
           <h5 className="parag_footer">Creative front-end devoloper</h5>
         </div>
@@ -28,8 +34,12 @@ const Footer = () => {
           <h6 onClick={functionsScroll.scrollToAbout} className="links">
             About
           </h6>
-          <h6 className="links"> Skills</h6>
-          <h6 className="links">Portfolio</h6>
+          <h6 onClick={functionsScroll.scrollToSkills} className="links">
+            Skills
+          </h6>
+          <h6 onClick={functionsScroll.scrollToPortfolio} className="links">
+            Portfolio
+          </h6>
         </div>
         <div className="col-xl-3 col-sm-12">
           <h5 className="title_links">Social Media</h5>
@@ -69,11 +79,9 @@ const Footer = () => {
                 className="footer_input"
                 type="email"
                 placeholder="Your email address"
+                required={true}
               />
             </form>
-            {/* <button type="submit" className="input_submit"> */}
-            {/* <img className="icon_send" src={icon_send} alt="icon_send" /> */}
-            {/* </button> */}
           </div>
         </div>
       </div>

@@ -51,6 +51,9 @@
 .table_2 {
   margin-left: toRem(150);
 }
+.footer_title_name{
+  margin-left: 43px;
+}
 .footer_input {
   position: relative;
   width: toRem(250);
@@ -104,5 +107,11 @@
   }
   .footer_input {
     width: 80% !important;
+  }
+  .table_2 {
+    margin-left: unset;
+  }
+  .footer_title_name {
+    margin-left: unset;
   }
 }

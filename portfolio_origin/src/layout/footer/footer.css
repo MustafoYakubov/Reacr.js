@@ -83,6 +83,10 @@ body {
   margin-left: 9.375rem;
 }
 
+.footer_title_name {
+  margin-left: 43px;
+}
+
 .footer_input {
   position: relative;
   width: 15.625rem;
@@ -163,5 +167,13 @@ body {
 
   .footer_input {
     width: 80% !important;
+  }
+
+  .table_2 {
+    margin-left: unset;
+  }
+
+  .footer_title_name {
+    margin-left: unset;
   }
 }/*# sourceMappingURL=footer.css.map */

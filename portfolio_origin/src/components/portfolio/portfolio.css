@@ -108,6 +108,7 @@ body {
   .title {
     margin-bottom: unset;
     text-align: center;
+    width: 100%;
   }
 
   .portfolio .row {
