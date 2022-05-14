@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Next js</title>
         <meta name="description" content="Next app" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="homeContent">
         <h1>Home</h1>
