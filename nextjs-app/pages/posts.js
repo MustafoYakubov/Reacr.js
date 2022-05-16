@@ -1,8 +1,11 @@
-import React from 'react'
+import Heading from "../components/Heading"
 
 const posts = () => {
   return (
-    <div>posts</div>
+    <div>
+        <h1>This page is posts </h1>
+        <Heading tag={'h1'} text={'Post List : '} />
+    </div>
   )
 }
 
