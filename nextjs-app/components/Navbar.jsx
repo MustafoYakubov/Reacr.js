@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "../styles/Navbar.module.scss";
+import Head from "next/head";
 const navigation = [
   { id: 1, title: "Home", path: "/" },
   { id: 2, title: "Contact", path: "/contacts" },
@@ -11,6 +12,8 @@ const Navbar = () => {
 
   console.log(pathname);
   return (
+   <>
+
     <nav className={styles.nav}>
       <div className={styles.logo}> Next js</div>
       <div className={styles.links}>
@@ -21,6 +24,7 @@ const Navbar = () => {
         ))}
       </div>
     </nav>
+    </>
   );
 };
 

@@ -1,12 +1,31 @@
-
-
+import Image from "next/image";
+import Head from "next/head";
+import React, { useRef } from "react";
+import fone from "../public/format.jpg";
 const Home = () => {
+  const lazyRoot = React.useRef(null);
+
   return (
     <>
-      <h2>hello mustafo </h2>
+      <Head>
+        <title>Next js</title>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:ital,wght@1,100&family=Work+Sans:ital,wght@1,200&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+      <div ref={lazyRoot} /*style={{ overflowX: "scroll", width: "500px" }} */>
+        <Image
+          src={fone}
+          // width={900}
+          // height={450}
+          // lazyRoot={lazyRoot}
+          layout="responsive"
+          alt="row_image"
+          placeholder="blur"
+        />
+      </div>
     </>
   );
-
-  
 };
 export default Home;
