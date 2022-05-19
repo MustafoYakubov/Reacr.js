@@ -6,9 +6,10 @@ const index = () => {
       <Head>
         <title>Contacts</title>
       </Head>
+
       <Heading text={"Contacts List :"} />
     </div>
-  )
+  );
 };
 
 export default index;

@@ -24,6 +24,7 @@ const Home = () => {
           alt="row_image"
           placeholder="blur"
         />
+        <h1 className="text-3xl font-bold underline hover:bg-slate-800">Hello world!</h1>
       </div>
     </>
   );
