@@ -9,10 +9,10 @@ const Home = () => {
     <>
       <Head>
         <title>Next js</title>
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:ital,wght@1,100&family=Work+Sans:ital,wght@1,200&display=swap"
           rel="stylesheet"
-        />
+        /> */}
       </Head>
       <div ref={lazyRoot} /*style={{ overflowX: "scroll", width: "500px" }} */>
         <Image

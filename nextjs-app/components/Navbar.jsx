@@ -10,7 +10,6 @@ const navigation = [
 const Navbar = () => {
   const { pathname } = useRouter();
 
-  console.log(pathname);
   return (
    <>
 
