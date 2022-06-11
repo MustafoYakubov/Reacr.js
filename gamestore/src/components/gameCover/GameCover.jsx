@@ -1,4 +1,6 @@
 import "./gameCover.scss";
-export const GameCover = () => {
-  return <div>GameCover</div>;
+export const GameCover = ({ image = null }) => {
+  return (
+    <div className="gameCover" style={{ backgroundImage: `url(${image})` }} />
+  );
 };
