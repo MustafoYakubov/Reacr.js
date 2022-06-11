@@ -1,6 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import { CardBlog } from "../cardBlog/CardBlog";
+import { CartBlog } from "../cartBlog/CartBlog";
 import "./Header.scss";
 export const Header = () => {
   return (
@@ -10,7 +9,7 @@ export const Header = () => {
           Game Store
         </Link>
         <div className="wrapper header_card_btn">
-          <CardBlog />
+          <CartBlog />
         </div>
       </div>
     </div>
