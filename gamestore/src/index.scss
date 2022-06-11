@@ -16,6 +16,6 @@ a {
   text-decoration: none;
 }
 @function rem($value) {
-  $remValue: ($value / 16) + rem
-   return $remValue;
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
 }

@@ -2,7 +2,19 @@
 .header {
   height: rem(80);
   display: flex;
+  margin-bottom: rem(30);
+}
+.wrapper {
+  display: flex;
+  flex-grow: 1;
   align-items: center;
   justify-content: center;
-  margin-bottom: rem(30);
+}
+
+.header_title {
+  font-size: rem(24);
+  font-weight: bold;
+}
+.header_card_btn {
+  justify-content: flex-end;
 }
