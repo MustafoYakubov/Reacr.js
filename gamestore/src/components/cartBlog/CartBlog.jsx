@@ -1,5 +1,6 @@
 import { BiCartAlt } from "react-icons/bi";
 import { useSelector } from "react-redux";
+import { CartMenu } from "../cartMenu/CartMenu";
 import "./cartBlog.scss";
 
 export const CartBlog = () => {
@@ -11,7 +12,8 @@ export const CartBlog = () => {
     <div className="cardBlock">
       <BiCartAlt size={35} className="cartBlock_icon" />
       <span className="cartBlock_price">
-        {totalPrice !== "" ? totalPrice : ""}
+        {totalPrice !== 0 ? totalPrice : "Корзина"}
+        <CartMenu  />
       </span>
     </div>
   );
