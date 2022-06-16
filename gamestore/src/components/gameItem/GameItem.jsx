@@ -9,8 +9,8 @@ export const GameItem = ({ game }) => {
       <div className="gameItemDetails">
         <span className="gameItemTitle"> {game.title}</span>
         <div className="gameItemGenre">
-          {game.genres.map((genre) => (
-            <GameGenre genre={genre} />
+          {game.genres.map((genre, index) => (
+            <GameGenre key={index} genre={genre} />
           ))}
         </div>
         <div className="gameItemBtn">
