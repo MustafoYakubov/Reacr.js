@@ -13,7 +13,6 @@ export const Button = ({
     "btn--medium": size === "m",
     "btn--small": size === "s",
   });
-  console.log(typeof btnClass);
   return (
     <button className={btnClass} onClick={onClick}>
       {children}
