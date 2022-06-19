@@ -1,19 +1,31 @@
-import { useDispatch } from "react-redux";
-import { setItemInCart } from "../../redux/cart/reducer";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { deleteItemsFromCart, setItemInCart } from "../../redux/cart/reducer";
 import { Button } from "../button/Button";
 import "./gameBuy.scss";
 
-const GameBuy = ({ game = null }) => {
+const GameBuy = ({ game = {} }) => {
   const dispatch = useDispatch();
+  const items = useSelector((state) => state.cart.itemInCart);
+  const isInItemsCart = items.some((item) => item.id === game.id);
   const handeClick = (e) => {
     e.stopPropagation();
-    dispatch(setItemInCart(game));
+    if (isInItemsCart) {
+      dispatch(deleteItemsFromCart(game.id));
+    } else {
+      dispatch(setItemInCart(game));
+    }
   };
+
   return (
     <div className="gameBuy">
-      <span className="gameBuy_price">{game.price}$ </span>
-      <Button onClick={handeClick} size="s" type="primary">
-        В Корзину
+      <span className="gameBuy_price">{game.price}руб </span>
+      <Button
+        onClick={handeClick}
+        size="s"
+        type={isInItemsCart ? "secondary" : "primary"}
+      >
+        {isInItemsCart ? "Убрать из корзины" : "В Корзину"}
       </Button>
     </div>
   );
