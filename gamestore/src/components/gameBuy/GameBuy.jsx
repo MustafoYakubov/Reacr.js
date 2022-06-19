@@ -19,7 +19,7 @@ const GameBuy = ({ game = {} }) => {
 
   return (
     <div className="gameBuy">
-      <span className="gameBuy_price">{game.price}руб </span>
+      <span className="gameBuy_price">{game.price} руб </span>
       <Button
         onClick={handeClick}
         size="s"
