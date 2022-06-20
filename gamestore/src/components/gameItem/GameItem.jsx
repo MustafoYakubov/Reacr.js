@@ -1,10 +1,21 @@
-import "./gameItem.scss";
 import { GameCover } from "../gameCover";
 import { GameBuy } from "../gameBuy/GameBuy";
 import { GameGenre } from "../gameGenre/GameGenre";
+import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setCurrentGame } from "../../redux/games/reducer";
+import "./gameItem.scss";
 export const GameItem = ({ game }) => {
+  const history = useHistory();
+  const dispatch = useDispatch();
+  ///
+  const handleClickToPage = () => {
+    dispatch(setCurrentGame(game));
+    history.push(`app/${game.title}`);
+  };
+
   return (
-    <div className="gameItem">
+    <div className="gameItem" onClick={handleClickToPage}>
       <GameCover image={game.image} />
       <div className="gameItemDetails">
         <span className="gameItemTitle"> {game.title}</span>

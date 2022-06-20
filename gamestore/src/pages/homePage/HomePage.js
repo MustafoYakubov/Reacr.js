@@ -1,4 +1,4 @@
-import { GameItem } from "../components/gameItem/GameItem";
+import { GameItem } from "../../components/gameItem/GameItem";
 import "./HomePage.scss";
 const games = [
   {
