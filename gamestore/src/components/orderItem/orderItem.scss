@@ -1,0 +1,19 @@
+@import "../../index.scss";
+
+.orderItem {
+  display: flex;
+  margin-bottom: rem(30);
+}
+.orderItemCover {
+  width: rem(200);
+  margin-right: rem(30);
+}
+.orderItemTitle {
+  font-size: rem(24);
+  font-weight: bold;
+}
+.orderItemPrice {
+  font-size: rem(24);
+  font-weight: bold;
+  margin-left: auto;
+}

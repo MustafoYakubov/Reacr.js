@@ -21,3 +21,7 @@ a {
   $remValue: ($value / 16) + rem;
   @return $remValue;
 }
+
+// .secondaryText {
+//   color: rgb(80, 82, 84);
+// }
