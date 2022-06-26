@@ -1,17 +1,17 @@
 import { GameCover } from "../gameCover";
 import { GameBuy } from "../gameBuy/GameBuy";
 import { GameGenre } from "../gameGenre/GameGenre";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setCurrentGame } from "../../redux/games/reducer";
 import "./gameItem.scss";
 export const GameItem = ({ game }) => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   ///
   const handleClickToPage = () => {
     dispatch(setCurrentGame(game));
-    history.push(`app/${game.title}`);
+    navigate(`app/${game.title}`);
   };
 
   return (

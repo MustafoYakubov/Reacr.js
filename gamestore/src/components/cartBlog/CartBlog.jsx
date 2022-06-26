@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useCallback } from "react";
 import { BiCartAlt } from "react-icons/bi";
 import { useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { CartMenu } from "../cartMenu/CartMenu";
 import { ItemsInCart } from "../itemsInCart/ItemsInCart";
 import { calcTotalPrice } from "../utils";
@@ -12,12 +12,12 @@ export const CartBlog = () => {
   const [isCartMenuVisible, setIsCartMenuVisible] = useState(false);
   const items = useSelector((state) => state.cart.itemInCart);
   const totalPrice = calcTotalPrice(items);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleClick = useCallback(() => {
     setIsCartMenuVisible(false);
-    history.push("/order");
-  }, [history]);
+    navigate("/order");
+  }, [navigate]);
   return (
     <div className="cardBlock">
       <ItemsInCart quantity={items.length} />

@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { OrderItem } from "../orderItem/OrderItem";
 import { calcTotalPrice } from "../utils";
 import "./orderPage.scss";
@@ -17,11 +18,20 @@ export const OrderPage = () => {
         ))}
       </div>
       <div className="orderPageRight">
-        <div className="orderPageTotalPrice">
-          <span>
-            {items.length} товаров на сумму {calcTotalPrice(items)} руб.
-          </span>
-        </div>
+        {items.length > 0 ? (
+          <div className="orderPageTotalPrice">
+            <span>
+              {items.length} товаров на сумму {calcTotalPrice(items)} руб.
+            </span>
+          </div>
+        ) : (
+          <div>
+            <h1>Пусто</h1>
+            <Link className="orderPageLink" to="/">
+              Домашняя страница
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 import { deleteItemsFromCart } from "../../redux/cart/reducer";
 import "./orderItem.scss";
 export const OrderItem = ({ game }) => {
+  console.log(game.title);
   const dispactch = useDispatch();
   const handleClick = () => {
     dispactch(deleteItemsFromCart(game.id));

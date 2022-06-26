@@ -21,11 +21,16 @@ const GameBuy = ({ game = {} }) => {
     <div className="gameBuy">
       <span className="gameBuy_price">{game.price} руб </span>
       <Button
+        className="gameBuyBtn"
         onClick={handeClick}
         size="s"
         type={isInItemsCart ? "secondary" : "primary"}
       >
-        {isInItemsCart ? "Убрать из корзины" : "В Корзину"}
+        {isInItemsCart ? (
+          <p className="moveIntoCart">Убрать из корзины</p>
+        ) : (
+          <p className="moveIntoCart">В Корзину</p>
+        )}
       </Button>
     </div>
   );
