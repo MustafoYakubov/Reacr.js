@@ -2,7 +2,7 @@ import { calcTotalPrice } from "../utils";
 import { Button } from "../button/Button";
 import { CartItem } from "../cartItem/CartItem";
 import "./cartMenu.scss";
-export const CartMenu = ({ items, onClick = null }) => {
+export const CartMenu = ({ items, onClick = null,setIsCartMenuVisible }) => {
   return (
     <div className="cartMenu">
       <div className="cartMenuGamesList">
@@ -27,6 +27,7 @@ export const CartMenu = ({ items, onClick = null }) => {
         </div>
       ) : (
         "Корзина Пусто"
+        // setIsCartMenuVisible(false)
       )}
     </div>
   );

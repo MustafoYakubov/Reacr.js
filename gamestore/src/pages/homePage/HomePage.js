@@ -1,4 +1,5 @@
 import { GameItem } from "../../components/gameItem/GameItem";
+// import blackOps from '/game-covers/blackops.jpg'
 import "./HomePage.scss";
 const games = [
   {
@@ -61,6 +62,26 @@ const games = [
     description:
       "Assassins Creed Valhalla — мультиплатформенная компьютерная игра в жанре action/RPG, разработанная студией Ubisoft Montreal под издательством компании Ubisoft. Является двенадцатой игрой в серии игр Assassins Creed.",
   },
+  {
+    image: "/game-covers/blackops.jpg",
+    title: "Call of duty Black ops 3",
+    genres: ["Шутер", "Экшен"],
+    video: "https://www.youtube.com/embed/PGh3tm78aoM",
+    price: 3063,
+    id: 7,
+    description:
+      "В Call of Duty®: Black Ops III используется новая цепная система плавного движения, позволяющая игрокам ловко перемещаться по окружающей среде, используя контролируемые прыжки, силовые скольжения, бег по стенам, плавание и быстрое маскирование во множестве способов.",
+  },
+  {
+    image: "/game-covers/fallGuys.png",
+    title: "Fall Guys",
+    genres: ["Симулятор", "Мультиплейер"],
+    video: "https://www.youtube.com/embed/Wj3dUvGLjNQ",
+    price: 3063,
+    id: 8,
+    description:
+      "Fall Guys (ранее Fall Guys: Ultimate Knockout) — платформер в жанре королевской битвы, разработанный Mediatonic. В игре участвуют до 60 игроков, которые управляют мармеладными существами и соревнуются друг с другом в серии случайно выбранных мини-игр, таких как полоса препятствий или теги",
+  },
 ];
 export const HomePage = () => {
   return (
@@ -68,6 +89,7 @@ export const HomePage = () => {
       {games.map((game, index) => (
         <GameItem game={game} key={index} />
       ))}
+      {/* <img src={blackOps} alt="" /> */}
     </div>
   );
 };

@@ -18,6 +18,7 @@ export const CartBlog = () => {
     setIsCartMenuVisible(false);
     navigate("/order");
   }, [navigate]);
+
   return (
     <div className="cardBlock">
       <ItemsInCart quantity={items.length} />
@@ -28,7 +29,13 @@ export const CartBlog = () => {
       />
       <span className="cartBlock_price">
         {totalPrice !== 0 ? `${totalPrice} руб.` : "Корзина"}
-        {isCartMenuVisible && <CartMenu items={items} onClick={handleClick} />}
+        {isCartMenuVisible && (
+          <CartMenu
+            items={items}
+            onClick={handleClick}
+            setIsCartMenuVisible={setIsCartMenuVisible}
+          />
+        )}
       </span>
     </div>
   );
