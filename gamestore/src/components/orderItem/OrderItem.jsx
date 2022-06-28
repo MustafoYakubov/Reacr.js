@@ -15,16 +15,18 @@ export const OrderItem = ({ game }) => {
       <div className="orderItemCover">
         <GameCover image={game.image} />
       </div>
-      <div className="orderItemTitle">
-        <span>{game.title}</span>
-      </div>
-      <div className="orderItemPrice">
-        <span> {game.price}</span>
-        <AiOutlineCloseCircle
-          size={25}
-          className="cartItemDeleteIcon"
-          onClick={handleClick}
-        />
+      <div className="orderItemHalf">
+        <div className="orderItemTitle">
+          <span>{game.title}</span>
+        </div>
+        <div className="orderItemPrice">
+          <span> {game.price} руб.</span>
+          <AiOutlineCloseCircle
+            size={25}
+            className="cartItemDeleteIcon"
+            onClick={handleClick}
+          />
+        </div>
       </div>
     </div>
   );
