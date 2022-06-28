@@ -20,3 +20,8 @@
 .btn--medium {
   font-size: 18px;
 }
+@media screen and(max-width: $small) {
+  .btn--medium {
+    font-size: 1rem;
+  }
+}

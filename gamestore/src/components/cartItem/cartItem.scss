@@ -16,6 +16,15 @@
   cursor: pointer;
 }
 .cartDelete {
-   position: absolute;
-   right: rem(100);
+  position: absolute;
+  right: rem(100);
+}
+
+@media screen and(max-width: $small) {
+  .cartItem {
+    font-size: 1rem;
+   .btn--medium {
+    font-size: 1rem;
+   }
+  }
 }
