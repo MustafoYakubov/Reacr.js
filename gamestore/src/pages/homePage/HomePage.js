@@ -1,5 +1,4 @@
 import { GameItem } from "../../components/gameItem/GameItem";
-// import blackOps from '/game-covers/blackops.jpg'
 import "./HomePage.scss";
 const games = [
   {
@@ -89,7 +88,6 @@ export const HomePage = () => {
       {games.map((game, index) => (
         <GameItem game={game} key={index} />
       ))}
-      {/* <img src={blackOps} alt="" /> */}
     </div>
   );
 };
