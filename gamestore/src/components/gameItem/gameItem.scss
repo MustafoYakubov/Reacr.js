@@ -9,11 +9,11 @@
   border-radius: rem(15);
   cursor: pointer;
   position: relative;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .gameItem:not(:last-child) {
   margin-bottom: rem(30);
-  margin-right: rem(50);
+  margin-right: 4.125rem;
 }
 .gameItemTitle {
   font-size: rem(18);
@@ -31,7 +31,12 @@
 }
 .gameItemBtn {
   position: absolute;
-  // top: rem(10);
   right: 0.5rem;
   bottom: 0.5rem;
+}
+@media screen and (max-width: $small) {
+  .gameItem:not(:last-child) {
+    margin-bottom: rem(30);
+    margin-right: unset;
+  }
 }

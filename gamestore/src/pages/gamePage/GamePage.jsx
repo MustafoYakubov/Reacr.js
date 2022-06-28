@@ -15,6 +15,7 @@ export const GamePage = () => {
         <div className="gamePageContent">
           <div className="gamePageLeft">
             <iframe
+              className="iframeOfGamePage"
               src={games.video}
               width="90%"
               height="400px"

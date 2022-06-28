@@ -1,7 +1,6 @@
 import React from "react";
 import { GameItem } from "../../components/gameItem/GameItem";
 import "./HomePage.scss";
-
 const games = [
   {
     image: "/game-covers/forza_5.jpeg",

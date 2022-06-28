@@ -19,3 +19,22 @@
   margin-top: rem(20);
   margin-bottom: 10px;
 }
+@media screen and (max-width: $small) {
+  .gamePageContent {
+    display: unset;
+  }
+  .gamePageLeft {
+    width: 100%;
+  }
+  .gamePageRight {
+    width: 100%;
+  }
+  .iframeOfGamePage {
+    border-radius: 20px;
+    width: 100% !important;
+    margin-bottom: 2rem;
+  }
+  .gamePageTitle {
+    margin-bottom: 1rem;
+  }
+}

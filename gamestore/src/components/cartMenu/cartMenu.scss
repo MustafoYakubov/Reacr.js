@@ -25,3 +25,11 @@
 .cartMenuGamesList {
   font-weight: 300;
 }
+
+@media screen and (max-width: $small) {
+  .cartMenu {
+    width: rem(350) !important;
+    top: 2rem !important;
+    left: rem(-287) !important;
+  }
+}
