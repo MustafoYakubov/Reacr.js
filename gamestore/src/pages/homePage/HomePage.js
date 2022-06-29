@@ -84,7 +84,7 @@ const games = [
   },
   {
     image: "/game-covers/csgo.png",
-    title: "CS Go",
+    title: "CS GO",
     genres: ["Шутер", "Мультиплейер"],
     video: "https://www.youtube.com/embed/edYCtaNueQY",
     price: 3903,
