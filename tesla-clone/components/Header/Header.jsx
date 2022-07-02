@@ -9,8 +9,9 @@ const Header = () => {
           <span className={styles.touchless}>Touchless delivery</span>
         </p>
       </div>
-      <div className="headerButtons">
-        <div className="mainBtn">
+      <div className={styles.headerButtons}>
+        
+        <div style={{display:'flex'}} className={styles.btnMain}>
           <a href="#" className={styles.btn}>
             custom order
           </a>
@@ -20,8 +21,8 @@ const Header = () => {
         </div>
       </div>
       <img
-      width={50}
-      height={40}
+        width={50}
+        height={40}
         src="/images/down-arrow.svg"
         alt="down icon"
         className={styles.downIcon}

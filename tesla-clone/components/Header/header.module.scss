@@ -1,4 +1,4 @@
-@import "../../styles/rediractes";
+@import "../../styles/rediractes.scss";
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Didact+Gothic&family=Inter&family=Lato:ital,wght@1,100&family=Montserrat&family=Poppins&family=Righteous&family=Work+Sans:ital,wght@1,200;1,900&display=swap");
 .section {
   background: url("../../public/images/model-3.jpg") no-repeat;
@@ -7,28 +7,55 @@
   height: 100vh;
   display: grid;
   place-items: center;
+}
+.textArea {
+  text-align: center;
+  margin-top: rem(70);
+  h3 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+.touchless {
+  border-bottom: 1px solid #313131;
+  padding: 3px;
+  cursor: pointer;
+  transition: all 0.4 linear;
+  -webkit-transition: all 0.4 linear;
+  &:hover {
+    border-bottom-width: 2px;
+  }
+}
+.headerButtons {
+  display: flex !important;
+  flex-direction: column;
+}
 
-  .textArea {
-    text-align: center;
-    margin-top: rem(70);
-    h3 {
-      font-size: 2.5rem;
-      margin: 0;
-      font-weight: 600;
-      font-family: "Montserrat", sans-serif;
-    }
-    p {
-      font-size: 1.5rem;
-    }
-  }
-  .touchless {
-    border-bottom: 1px solid #313131;
-    padding: 3px;
-    cursor: pointer;
-    transition: all 0.4 linear;
-    -webkit-transition: all 0.4 linear;
-    &:hover {
-      border-bottom-width: 2px;
-    }
-  }
+.btnMain {
+  display: flex !important;
+  padding: rem(240) 0 rem(20);
+}
+
+.btn {
+  background-color: rgba(23, 26, 32, 0.8);
+  color: #ffffff;
+  width: 256px;
+  height: rem(38);
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  border-radius: rem(20);
+}
+.btn:nth-child(2) {
+  background-color: #ffffff;
+  color: #171a20cc;
+  margin-left: rem(20);
 }
