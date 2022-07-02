@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Didact+Gothic&family=Inter&family=Lato:ital,wght@1,100&family=Poppins&family=Righteous&family=Work+Sans:ital,wght@1,200;1,900&display=swap");
+@import "../../styles/_rediractes";
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 0 rem(2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.teslaLogo {
+  margin-right: rem(35);
+  width: rem(130);
+  cursor: pointer;
+}
+.navbarNav,
+.menu {
+  display: flex;
+  gap: 5px;
+  .items {
+    font-family: "Poppins", sans-serif;
+    list-style-type: none;
+    font-size: rem(14);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    border-radius: 10px;
+    &:hover {
+      background-color: #b3b7bd48;
+    }
+  }
+}
+.items > .itemsLink {
+  color: #171a20;
+}
