@@ -12,9 +12,16 @@
   background: url("../../public/images/model-y.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  // display: grid;
-  // place-items: center;
+}
+.section:nth-child(4) {
+  background: url("../../public/images/model-s.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section:nth-child(5) {
+  background: url("../../public/images/model-x.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .textArea {
   text-align: center;
