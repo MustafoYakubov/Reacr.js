@@ -23,6 +23,21 @@
   background-size: cover;
   background-position: center;
 }
+.section:nth-child(6) {
+  background: url("../../public/images/solar-roof.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section:nth-child(7) {
+  background: url("../../public/images/solar-panel.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section:nth-child(8) {
+  background: url("../../public/images/accessories.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .textArea {
   text-align: center;
   margin-top: rem(70);
