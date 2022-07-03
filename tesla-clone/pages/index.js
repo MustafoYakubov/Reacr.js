@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header/Header";
+import ModelY from "../components/ModelY/ModelY";
 import Navbar from "../layout/Navbar/Navbar";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Header />
+      <ModelY />
     </>
   );
 }

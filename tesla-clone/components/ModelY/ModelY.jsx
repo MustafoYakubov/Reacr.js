@@ -1,9 +1,10 @@
-import styles from "./header.module.scss";
-const Header = () => {
+import React from "react";
+import styles from '../Header/header.module.scss';
+const ModelY = () => {
   return (
     <section className={styles.section}>
       <div className={styles.textArea}>
-        <h3>Model 3</h3>
+        <h3>Model Y</h3>
         <p>
           Order Online for
           <span className={styles.touchless}>Touchless delivery</span>
@@ -14,20 +15,13 @@ const Header = () => {
           <a href="#" className={styles.btn}>
             custom order
           </a>
-          <a href="" className={styles.btn}>
+          <a href="#" className={styles.btn}>
             exicting enventory
           </a>
         </div>
       </div>
-      <img
-        width={50}
-        height={40}
-        src="/images/down-arrow.svg"
-        alt="down icon"
-        className={styles.downIcon}
-      />
     </section>
   );
 };
 
-export default Header;
+export default ModelY;
