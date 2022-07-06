@@ -15,7 +15,7 @@ a {
 .fadeInUp {
   animation: fadeInUp 5s ease;
 }
-
+ 
 .fadeInUpForBtns {
   animation: fadeInUpForBtns 3s ease;
 }

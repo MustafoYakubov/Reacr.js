@@ -10,9 +10,7 @@ const Navbar = () => {
       return !prev;
     });
   };
-  // const closeMenu =()=> {
-
-  // }
+ 
   return (
     <>
       <nav className={styles.navbar}>
@@ -71,10 +69,8 @@ const Navbar = () => {
               Account
             </a>
           </li>
-          <li className={styles.items}>
-            <a className={styles.itemsLink} onClick={showSideBar}>
-              Menu
-            </a>
+          <li className={styles.items} onClick={showSideBar}>
+            Menu
           </li>
         </div>
         <div
