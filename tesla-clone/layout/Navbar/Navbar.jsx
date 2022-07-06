@@ -10,6 +10,9 @@ const Navbar = () => {
       return !prev;
     });
   };
+  // const closeMenu =()=> {
+
+  // }
   return (
     <>
       <nav className={styles.navbar}>
@@ -81,7 +84,10 @@ const Navbar = () => {
               : styles["sideMenu"]
           }
         >
-          <CloseIcon className={styles.closeIcon} onClick={showSideBar} />
+          <CloseIcon
+            className={styles.closeIcon}
+            onClick={() => setsideBar(false)}
+          />
           <ul className={styles.sideBarNav}>
             {SideBar.map((item, key) => {
               return (

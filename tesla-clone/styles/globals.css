@@ -13,11 +13,11 @@ a {
   text-decoration: none;
 }
 .fadeInUp {
-  animation: fadeInUp 3s ease;
+  animation: fadeInUp 5s ease;
 }
 
 .fadeInUpForBtns {
-  animation: fadeInUpForBtns 2s ease;
+  animation: fadeInUpForBtns 3s ease;
 }
 @keyframes fadeInUp {
   from {
