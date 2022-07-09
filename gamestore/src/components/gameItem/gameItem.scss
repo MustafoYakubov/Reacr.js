@@ -35,6 +35,9 @@
   bottom: 0.5rem;
 }
 @media screen and (max-width: $small) {
+  .gameItem {
+    width: 100% !important;
+  }
   .gameItem:not(:last-child) {
     margin-bottom: rem(30);
     margin-right: unset;
