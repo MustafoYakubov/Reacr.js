@@ -37,6 +37,11 @@
 @media screen and (max-width: $small) {
   .gameItem {
     width: 100% !important;
+    display: block;
+    margin: auto;
+  }
+  .gameGenre{
+    margin-top: 10px !important;
   }
   .gameItem:not(:last-child) {
     margin-bottom: rem(30);
