@@ -16,3 +16,10 @@
   top: rem(-6);
   cursor: pointer;
 }
+@media screen and (max-width: 500px) {
+  .itemsInCart {
+    width: 1rem !important;
+    height: 1rem !important;
+    font-size: 15px !important;
+  }
+}
