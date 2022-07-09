@@ -18,3 +18,16 @@
 .header_card_btn {
   justify-content: flex-end;
 }
+
+@media screen and(max-width:500px) {
+  .header_title {
+    margin-left: -29px;
+    width: rem(94) !important;
+    font-size: 19px;
+    height: rem(25);
+    
+  }
+  .logo {
+    margin-left: rem(-26);
+  }
+}

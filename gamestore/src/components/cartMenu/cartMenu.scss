@@ -6,7 +6,6 @@
   left: -300px;
   background-color: rgb(36, 37, 41);
   width: rem(400);
-  padding: rem(10) rem(20);
   z-index: 2;
   border-radius: rem(15);
 }
@@ -28,9 +27,15 @@
 
 @media screen and (max-width: $small) {
   .cartMenu {
-    width: rem(350) !important;
+    width: 16.5rem !important;
     top: 2rem !important;
-    left: rem(-287) !important; 
+    left: -12.5rem !important;
     font-size: 1rem;
+    padding: rem(5) rem(10);
+  }
+
+  .cartMenuArrange {
+    padding: 8px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
   }
 }

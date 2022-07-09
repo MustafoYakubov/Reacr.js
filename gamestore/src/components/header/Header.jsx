@@ -9,7 +9,7 @@ export const Header = () => {
         <Link to="/" className="header_title">
           Game Store
         </Link>
-        <GiGamepad size="40px" style={{ padding: "10px 10px" }} />
+        <GiGamepad className="logo" size="40px" style={{ padding: "10px 10px" }} />
         <div className="wrapper header_card_btn">
           <CartBlog />
         </div>

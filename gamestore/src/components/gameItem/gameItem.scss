@@ -3,7 +3,7 @@
   padding: rem(10) rem(20);
 }
 .gameItem {
-  width: rem(320);
+  width: rem(290);
   height: rem(300);
   background-color: rgb(36, 37, 41);
   border-radius: rem(15);
@@ -13,7 +13,7 @@
 }
 .gameItem:not(:last-child) {
   margin-bottom: rem(30);
-  margin-right: 4.125rem;
+  margin-right: 20px;
 }
 .gameItemTitle {
   font-size: rem(18);
@@ -23,7 +23,7 @@
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
-  width: auto + 15px;
+  width: auto;
 }
 .gameItemDescription {
   margin-top: 10px;
@@ -35,8 +35,20 @@
   bottom: 0.5rem;
 }
 @media screen and (max-width: $small) {
+  .gameItem {
+    display: block;
+    margin: auto;
+    height: 19.75rem;
+    margin-right: unset;
+  }
+  .gameGenre {
+    margin-top: 10px;
+  }
   .gameItem:not(:last-child) {
     margin-bottom: rem(30);
     margin-right: unset;
+  }
+  .gameBuy {
+    height: 1.5rem;
   }
 }
