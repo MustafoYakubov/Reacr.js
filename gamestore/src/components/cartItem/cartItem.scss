@@ -23,8 +23,11 @@
 @media screen and(max-width: $small) {
   .cartItem {
     font-size: 1rem;
-   .btn--medium {
-    font-size: 1rem;
-   }
+    span {
+      max-width: 218px !important;
+    }
+    .btn--medium {
+      font-size: 1rem;
+    }
   }
 }
