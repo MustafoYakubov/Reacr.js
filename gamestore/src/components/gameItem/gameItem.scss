@@ -40,11 +40,14 @@
     display: block;
     margin: auto;
   }
-  .gameGenre{
+  .gameGenre {
     margin-top: 10px !important;
   }
   .gameItem:not(:last-child) {
-    margin-bottom: rem(30);
+    margin-bottom: rem(30) !important;
     margin-right: unset;
+  }
+  .gameItemBtn {
+    bottom: rem(-18) !important;
   }
 }
