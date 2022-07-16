@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import styles from "./navbar.module.scss";
+import styles from "../../layout/Navbar/navbar.module.scss";
 import Link from "next/link";
-import { SideBar } from "./SideBar";
+import { SideBar } from "../../layout/Navbar/SideBar";
 import CloseIcon from "@mui/icons-material/Close";
-const Navbar = () => {
+const AccountNavbar = () => {
   const [sideBar, setsideBar] = useState(false);
   const showSideBar = () => {
     setsideBar((prev) => {
@@ -65,9 +65,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className={styles.items}>
-            <Link href="/teslaaccount" className={styles.itemsLink}>
-              Account
-            </Link>
+            <Link href="/teslaaccount">Account</Link>
           </li>
           <li className={styles.items} onClick={showSideBar}>
             Menu
@@ -100,4 +98,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default AccountNavbar;

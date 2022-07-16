@@ -11,18 +11,21 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
   const router = useRouter();
+  const isDisable = ["email", "password"];
   const { signInWithEmailAndPassword } = useAuth();
   const onSubmit = (e) => {
+    // e.preventDefault();
     setError(null);
-    signInWithEmailAndPassword(email, password)
-      .then(authUser => {
-        router.push("/");
-      })
-      .catch((error) => {
-        setError(error.massage);
-      });
+    try {
+      signInWithEmailAndPassword(email, password);
+      e.preventDefault();
+      router.push("/teslaaccount");
+    } catch (error) {
+      setError(error.message);
+    }
     e.preventDefault();
   };
+
   return (
     <>
       <Head>
@@ -33,11 +36,12 @@ const Login = () => {
       <div className={styles.login}>
         <form className={styles.form} onSubmit={onSubmit}>
           <h2 className={styles.signInText}>Sign In </h2>
-          {error && <h4 className={styles.errorText}>{error}</h4>}
+          {!error && <h4 className={styles.errorText}>{error}</h4>}
 
           <label htmlFor="email">Email Address</label>
 
           <input
+            required
             type="email"
             className={styles.input}
             value={email}
@@ -46,6 +50,7 @@ const Login = () => {
           />
           <label htmlFor="password">Password</label>
           <input
+            required
             type="password"
             className={styles.input}
             value={password}
@@ -53,7 +58,12 @@ const Login = () => {
             name="password"
           />
 
-          <button className={styles.loginBtn}>Login</button>
+          <button
+            disabled={isDisable ? false : true}
+            className={styles.loginBtn}
+          >
+            Login
+          </button>
         </form>
         <hr className={styles.line} />
         <div className={styles.signUpArea}>

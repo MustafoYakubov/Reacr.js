@@ -3,9 +3,7 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <AuthUserProvider>
-      <Component {...pageProps} />
-    </AuthUserProvider>
+    <AuthUserProvider><Component {...pageProps} /></AuthUserProvider>
   );
 }
 
