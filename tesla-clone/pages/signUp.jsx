@@ -5,34 +5,19 @@ import Link from "next/link";
 import Navbar from "../layout/Navbar/Navbar";
 import { useAuth } from "../context/AuthUserContext";
 import styles from "../styles/Auth.module.scss";
+
 const Register = () => {
   const ref = useRef(null);
-  function handleClick() {
-    console.log("on");
-  }
   const [email, setEmail] = useState("");
   const [passwordFirst, setPasswordFirst] = useState("");
   const [passwordSecond, setPasswordSecond] = useState("");
   const [error, setError] = useState(null);
   const router = useRouter();
-  const { createUserWithEmailAndPassword } = useAuth();
-  console.log(createUserWithEmailAndPassword);
+  const { createUserWithEmailAndPassword, loading } = useAuth();
   const onSubmit = (e) => {
-    // if (passwordFirst === passwordSecond) {
-    //   setError(null);
-    //   createUserWithEmailAndPassword(email, passwordFirst);
-    //   router.push("/teslaaccount");
-    //   // .catch((error) => {
-    //   //   setError(error.massage);
-    //   // });
-    // } else {
-    //   setError("Passwords  Don`t match");
-    //   e.preventDefault();
-    //   setError(error.massage);
-    // }
-    setError(null);
     if (passwordFirst === passwordSecond) {
       createUserWithEmailAndPassword(email, passwordFirst);
+      setLoading(false);
       try {
         e.preventDefault();
         router.push("/teslaaccount");
@@ -42,7 +27,7 @@ const Register = () => {
     } else setError("Passwords doesn`t match");
     e.preventDefault();
   };
- const isDisable = ["email", "passwordFirst", "passwordSecond "];
+  const isDisable = ["email", "passwordFirst", "passwordSecond "];
   return (
     <>
       <Head>
@@ -66,7 +51,6 @@ const Register = () => {
             name="email"
             ref={ref}
           />
-          <button onClick={handleClick}>click</button>
           <label htmlFor="passwordFirst">Password</label>
           <input
             type="password"

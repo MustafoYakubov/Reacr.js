@@ -12,10 +12,8 @@ const Login = () => {
   const [error, setError] = useState(null);
   const router = useRouter();
   const isDisable = ["email", "password"];
-  const { signInWithEmailAndPassword } = useAuth();
+  const { signInWithEmailAndPassword, loading } = useAuth();
   const onSubmit = (e) => {
-    // e.preventDefault();
-    setError(null);
     try {
       signInWithEmailAndPassword(email, password);
       e.preventDefault();
