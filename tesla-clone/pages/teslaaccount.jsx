@@ -8,11 +8,11 @@ import styles from "../styles/teslaaccount.module.scss";
 const teslaaccount = () => {
   const { loading, authUser, signOut } = useAuth();
   const router = useRouter();
-  // useEffect(() => {
-  //   if ((!loading, !authUser)) {
-  //     router.push("/signIn ");
-  //   }
-  // }, [loading, authUser]);
+  useEffect(() => {
+    if ((!loading, !authUser)) {
+      router.push("/signIn ");
+    }
+  }, [loading, authUser]);
 
   return (
     <>

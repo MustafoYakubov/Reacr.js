@@ -20,8 +20,10 @@ const Login = () => {
       router.push("/teslaaccount");
     } catch (error) {
       setError(error.message);
+      e.preventDefault();
+
+      console.log(error);
     }
-    e.preventDefault();
   };
 
   return (
@@ -34,7 +36,7 @@ const Login = () => {
       <div className={styles.login}>
         <form className={styles.form} onSubmit={onSubmit}>
           <h2 className={styles.signInText}>Sign In </h2>
-          {!error && <h4 className={styles.errorText}>{error}</h4>}
+          {error && <h4 className={styles.errorText}>{error}</h4>}
 
           <label htmlFor="email">Email Address</label>
 
