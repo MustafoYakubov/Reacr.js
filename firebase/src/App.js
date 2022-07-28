@@ -1,8 +1,8 @@
-import HomePage from "./pages/HomePage";
-import Register from "./pages/Register";
-import LoginPage from "./pages/LoginPage";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import HomePage from "pages/HomePage";
+import Register from "pages/LoginPage";
+import LoginPage from "pages/Register";
 function App() {
   return (
     <>
