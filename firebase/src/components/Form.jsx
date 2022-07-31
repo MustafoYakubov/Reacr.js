@@ -10,16 +10,18 @@ const Form = ({ handleClick, title }) => {
         type="email"
         placeholder="Email"
         onChange={(e) => setemail(e.target.value)}
+        required
       />
       <input
         value={password}
         type="password"
         placeholder="Password"
         onChange={(e) => setpassword(e.target.value)}
+        required
       />
       <button onClick={() => handleClick(email, password)}>{title}</button>
     </>
-  ); 
+  );
 };
 
 export default Form;
