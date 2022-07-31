@@ -7,9 +7,10 @@ const SignUp = () => {
   const dispatch = useDispatch();
   const handleSignUp = (email, password) => {
     const auth = getAuth();
-    console.log(auth);
     createUserWithEmailAndPassword(auth, email, password)
-      .then(console.log)
+      .then(user => {
+        console.log();
+      })
       .catch(console.error);
   };
   return ( 
