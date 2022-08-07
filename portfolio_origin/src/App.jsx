@@ -6,7 +6,7 @@ import Container from "./layout/Container/Container";
 import Footer from "./layout/footer/Footer";
 import Navbar from "./layout/navbar/Navbar";
 
-function App() {
+function App() {  
   const scrollToPass = () => {
     window.scrollBy(0, 400);
   };

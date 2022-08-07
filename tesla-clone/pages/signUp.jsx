@@ -1,81 +1,74 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
+import { useAuth } from "../context/AuthUserContext";
+import Navbar from "../layout/Navbar/Navbar";
 import Head from "next/head";
 import Link from "next/link";
-import Navbar from "../layout/Navbar/Navbar";
-import { useAuth } from "../context/AuthUserContext";
 import styles from "../styles/Auth.module.scss";
 
 const Register = () => {
-  const ref = useRef(null);
-  const [email, setEmail] = useState("");
-  const [passwordFirst, setPasswordFirst] = useState("");
-  const [passwordSecond, setPasswordSecond] = useState("");
-  const [error, setError] = useState(null);
+  const [email, setEmail] = useState(""); //email uchun state
+  const [passwordOne, setPasswordOne] = useState(""); // birinchi parol inputi
+  const [passwordTwo, setPasswordTwo] = useState(""); // ikkinchi parol inputi
   const router = useRouter();
-  const { createUserWithEmailAndPassword, loading } = useAuth();
-  const onSubmit = (e) => {
-    if (passwordFirst === passwordSecond) {
-      createUserWithEmailAndPassword(email, passwordFirst);
-      setLoading(false);
-      try {
-        e.preventDefault();
-        router.push("/teslaaccount");
-      } catch (error) {
-        setError(error.massage);
-      }
-    } else setError("Passwords doesn`t match");
-    e.preventDefault();
+  const [error, setError] = useState(null);
+
+  const { createUserWithEmailAndPassword } = useAuth();
+
+  const onSubmit = (event) => {
+    setError(null);
+    if (passwordOne === passwordTwo)
+      createUserWithEmailAndPassword(email, passwordOne)
+        .then((authUser) => {
+          router.push("/teslaaccount"); // profilga yonaltiramiz
+        })
+        .catch((error) => {
+          setError(error.message);
+        });
+    else setError("Passwords don't match!");
+    event.preventDefault();
   };
-  const isDisable = ["email", "passwordFirst", "passwordSecond "];
+
   return (
     <>
       <Head>
         <title>Sign Up</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
       </Head>
       <Navbar />
       <div className={styles.login}>
         <form className={styles.form} onSubmit={onSubmit}>
-          <h2 className={styles.signInText}>Sign Up </h2>
+          <h2 className={styles.signInText}>Sign Up</h2>
           {error && <h4 className={styles.errorText}>{error}</h4>}
 
           <label htmlFor="email">Email Address</label>
-
           <input
-            required
             type="email"
-            className={styles.input}
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(event) => setEmail(event.target.value)}
             name="email"
-            ref={ref}
+            className={styles.input}
           />
-          <label htmlFor="passwordFirst">Password</label>
+          <label htmlFor="passwordOne">Password</label>
           <input
             type="password"
+            value={passwordOne}
+            onChange={(event) => setPasswordOne(event.target.value)}
+            name="passwordOne"
             className={styles.input}
-            value={passwordFirst}
-            onChange={(e) => setPasswordFirst(e.target.value)}
-            name="passwordFirst"
-            required
           />
-          <label htmlFor="passwordSecond"> Confirm Password</label>
+          <label htmlFor="passwordTwo">Confirm Password</label>
           <input
-            required
             type="password"
+            value={passwordTwo}
+            onChange={(event) => setPasswordTwo(event.target.value)}
+            name="passwordTwo"
             className={styles.input}
-            value={passwordSecond}
-            onChange={(e) => setPasswordSecond(e.target.value)}
-            name="passwordSecond"
           />
-          <button
-            disabled={isDisable ? true : false}
-            className={styles.loginBtn}
-            onClick={handleClick}
-          >
-            Create Account
-          </button>
+          <button className={styles.loginBtn}>Create Account</button>
         </form>
         <hr className={styles.line} />
         <div className={styles.signUpArea}>
@@ -84,7 +77,7 @@ const Register = () => {
               pathname: "/signIn",
             }}
           >
-            <button className={styles.createAccount}> Sign In</button>
+            <button className={styles.createAccount}>Sign In</button>
           </Link>
         </div>
       </div>
