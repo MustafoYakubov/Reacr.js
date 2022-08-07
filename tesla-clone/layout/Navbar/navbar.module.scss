@@ -87,3 +87,21 @@
 .sideBarNav {
   padding-left: unset;
 }
+
+@media screen and (max-width: 330px) {
+  .navbarNav {
+    display: none;
+  }
+  .navbar {
+    align-items: baseline;
+    padding: 10px 0 0 0;
+    justify-content: space-around;
+  }
+  .teslaLogo {
+    width: rem(90);
+    margin-right: unset;
+  }
+  .navbar_items {
+    font-size: 13px;
+  }
+}
