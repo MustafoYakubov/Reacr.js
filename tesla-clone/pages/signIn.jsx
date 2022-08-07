@@ -7,8 +7,8 @@ import Link from "next/link";
 import styles from "../styles/Auth.module.scss";
 
 export default function Login() {
-  const [email, setEmail] = useState(""); //email uchun state
-  const [password, setPassword] = useState(""); // birinchi parol inputi
+  const [email, setEmail] = useState(""); 
+  const [password, setPassword] = useState(""); 
   const router = useRouter();
   const [error, setError] = useState(null);
 
@@ -18,7 +18,7 @@ export default function Login() {
     setError(null);
     signInWithEmailAndPassword(email, password)
       .then((authUser) => {
-        router.push("/teslaaccount"); // profil componentini manzilini route
+        router.push("/teslaaccount"); 
       })
       .catch((error) => {
         setError(error.message);

@@ -1,18 +1,18 @@
-import firebase from 'firebase/app'
-import 'firebase/auth'
+import firebase from "firebase/app";
+import "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCda1plKdgrm4GnF0I6DIcXTQvMPAlt6Qs",
-    authDomain: "teslaclone-fce24.firebaseapp.com",
-    projectId: "teslaclone-fce24",
-    storageBucket: "teslaclone-fce24.appspot.com",
-    messagingSenderId: "17066301177",
-    appId: "1:17066301177:web:8c2974d47d22eafe573428",
-    measurementId: "G-8M5G8YECVS"
+  apiKey: "AIzaSyBMcl1PXnPeYnb6EN6ixV91b8-rbAMXon8",
+  authDomain: "tesla-clone-e96a8.firebaseapp.com",
+  projectId: "tesla-clone-e96a8",
+  storageBucket: "tesla-clone-e96a8.appspot.com",
+  messagingSenderId: "567748972910",
+  appId: "1:567748972910:web:42aebc310219f6dca3317f",
+  measurementId: "G-PZ9347E0FN",
 };
 
-if(!firebase.apps.length){
-    firebase.initializeApp(firebaseConfig)
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
 }
 
 export default firebase;
