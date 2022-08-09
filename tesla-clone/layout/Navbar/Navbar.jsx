@@ -70,7 +70,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.items} onClick={showSideBar}>
-            Menu
+            <a href="#"> Menu</a>
           </li>
         </div>
         <div

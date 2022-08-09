@@ -92,16 +92,15 @@
   .navbarNav {
     display: none;
   }
-  .navbar {
-    align-items: baseline;
-    padding: 10px 0 0 0;
-    justify-content: space-around;
-  }
   .teslaLogo {
-    width: rem(90);
+    width: rem(80);
     margin-right: unset;
   }
-  .navbar_items {
+  .navbar {
+    padding: 10px 0 0;
+    justify-content: space-around;
+  }
+  .items a {
     font-size: 13px;
   }
 }

@@ -14,11 +14,11 @@ const Header = () => {
       </Reveal>
       <Reveal effect="fadeInUpForBtns">
         <div className={styles.headerButtons}>
-          <div style={{ display: "flex" }} className={styles.btnMain}>
+          <div className={styles.btnMain}>
             <a href="#" className={styles.btn}>
               custom order
             </a>
-            <a href="" className={styles.btn}>
+            <a href="#" className={styles.btn}>
               exicting enventory
             </a>
           </div>
