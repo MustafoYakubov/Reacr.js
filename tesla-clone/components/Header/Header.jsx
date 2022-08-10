@@ -1,6 +1,7 @@
 import styles from "./header.module.scss";
 import Reveal from "react-reveal/Reveal";
 import Image from "next/image";
+import Link from "next/link";
 const Header = () => {
   return (
     <section className={styles.section}>
@@ -16,12 +17,12 @@ const Header = () => {
       <Reveal effect="fadeInUpForBtns">
         <div className={styles.headerButtons}>
           <div className={styles.btnMain}>
-            <a href="#" className={styles.btn}>
+            <Link href="/" className={styles.btn}>
               custom order
-            </a>
-            <a href="#" className={styles.btn}>
+            </Link>
+            <Link href="/" className={styles.btn}>
               exicting enventory
-            </a>
+            </Link>
           </div>
         </div>
       </Reveal>

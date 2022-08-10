@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../Header/header.module.scss";
 import Reveal from "react-reveal/Reveal";
+import  Link from "next/link";
 
 const SolarPanel = () => {
   return (
@@ -14,10 +15,10 @@ const SolarPanel = () => {
       <Reveal effect="fadeInUpForBtns">
         <div className={styles.headerButtons}>
           <div style={{ display: "flex" }} className={styles.btnMain}>
-            <a href="#" className={styles.btn}>
+            <Link href="/" className={styles.btn}>
               custom order
-            </a>
-            <a href="#" className={styles.btn}>
+            </Link>
+            <a href="/" className={styles.btn}>
               exicting enventory
             </a>
           </div>

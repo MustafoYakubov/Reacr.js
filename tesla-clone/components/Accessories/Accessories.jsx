@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../Header/header.module.scss";
 import Reveal from "react-reveal/Reveal";
+import Link from "next/link";
 const Accessories = () => {
   return (
     <section className={styles.section}>
@@ -11,10 +12,10 @@ const Accessories = () => {
       </Reveal>
       <Reveal effect="fadeInUpForBtns">
         <div className={styles.headerButtons}>
-          <div style={{ display: "flex" }}  className={styles.btnMain}>
-            <a href="#" id='access' className={styles.btn}>
+          <div style={{ display: "flex" }} className={styles.btnMain}>
+            <Link href="/" id="access" className={styles.btn}>
               Shop Now
-            </a>
+            </Link>
           </div>
         </div>
       </Reveal>

@@ -6,6 +6,7 @@ import styles from "../styles/teslaaccount.module.scss";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import AccountNavbar from "../components/AccountNavbar/AccountNavbar";
 import Image from "next/image";
+import Link from "next/link";
 
 const LoggedIn = () => {
   const { authUser, loading, signOut } = useAuth();
@@ -48,12 +49,12 @@ const LoggedIn = () => {
             />
             <h1>Model X</h1>
             <div className={styles.btnMain}>
-              <a href="#" className={styles.btn}>
+              <Link href="/" className={styles.btn}>
                 custom order
-              </a>
-              <a href="#" className={styles.btn}>
+              </Link>
+              <Link href="/" className={styles.btn}>
                 existing inventory
-              </a>
+              </Link>
             </div>
           </div>
         </>
