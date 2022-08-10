@@ -110,8 +110,17 @@
   }
 }
 @media screen and (max-width: 330px) {
-  // .btnMain {
-  //   display: inline-block !important;
-  //   padding: rem(100) 0.9rem 0;
-  // }
+  .section {
+    display: inline-block !important;
+    padding: rem(100) 0.9rem 0 !important;
+  }
+  .btn {
+    background-color: rgba(23, 26, 32, 0.2);
+    opacity: unset;
+  }
+  .btnMain {
+    display: block !important;
+    padding: unset;
+    opacity: unset;
+  }
 }

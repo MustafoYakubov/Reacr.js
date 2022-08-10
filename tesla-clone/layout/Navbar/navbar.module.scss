@@ -19,6 +19,8 @@
   transition: 950ms;
   -webkit-transition: 950ms;
   box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  z-index: 111 !important;
+  position: absolute;
 }
 .closeIcon {
   cursor: pointer;
@@ -102,5 +104,11 @@
   }
   .items a {
     font-size: 13px;
+  }
+  .sideMenu {
+    width: auto;
+    height: 100vh;
+    padding: 1rem;
+    opacity: 15;
   }
 }
