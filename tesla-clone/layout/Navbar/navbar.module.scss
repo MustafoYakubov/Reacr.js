@@ -112,3 +112,47 @@
     padding: 1rem;
   }
 }
+@media screen and (max-width: 370px) {
+ 
+  .navbarNav {
+    display: none;
+  }
+  .teslaLogo {
+    width: rem(100);
+    margin-right: unset;
+  }
+  .navbar {
+    padding: 10px 0 0;
+    justify-content: space-around;
+  }
+  .items a {
+    font-size: 12px;
+  }
+  .sideMenu {
+    width: auto;
+    height: 100vh;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 470px) {
+ 
+  .navbarNav {
+    display: none;
+  }
+  .teslaLogo {
+    width: rem(100);
+    margin-right: unset;
+  }
+  .navbar {
+    padding: 10px 0 0;
+    justify-content: space-around;
+  }
+  .items a {
+    font-size: 12px;
+  }
+  .sideMenu {
+    width: auto;
+    height: 100vh;
+    padding: 1rem;
+  }
+}
