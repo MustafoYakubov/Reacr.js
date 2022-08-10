@@ -162,7 +162,7 @@
   }
   .btnMain {
     display: inline-block !important;
-    padding: 13rem 22.5px 0; 
+    padding: 13rem 22.5px 0;
     opacity: unset;
   }
   .btn {
@@ -199,7 +199,7 @@
 @media screen and (max-width: 470px) {
   .section {
     display: inline-block !important;
-    padding: 47px;
+    // padding: 47px;
   }
   .btn {
     background-color: rgba(23, 26, 32, 0.8);
@@ -207,11 +207,11 @@
   }
   .btnMain {
     display: inline-block !important;
-    padding: 22rem 22.5px 0; 
+    padding: 23rem 22.5px 0;
     opacity: unset;
   }
   .btn {
-    width: rem(220) !important;
+    width: 19rem !important;
     height: rem(35) !important;
     font-size: 12px;
   }
@@ -224,8 +224,8 @@
     margin-top: 4rem;
   }
   .textArea p {
-    font-size: 18px;
-    width: 86%;
+    font-size: 19px;
+    width: 100%;
     margin: auto;
   }
   .textArea h3 {

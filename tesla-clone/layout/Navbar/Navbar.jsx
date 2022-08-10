@@ -27,42 +27,42 @@ const Navbar = () => {
         {/* NAV LINK */}
         <ul className={styles.navbarNav}>
           <li className={styles.items}>
-            <a href="/" className={styles.itemsLink}>
+            <Link href="/" className={styles.itemsLink}>
               Model S
-            </a>
+            </Link>
           </li>
           <li className={styles.items}>
-            <a href="/" className={styles.itemsLink}>
+            <Link href="/" className={styles.itemsLink}>
               Model 3
-            </a>
+            </Link>
           </li>
           <li className={styles.items}>
-            <a href="/" className={styles.itemsLink}>
+            <Link href="/" className={styles.itemsLink}>
               Model X
-            </a>
+            </Link>
           </li>
           <li className={styles.items}>
-            <a href="/" className={styles.itemsLink}>
+            <Link href="/" className={styles.itemsLink}>
               Model Y
-            </a>
+            </Link>
           </li>
           <li className={styles.items}>
-            <a href="/" className={styles.itemsLink}>
+            <Link href="/" className={styles.itemsLink}>
               Solar Roof
-            </a>
+            </Link>
           </li>
           <li className={styles.items}>
-            <a href="/" className={styles.itemsLink}>
+            <Link href="/" className={styles.itemsLink}>
               Solar Panels
-            </a>
+            </Link>
           </li>
         </ul>
         {/* NAV MENU */}
         <div className={styles.menu}>
           <li className={styles.items}>
-            <a href="/" className={styles.itemsLink}>
+            <Link href="/" className={styles.itemsLink}>
               Shop
-            </a>
+            </Link>
           </li>
           <li className={styles.items}>
             <Link href="/teslaaccount" className={styles.itemsLink}>
@@ -70,7 +70,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.items} onClick={showSideBar}>
-            <a href="#"> Menu</a>
+            <Link href="#"> Menu</Link>
           </li>
         </div>
         <div
