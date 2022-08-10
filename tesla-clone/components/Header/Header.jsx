@@ -1,5 +1,6 @@
 import styles from "./header.module.scss";
 import Reveal from "react-reveal/Reveal";
+import Image from "next/image";
 const Header = () => {
   return (
     <section className={styles.section}>
@@ -24,7 +25,7 @@ const Header = () => {
           </div>
         </div>
       </Reveal>
-      <img
+      <Image
         width={50}
         height={40}
         src="/images/down-arrow.svg"

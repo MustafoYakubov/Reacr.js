@@ -3,6 +3,7 @@ import styles from "../../layout/Navbar/navbar.module.scss";
 import Link from "next/link";
 import { SideBar } from "../../layout/Navbar/SideBar";
 import CloseIcon from "@mui/icons-material/Close";
+import Image from "next/image";
 const AccountNavbar = () => {
   const [sideBar, setsideBar] = useState(false);
   const showSideBar = () => {
@@ -15,14 +16,14 @@ const AccountNavbar = () => {
     <>
       <nav className={styles.navbar}>
         <Link href="/">
-          <a>
-            <img
+          <Link>
+            <Image
               className={styles.teslaLogo}
               src="/images/logo.svg"
               alt="logo"
               loading="lazy"
             />
-          </a>
+          </Link>
         </Link>
         {/* NAV LINK */}
         <ul className={styles.navbarNav}>

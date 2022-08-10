@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./navbar.module.scss";
 import Link from "next/link";
+import Image from "next/image";
 import { SideBar } from "./SideBar";
 import CloseIcon from "@mui/icons-material/Close";
 const Navbar = () => {
@@ -15,14 +16,14 @@ const Navbar = () => {
     <>
       <nav className={styles.navbar}>
         <Link href="/">
-          <a>
-            <img
+          <Link>
+            <Image
               className={styles.teslaLogo}
               src="/images/logo.svg"
               alt="logo"
               loading="lazy"
             />
-          </a>
+          </Link>
         </Link>
         {/* NAV LINK */}
         <ul className={styles.navbarNav}>
@@ -70,7 +71,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.items} onClick={showSideBar}>
-            <Link href="#"> Menu</Link>
+            <Link href="/"> Menu</Link>
           </li>
         </div>
         <div

@@ -5,6 +5,7 @@ import Head from "next/head";
 import styles from "../styles/teslaaccount.module.scss";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import AccountNavbar from "../components/AccountNavbar/AccountNavbar";
+import Image from "next/image";
 
 const LoggedIn = () => {
   const { authUser, loading, signOut } = useAuth();
@@ -40,7 +41,7 @@ const LoggedIn = () => {
             </button>
           </div>
           <div className={styles.carPurchase}>
-            <img
+            <Image
               src="/images/modelX.png"
               alt="Model X purchase"
               className={styles.modelX}
