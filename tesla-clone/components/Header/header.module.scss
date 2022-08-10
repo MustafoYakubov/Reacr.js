@@ -112,15 +112,42 @@
 @media screen and (max-width: 330px) {
   .section {
     display: inline-block !important;
-    padding: rem(100) 0.9rem 0 !important;
+    padding: 0;
   }
   .btn {
-    background-color: rgba(23, 26, 32, 0.2);
+    background-color: rgba(23, 26, 32, 0.8);
     opacity: unset;
   }
   .btnMain {
-    display: block !important;
-    padding: unset;
+    display: inline-block !important;
+    padding: 10.75rem 22.5px 0;
     opacity: unset;
+  }
+  .btn {
+    width: rem(220) !important;
+    height: rem(35) !important;
+    font-size: 12px;
+  }
+  .btnMain {
+    .btn:nth-child(2) {
+      margin: 5px 0 0;
+    }
+  }
+  .textArea {
+    margin-top: 2rem;
+  }
+  .textArea p {
+    font-size: 18px;
+    width: 86%;
+    margin: auto;
+  }
+  .textArea h3 {
+    width: 100%;
+    margin: auto;
+    font-size: 1.7 rem;
+  }
+  .downIcon {
+    display: block;
+    margin: auto;
   }
 }

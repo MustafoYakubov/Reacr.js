@@ -24,7 +24,6 @@ const Header = () => {
           </div>
         </div>
       </Reveal>
-
       <img
         width={50}
         height={40}
