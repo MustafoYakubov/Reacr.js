@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
-import { Link } from "next/link";
+import Link from "next/link";
 import Head from "next/head";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import AccountNavbar from "../components/AccountNavbar/AccountNavbar";
@@ -45,11 +45,11 @@ const teslaaccount = () => {
             <h1>Model X</h1>
             <div className={styles.headerButtons}>
               <div className={styles.btnMain}>
-                <Link href="#" className={styles.btn}>
-                  custom order
+                <Link href="/">
+                  <a className={styles.btn}>Custom Order</a>
                 </Link>
-                <Link href="#" className={styles.btn}>
-                  <a>exicting enventory</a>
+                <Link href="/">
+                  <a className={styles.btn}>exicting enventory</a>
                 </Link>
               </div>
             </div>

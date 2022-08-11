@@ -3,7 +3,7 @@ import styles from "../../layout/Navbar/navbar.module.scss";
 import Link from "next/link";
 import { SideBar } from "../../layout/Navbar/SideBar";
 import CloseIcon from "@mui/icons-material/Close";
-import Image from "next/image";
+// import Image from "next/image";
 const AccountNavbar = () => {
   const [sideBar, setsideBar] = useState(false);
   const showSideBar = () => {
@@ -16,57 +16,59 @@ const AccountNavbar = () => {
     <>
       <nav className={styles.navbar}>
         <Link href="/">
-          <Link>
-            <Image
+          <a>
+            <img
               className={styles.teslaLogo}
               src="/images/logo.svg"
               alt="logo"
               loading="lazy"
             />
-          </Link>
+          </a>
         </Link>
         {/* NAV LINK */}
         <ul className={styles.navbarNav}>
           <li className={styles.items}>
-            <Link href="/" className={styles.itemsLink}>
-              Model S
+            <Link href="/">
+              <a className={styles.itemsLink}>Model S</a>
             </Link>
           </li>
           <li className={styles.items}>
-            <Link href="/" className={styles.itemsLink}>
-              Model 3
+            <Link href="/">
+              <a className={styles.itemsLink}>Model 3</a>
             </Link>
           </li>
           <li className={styles.items}>
-            <Link href="/" className={styles.itemsLink}>
-              Model X
+            <Link href="/">
+              <a className={styles.itemsLink}>Model X</a>
             </Link>
           </li>
           <li className={styles.items}>
-            <Link href="/" className={styles.itemsLink}>
-              Model Y
+            <Link href="/">
+              <a className={styles.itemsLink}>Model Y</a>
             </Link>
           </li>
           <li className={styles.items}>
-            <Link href="/" className={styles.itemsLink}>
-              Solar Roof
+            <Link href="/">
+              <a className={styles.itemsLink}>Solar Roof</a>
             </Link>
           </li>
           <li className={styles.items}>
-            <Link href="/" className={styles.itemsLink}>
-              Solar Panels
+            <Link href="/">
+              <a className={styles.itemsLink}>Solar Panels</a>
             </Link>
           </li>
         </ul>
         {/* NAV MENU */}
         <div className={styles.menu}>
           <li className={styles.items}>
-            <Link href="/" className={styles.itemsLink}>
-              Shop
+            <Link href="/">
+              <a className={styles.itemsLink}>Shop</a>
             </Link>
           </li>
           <li className={styles.items}>
-            <Link href="/teslaaccount">Account</Link>
+            <Link href="/">
+              <a className={styles.itemsLink}>Account</a>
+            </Link>
           </li>
           <li className={styles.items} onClick={showSideBar}>
             Menu
