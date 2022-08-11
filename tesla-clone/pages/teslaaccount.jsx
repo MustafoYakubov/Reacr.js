@@ -1,63 +1,57 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
-import { useAuth } from "../context/AuthUserContext";
+import { Link } from "next/link";
 import Head from "next/head";
-import styles from "../styles/teslaaccount.module.scss";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import AccountNavbar from "../components/AccountNavbar/AccountNavbar";
-import Image from "next/image";
-import Link from "next/link";
-
-const LoggedIn = () => {
+import { useAuth } from "../context/AuthUserContext";
+import styles from "../styles/teslaaccount.module.scss";
+const teslaaccount = () => {
   const { authUser, loading, signOut } = useAuth();
   const router = useRouter();
 
   useEffect(() => {
-    function navigateToAccount() {
-      if (!loading && !authUser) router.push("/signIn");
-    }
-    navigateToAccount();
+    if (!loading && !authUser) router.push("/signIn");
   }, [authUser, loading]);
 
   return (
     <>
       {loading ? (
-        <p>loading...</p>
+        <p>Loading ... </p>
       ) : (
         <>
           <AccountNavbar />
+
           <Head>
-            <title>Your Account</title>
+            <title>Account</title>
             <meta
               name="viewport"
               content="width=device-width, initial-scale=1.0"
-            ></meta>
+            />
           </Head>
-          <div className={styles.logInfo}>
-            {authUser && (
-              <p>
-                Youre logged as <b>{authUser.email}s</b>email
-              </p>
-            )}
-            <button className={styles.logOutBtn} onClick={signOut}>
+          <div className={styles.logoInfo}>
+            {authUser && <p>You`re logged as {authUser.email}</p>}
+            <button onClick={signOut} className={styles.logOutBtn}>
+              <p>Sign Out</p>
               <ExitToAppIcon className={styles.btnIcon} />
-              Sign Out
             </button>
           </div>
           <div className={styles.carPurchase}>
-            <Image
-              src="/images/modelX.png"
-              alt="Model X purchase"
+            <img
               className={styles.modelX}
+              src="/images/modelX.png"
+              alt="modelx"
             />
             <h1>Model X</h1>
-            <div className={styles.btnMain}>
-              <Link href="/" className={styles.btn}>
-                <a>custom order</a>
-              </Link>
-              <Link href="/" className={styles.btn}>
-                <a>existing inventory</a>
-              </Link>
+            <div className={styles.headerButtons}>
+              <div className={styles.btnMain}>
+                <Link href="#" className={styles.btn}>
+                  custom order
+                </Link>
+                <Link href="#" className={styles.btn}>
+                  <a>exicting enventory</a>
+                </Link>
+              </div>
             </div>
           </div>
         </>
@@ -66,4 +60,4 @@ const LoggedIn = () => {
   );
 };
 
-export default LoggedIn;
+export default teslaaccount;
