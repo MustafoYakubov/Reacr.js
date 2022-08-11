@@ -16,45 +16,45 @@ const Navbar = () => {
     <>
       <nav className={styles.navbar}>
         <Link href="/">
-          <Link>
-            <Image
+          <a>
+            <img
               className={styles.teslaLogo}
               src="/images/logo.svg"
               alt="logo"
               loading="lazy"
             />
-          </Link>
+          </a>
         </Link>
         {/* NAV LINK */}
         <ul className={styles.navbarNav}>
           <li className={styles.items}>
             <Link href="/" className={styles.itemsLink}>
-              Model S
+              <a> Model S</a>
             </Link>
           </li>
           <li className={styles.items}>
             <Link href="/" className={styles.itemsLink}>
-              Model 3
+              <a> Model 3</a>
             </Link>
           </li>
           <li className={styles.items}>
             <Link href="/" className={styles.itemsLink}>
-              Model X
+              <a> Model X</a>
             </Link>
           </li>
           <li className={styles.items}>
             <Link href="/" className={styles.itemsLink}>
-              Model Y
+              <a> Model Y</a>
             </Link>
           </li>
           <li className={styles.items}>
             <Link href="/" className={styles.itemsLink}>
-              Solar Roof
+              <a> Solar Roof</a>
             </Link>
           </li>
           <li className={styles.items}>
             <Link href="/" className={styles.itemsLink}>
-              Solar Panels
+              <a> Solar Panels</a>
             </Link>
           </li>
         </ul>
@@ -62,16 +62,18 @@ const Navbar = () => {
         <div className={styles.menu}>
           <li className={styles.items}>
             <Link href="/" className={styles.itemsLink}>
-              Shop
+              <a>Shop</a>
             </Link>
           </li>
           <li className={styles.items}>
             <Link href="/teslaaccount" className={styles.itemsLink}>
-              Account
+              <a>Account</a>
             </Link>
           </li>
           <li className={styles.items} onClick={showSideBar}>
-            <Link href="/"> Menu</Link>
+            <Link href="/">
+              <a>Menu</a>
+            </Link>
           </li>
         </div>
         <div

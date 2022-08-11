@@ -13,7 +13,10 @@ const LoggedIn = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if (!loading && !authUser) router.push("/signIn");
+    function navigateToAccount() {
+      if (!loading && !authUser) router.push("/signIn");
+    }
+    navigateToAccount();
   }, [authUser, loading]);
 
   return (
@@ -50,10 +53,10 @@ const LoggedIn = () => {
             <h1>Model X</h1>
             <div className={styles.btnMain}>
               <Link href="/" className={styles.btn}>
-                custom order
+                <a>custom order</a>
               </Link>
               <Link href="/" className={styles.btn}>
-                existing inventory
+                <a>existing inventory</a>
               </Link>
             </div>
           </div>

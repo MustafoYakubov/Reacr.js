@@ -18,10 +18,10 @@ const Header = () => {
         <div className={styles.headerButtons}>
           <div className={styles.btnMain}>
             <Link href="/" className={styles.btn}>
-              custom order
+              <a className={styles.btn}> Custom Order </a>
             </Link>
-            <Link href="/" className={styles.btn}>
-              exicting enventory
+            <Link href="/">
+              <a className={styles.btn}> Exicting enventory</a>
             </Link>
           </div>
         </div>
