@@ -18,9 +18,9 @@ const SolarPanel = () => {
             <Link href="/" className={styles.btn}>
               custom order
             </Link>
-            <a href="/" className={styles.btn}>
+            <Link href="/" className={styles.btn}>
               exicting enventory
-            </a>
+            </Link>
           </div>
         </div>
       </Reveal>
