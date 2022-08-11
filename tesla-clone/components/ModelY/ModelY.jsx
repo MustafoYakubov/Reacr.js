@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../Header/header.module.scss";
 import Reveal from "react-reveal/Reveal";
-import  Link  from "next/link";
+import Link from "next/link";
 const ModelY = () => {
   return (
     <section className={styles.section}>
@@ -18,10 +18,10 @@ const ModelY = () => {
         <div className={styles.headerButtons}>
           <div style={{ display: "flex" }} className={styles.btnMain}>
             <Link href="/" className={styles.btn}>
-              custom order
+              <a className={styles.btn}> Custom Order </a>
             </Link>
-            <Link href="/" className={styles.btn}>
-              exicting enventory
+            <Link href="/">
+              <a className={styles.btn}> Exicting enventory</a>
             </Link>
           </div>
         </div>

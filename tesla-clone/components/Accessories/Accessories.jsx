@@ -13,8 +13,10 @@ const Accessories = () => {
       <Reveal effect="fadeInUpForBtns">
         <div className={styles.headerButtons}>
           <div style={{ display: "flex" }} className={styles.btnMain}>
-            <Link href="/" id="access" className={styles.btn}>
-              Shop Now
+            <Link href="/">
+              <a id="access" className={styles.btn}>
+                Shop now
+              </a>
             </Link>
           </div>
         </div>
