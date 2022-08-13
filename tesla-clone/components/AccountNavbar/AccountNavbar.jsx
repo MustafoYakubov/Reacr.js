@@ -3,7 +3,6 @@ import styles from "../../layout/Navbar/navbar.module.scss";
 import Link from "next/link";
 import { SideBar } from "../../layout/Navbar/SideBar";
 import CloseIcon from "@mui/icons-material/Close";
-// import Image from "next/image";
 const AccountNavbar = () => {
   const [sideBar, setsideBar] = useState(false);
   const showSideBar = () => {
@@ -12,7 +11,7 @@ const AccountNavbar = () => {
     });
   };
 
-  return (  
+  return (
     <>
       <nav className={styles.navbar}>
         <Link href="/">
@@ -66,7 +65,7 @@ const AccountNavbar = () => {
             </Link>
           </li>
           <li className={styles.items}>
-            <a className={styles.itemsLink}>Account</a>
+            <button className={styles.itemsLink}>Account</button>
           </li>
           <li className={styles.items} onClick={showSideBar}>
             Menu
