@@ -12,9 +12,7 @@ const Register = () => {
   const [passwordTwo, setPasswordTwo] = useState("");
   const router = useRouter();
   const [error, setError] = useState(null);
-
   const { createUserWithEmailAndPassword } = UseAuth();
-
   const onSubmit = (event) => {
     setError(null);
     if (passwordOne === passwordTwo)

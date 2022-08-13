@@ -6,7 +6,7 @@ const formatAuthUser = (user) => ({
   email: user.email,
 });
 
-export default function useFirebaseAuth() {
+export function useFirebaseAuth() {
   const [authUser, setAuthUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -53,3 +53,4 @@ export default function useFirebaseAuth() {
     signOut,
   };
 }
+  
