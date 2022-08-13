@@ -64,7 +64,9 @@ const AccountNavbar = () => {
             </Link>
           </li>
           <li className={styles.items}>
-            <button className={styles.itemsLink}>Account</button>
+            <Link href=" ">
+              <a className={styles.itemsLink}>Account</a>
+            </Link>
           </li>
           <li className={styles.items} onClick={showSideBar}>
             Menu
