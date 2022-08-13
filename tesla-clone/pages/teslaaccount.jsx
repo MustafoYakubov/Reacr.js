@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
-import { useRouter } from "next/router";
+import useRouter from "next/router";
 import Link from "next/link";
 import Head from "next/head";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import AccountNavbar from "../components/AccountNavbar/AccountNavbar";
-import { useAuth } from "../context/AuthUserContext";
+import UseAuth from "../context/AuthUserContext";
 import styles from "../styles/teslaaccount.module.scss";
 const teslaaccount = () => {
-  const { authUser, loading, signOut } = useAuth();
+  const { authUser, loading, signOut } = UseAuth();
   const router = useRouter();
 
   useEffect(() => {

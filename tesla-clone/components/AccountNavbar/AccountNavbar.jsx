@@ -20,7 +20,6 @@ const AccountNavbar = () => {
               className={styles.teslaLogo}
               src="/images/logo.svg"
               alt="logo"
-              loading="lazy"
             />
           </a>
         </Link>
