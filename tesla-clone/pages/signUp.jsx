@@ -7,9 +7,9 @@ import Link from "next/link";
 import styles from "../styles/Auth.module.scss";
 
 const Register = () => {
-  const [email, setEmail] = useState(""); 
+  const [email, setEmail] = useState("");
   const [passwordOne, setPasswordOne] = useState("");
-  const [passwordTwo, setPasswordTwo] = useState(""); 
+  const [passwordTwo, setPasswordTwo] = useState("");
   const router = useRouter();
   const [error, setError] = useState(null);
 
@@ -20,7 +20,7 @@ const Register = () => {
     if (passwordOne === passwordTwo)
       createUserWithEmailAndPassword(email, passwordOne)
         .then((authUser) => {
-          router.push("/teslaaccount"); 
+          router.push("/teslaaccount");
         })
         .catch((error) => {
           setError(error.message);

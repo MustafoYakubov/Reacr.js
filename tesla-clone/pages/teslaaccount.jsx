@@ -6,7 +6,7 @@ import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import AccountNavbar from "../components/AccountNavbar/AccountNavbar";
 import { UseAuth } from "../context/AuthUserContext";
 import styles from "../styles/teslaaccount.module.scss";
-export default function Teslaaccount() {
+const Teslaaccount = () => {
   const { authUser, loading, signOut } = UseAuth();
   const router = useRouter();
 
@@ -58,4 +58,6 @@ export default function Teslaaccount() {
       )}
     </>
   );
-}
+};
+
+export default Teslaaccount;
