@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
@@ -6,7 +6,7 @@ import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import AccountNavbar from "../components/AccountNavbar/AccountNavbar";
 import { UseAuth } from "../context/AuthUserContext";
 import styles from "../styles/teslaaccount.module.scss";
-const teslaaccount = () => {
+const Teslaaccount = () => {
   const { authUser, loading, signOut } = UseAuth();
   const router = useRouter();
 
@@ -60,4 +60,4 @@ const teslaaccount = () => {
   );
 };
 
-export default teslaaccount;
+export default Teslaaccount;
