@@ -12,7 +12,7 @@ const AccountNavbar = () => {
     });
   };
 
-  return (
+  return (  
     <>
       <nav className={styles.navbar}>
         <Link href="/">
@@ -66,9 +66,7 @@ const AccountNavbar = () => {
             </Link>
           </li>
           <li className={styles.items}>
-            <Link href="/">
-              <a className={styles.itemsLink}>Account</a>
-            </Link>
+            <a className={styles.itemsLink}>Account</a>
           </li>
           <li className={styles.items} onClick={showSideBar}>
             Menu
