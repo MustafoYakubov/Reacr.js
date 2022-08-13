@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-import { useAuth } from "../context/AuthUserContext";
+import { UseAuth } from "../context/AuthUserContext";
 import Navbar from "../layout/Navbar/Navbar";
 import Head from "next/head";
 import Link from "next/link";
@@ -13,7 +13,7 @@ const Register = () => {
   const router = useRouter();
   const [error, setError] = useState(null);
 
-  const { createUserWithEmailAndPassword } = useAuth();
+  const { createUserWithEmailAndPassword } = UseAuth();
 
   const onSubmit = (event) => {
     setError(null);
