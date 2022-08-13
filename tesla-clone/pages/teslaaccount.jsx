@@ -1,16 +1,16 @@
-import React, { useEffect } from "react";
-import useRouter from "next/router";
+import React from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import AccountNavbar from "../components/AccountNavbar/AccountNavbar";
 import UseAuth from "../context/AuthUserContext";
 import styles from "../styles/teslaaccount.module.scss";
-const teslaaccount = () => {
+function teslaaccount() {
   const { authUser, loading, signOut } = UseAuth();
   const router = useRouter();
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (!loading && !authUser) router.push("/signIn");
   }, [authUser, loading]);
 
@@ -58,6 +58,6 @@ const teslaaccount = () => {
       )}
     </>
   );
-};
+}
 
 export default teslaaccount;
