@@ -1,5 +1,11 @@
 {
   "/_app": "pages/_app.js",
+  "/api/hello": "pages/api/hello.js",
+  "/": "pages/index.html",
+  "/sign_in": "pages/sign_in.html",
+  "/sign_up": "pages/sign_up.html",
+  "/teslaaccount": "pages/teslaaccount.html",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
 }
