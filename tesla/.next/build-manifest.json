@@ -34,16 +34,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/sign_in.js"
-    ],
-    "/sign_up": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/sign_up.js"
-    ],
-    "/teslaaccount": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/teslaaccount.js"
     ]
   },
   "ampFirstPages": []
